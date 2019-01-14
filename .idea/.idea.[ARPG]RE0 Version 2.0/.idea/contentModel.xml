@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Administrator\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_[ARPG]RE0 Version 2.0.884666349.00" t="ExcludeRecursive" />
+    <e p="F:\Unity\[ARPG]RE0 Version 2.0" t="IncludeRecursive">
+      <e p="[ARPG]RE0 Version 2.0.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
+      <e p="Assets" t="Include">
+        <e p="Scripts" t="Include">
+          <e p="GameAttr" t="Include">
+            <e p="CharactorAttr" t="Include">
+              <e p="AttrStrategy" t="Include">
+                <e p="IAttrStrategy.cs" t="Include" />
+                <e p="PlayerAttrStrategy.cs" t="Include" />
+              </e>
+              <e p="EnemyAttr.cs" t="Include" />
+              <e p="ICharactorAttr.cs" t="Include" />
+              <e p="PlayerAttr.cs" t="Include" />
+            </e>
+            <e p="WeaponAttr" t="Include">
+              <e p="WeaponAttr.cs" t="Include" />
+            </e>
+          </e>
+          <e p="GameLoop.cs" t="Include" />
+          <e p="GameManageHub.cs" t="Include" />
+          <e p="M_CameraController" t="Include">
+            <e p="CameraControl.cs" t="Include" />
+          </e>
+          <e p="M_CharactorSystem" t="Include">
+            <e p="ICharactor.cs" t="Include" />
+            <e p="Player" t="Include">
+              <e p="Player.cs" t="Include" />
+            </e>
+          </e>
+          <e p="M_ControllerSystem" t="Include">
+            <e p="IController.cs" t="Include" />
+            <e p="JoyStrickInput.cs" t="Include" />
+            <e p="KeyBoardInput.cs" t="Include" />
+            <e p="MyButton.cs" t="Include" />
+            <e p="MyTimer.cs" t="Include" />
+          </e>
+          <e p="M_WeaponSystem" t="Include">
+            <e p="IWeapon.cs" t="Include" />
+            <e p="WeaponSword.cs" t="Include" />
+          </e>
+          <e p="SceneStateMgr" t="Include">
+            <e p="BattleState.cs" t="Include" />
+            <e p="ISceneState.cs" t="Include" />
+            <e p="LogoMenuState.cs" t="Include" />
+            <e p="SceneStateController.cs" t="Include" />
+            <e p="StartMenuState.cs" t="Include" />
+          </e>
+          <e p="tempScript.cs" t="Include" />
+          <e p="UnityHelp" t="Include">
+            <e p="CheckController.cs" t="Include" />
+            <e p="UnityTool.cs" t="Include" />
+          </e>
+        </e>
+      </e>
+      <e p="Library" t="ExcludeRecursive" />
+      <e p="obj" t="ExcludeRecursive" />
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="Temp" t="ExcludeRecursive">
+        <e p="bin" t="ExcludeRecursive" />
+      </e>
+    </e>
+  </component>
+</project>
