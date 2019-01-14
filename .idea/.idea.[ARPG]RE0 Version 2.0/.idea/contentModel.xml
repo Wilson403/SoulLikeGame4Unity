@@ -4,15 +4,39 @@
     <e p="C:\Users\Administrator\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_[ARPG]RE0 Version 2.0.884666349.00" t="ExcludeRecursive" />
     <e p="F:\Unity\[ARPG]RE0 Version 2.0" t="IncludeRecursive">
       <e p="[ARPG]RE0 Version 2.0.sln" t="IncludeFlat" />
+      <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
       <e p="Assembly-CSharp.csproj" t="IncludeRecursive" />
       <e p="Assets" t="Include">
+        <e p="Editor" t="Include">
+          <e p="AIWallPointNetWorkEditor.cs" t="Include" />
+        </e>
+        <e p="EnemyFSMStateEvent.cs" t="Include" />
         <e p="Scripts" t="Include">
+          <e p="AIMgr" t="Include">
+            <e p="AIWallPointNetWork.cs" t="Include" />
+            <e p="CharactorAIMgr" t="Include">
+              <e p="AttackAIState.cs" t="Include" />
+              <e p="ChaseAiState.cs" t="Include" />
+              <e p="EnemyAI.cs" t="Include" />
+              <e p="IAIState.cs" t="Include" />
+              <e p="ICharactorAI.cs" t="Include" />
+              <e p="IdleAIState.cs" t="Include" />
+              <e p="MoveAIState.cs" t="Include" />
+            </e>
+          </e>
+          <e p="AnimationEventMgr.cs" t="Include" />
+          <e p="EventSystem" t="Include">
+            <e p="EventMgr.cs" t="Include" />
+          </e>
+          <e p="FSM" t="Include">
+            <e p="FSMOnSendMessage.cs" t="Include" />
+          </e>
           <e p="GameAttr" t="Include">
+            <e p="AttrStrategy" t="Include">
+              <e p="IAttrStrategy.cs" t="Include" />
+              <e p="PlayerAttrStrategy.cs" t="Include" />
+            </e>
             <e p="CharactorAttr" t="Include">
-              <e p="AttrStrategy" t="Include">
-                <e p="IAttrStrategy.cs" t="Include" />
-                <e p="PlayerAttrStrategy.cs" t="Include" />
-              </e>
               <e p="EnemyAttr.cs" t="Include" />
               <e p="ICharactorAttr.cs" t="Include" />
               <e p="PlayerAttr.cs" t="Include" />
@@ -23,11 +47,24 @@
           </e>
           <e p="GameLoop.cs" t="Include" />
           <e p="GameManageHub.cs" t="Include" />
+          <e p="M_ActionManager" t="Include">
+            <e p="ActionManager.cs" t="Include" />
+            <e p="BattleActionMgr.cs" t="Include" />
+            <e p="GeneralActionMgr.cs" t="Include" />
+            <e p="IActionInterface.cs" t="Include" />
+          </e>
           <e p="M_CameraController" t="Include">
             <e p="CameraControl.cs" t="Include" />
+            <e p="LockGameObject.cs" t="Include" />
           </e>
           <e p="M_CharactorSystem" t="Include">
+            <e p="CharactorTest.cs" t="Include" />
+            <e p="Enemy" t="Include">
+              <e p="Enemy.cs" t="Include" />
+              <e p="EnemyAnimEvent.cs" t="Include" />
+            </e>
             <e p="ICharactor.cs" t="Include" />
+            <e p="IHuman.cs" t="Include" />
             <e p="Player" t="Include">
               <e p="Player.cs" t="Include" />
             </e>
