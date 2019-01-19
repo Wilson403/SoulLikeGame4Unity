@@ -140,10 +140,11 @@ public class CameraControl : MonoBehaviour
 
 		//射线，用于解决‘穿墙问题’
 		RaycastHit hit;
-		if (Physics.Linecast(_playerController.transform.position + Vector3.up, transform.position, out hit))
+		if (Physics.Linecast(_playerController.transform.position + Vector3.up, transform.position, out hit,
+			~(1 << 12 | 1 << 13)))
 		{
-			string name = hit.collider.gameObject.tag;
-			if (name != "MainCamera")
+			var tagname = hit.collider.gameObject.tag;
+			if (tagname != "MainCamera")
 			{
 				//如果射线碰撞的不是相机，那么就取得射线碰撞点到玩家的距离
 				float currentDistance = Vector3.Distance(hit.point, _playerController.transform.position);

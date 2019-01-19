@@ -16,7 +16,8 @@ public class WeaponSword : IWeapon
 {
     public override void WeaponAttack(ICharactor theTarget)
     {
-        //通知敌人，你被攻击了！！！同时报上自己的名字
-        theTarget.UnderAttack(WeaponOwner);
+        //声音
+        //粒子特效
+        //动作
     }
 }

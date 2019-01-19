@@ -25,6 +25,7 @@
             </e>
           </e>
           <e p="AnimationEventMgr.cs" t="Include" />
+          <e p="AttackedTrigger.cs" t="Include" />
           <e p="EventSystem" t="Include">
             <e p="EventMgr.cs" t="Include" />
           </e>
@@ -47,11 +48,19 @@
           </e>
           <e p="GameLoop.cs" t="Include" />
           <e p="GameManageHub.cs" t="Include" />
-          <e p="M_ActionManager" t="Include">
+          <e p="M_AnimationManager" t="Include">
             <e p="ActionManager.cs" t="Include" />
             <e p="BattleActionMgr.cs" t="Include" />
             <e p="GeneralActionMgr.cs" t="Include" />
             <e p="IActionInterface.cs" t="Include" />
+            <e p="IEqip.cs" t="Include" />
+            <e p="IGeneral.cs" t="Include" />
+            <e p="IUnEqip.cs" t="Include" />
+            <e p="PlayerAnimation" t="Include">
+              <e p="PlayerEqipAnimationMgr.cs" t="Include" />
+              <e p="PlayerGeneralAnimationMgr.cs" t="Include" />
+              <e p="PlayerUnEqipAnimationMgr.cs" t="Include" />
+            </e>
           </e>
           <e p="M_CameraController" t="Include">
             <e p="CameraControl.cs" t="Include" />
@@ -64,7 +73,6 @@
               <e p="EnemyAnimEvent.cs" t="Include" />
             </e>
             <e p="ICharactor.cs" t="Include" />
-            <e p="IHuman.cs" t="Include" />
             <e p="Player" t="Include">
               <e p="Player.cs" t="Include" />
             </e>

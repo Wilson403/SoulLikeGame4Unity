@@ -17,7 +17,7 @@ using AIMgr.CharactorAIMgr;
 
 namespace M_CharactorSystem
 {
-    public class Enemy : IHuman
+    public class Enemy : ICharactor
     {
 
     #region Public_Attribute
@@ -130,7 +130,7 @@ namespace M_CharactorSystem
                 SetMoveState(isStop: true);
             }
 
-            Debug.Log(CharactorAi.CurAiState);
+            //Debug.Log(CharactorAi.CurAiState);
         }
 
     #endregion

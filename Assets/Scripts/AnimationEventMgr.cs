@@ -43,8 +43,9 @@ public class AnimationEventMgr : MonoBehaviour
 	public void RHandTakeWeapon()
 	{
 		//剑父对象的替换
-		UnityTool.SetParent(_player.MWeapon.WeaponHandleR.transform, _player.Sword.transform);
-		UnityTool.SetParent(_player.MWeapon.WeaponHandleL.transform, _player.Shield.transform);
+		UnityTool.SetParent(_player.RWeapontrans, _player.Sword.transform);
+		UnityTool.SetParent(_player.LWeapontrans, _player.Shield.transform);
+		_player.GetWeaponAttr();
 	}
 
 	

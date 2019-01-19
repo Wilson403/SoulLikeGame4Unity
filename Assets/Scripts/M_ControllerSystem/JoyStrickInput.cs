@@ -68,6 +68,9 @@ namespace M_ControllerSystem
 		public MyButton buttonSelect = new MyButton();
 		public MyButton buttonStart = new MyButton();
 		
+		public MyButton ButtonLeft = new MyButton();
+		public MyButton ButtonRight = new MyButton();
+		
 
 		#endregion
 		
@@ -77,11 +80,13 @@ namespace M_ControllerSystem
 
 		public override void Update()
 		{
+			
 			//接收按钮信号，true or false
 			//待优化
 
 			#region buttonX.GetSignal() 
 
+			//键
 			buttonA.GetSignal(Input.GetButton(Btn0));
 			buttonB.GetSignal(Input.GetButton(Btn1));
 			buttonX.GetSignal(Input.GetButton(Btn2));
@@ -95,6 +100,10 @@ namespace M_ControllerSystem
 			buttonSelect.GetSignal(Input.GetButton(Btn_Select));
 			buttonStart.GetSignal(Input.GetButton(Btn_Start));
 
+			//轴转键
+			ButtonLeft.GetSignal(Input.GetAxis(Axis6) >= 1 ? true : false);
+			ButtonRight.GetSignal(Input.GetAxis(Axis6) <= -1 ? true : false);
+
 			#endregion
 
 			//左摇杆Y轴分量
@@ -104,8 +113,7 @@ namespace M_ControllerSystem
 			Target_Horizontal = Input.GetAxis(AxisX);
 
 
-			BSelect1 = Input.GetAxis(Axis6) >= 1 ? true : false; 
-			BSelect2 = Input.GetAxis(Axis6) <= -1 ? true : false;
+			
 			//_dirY = Input.GetAxis(Axis7); //十字键Y
 
 			//右摇杆Y轴分量
@@ -136,7 +144,9 @@ namespace M_ControllerSystem
 			BEnter = buttonStart.OnPressed;
 			LAttack = buttonX.OnPressed;
 			WAttack = buttonY.OnPressed;
-
+			
+			BSelect1 = ButtonLeft.OnPressed;
+			BSelect2 = ButtonRight.OnPressed;
 		}
 
 	}//Class_end

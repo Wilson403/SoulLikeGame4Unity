@@ -12,11 +12,33 @@ using System.Collections;
 using System.Collections.Generic;
 using AIMgr.CharactorAIMgr;
 using GameAttr.CharactorAttr;
+using M_AnimationManager;
+using M_ControllerSystem;
 
 namespace M_CharactorSystem
 {
 	public abstract class ICharactor : MonoBehaviour
 	{
+
+	#region Public_Attriable
+
+		public Transform LWeapontrans
+		{
+			get { return _lweapontrans; }
+		}
+
+		public Transform RWeapontrans
+		{
+			get { return _rweapontrans; }
+		}
+
+		
+
+	#endregion
+
+
+		//----------------------------------------------------------------------
+
 
 	#region Public_Variable
 
@@ -41,6 +63,42 @@ namespace M_CharactorSystem
 		protected Rigidbody Rig; //角色控制柄挂载的刚体
 		protected ICharactorAttr CharactorAttr = null; //角色属性引用
 		protected ICharactorAI CharactorAi = null; //角色AI引用
+		protected GameObject Sensor; //传感器,用于检测地面
+		protected ActionManager MyActionManager;
+
+	#endregion
+
+
+		//----------------------------------------------------------------------
+
+
+	#region Private_Variable
+
+		private Transform _lweapontrans;
+		private Transform _rweapontrans;
+		private float _raylength = 2f; //射线长度
+		private IWeapon _weapon; //武器对象（桥接模式）
+		
+
+	#endregion
+
+
+		//----------------------------------------------------------------------
+
+
+	#region Public_Methods
+
+		//取得武器攻击力
+		public int GetAtkValue(int index)
+		{
+			return _weapon.GetAtkValue(index);
+		}
+
+		//取得武器防御力
+		public int GetDefenseValue(int index)
+		{
+			return _weapon.GetDefenseValue(index);
+		}
 
 	#endregion
 
@@ -52,7 +110,7 @@ namespace M_CharactorSystem
 
 		public virtual void Attack(ICharactor theTarget)
 		{
-			//攻击敌人
+			_weapon.WeaponAttack(theTarget);
 		}
 
 
@@ -85,9 +143,11 @@ namespace M_CharactorSystem
 
 		public virtual bool UsefulView(ICharactor theTarget)
 		{
-			return false;
 			//是否在有效视野
+			return false;
 		}
+
+
 
 	#endregion
 
@@ -96,6 +156,36 @@ namespace M_CharactorSystem
 
 
 	#region Protected_Methods
+
+		protected void InitActionManager()
+		{
+			MyActionManager = new ActionManager(this);
+		}
+
+		protected void SetAnimation(IGeneral general,IEqip eqip,IUnEqip unEqip)
+		{
+			MyActionManager.SetAnimation(general, eqip, unEqip);
+		}
+
+		protected void SetWeapon(IWeapon weapon)
+		{
+			_weapon = weapon;
+		}
+
+		protected void WeaponInit()
+		{
+			if (_weapon != null)
+			{
+				_weapon.SetWeapon(MyModel.transform, out _lweapontrans, out _rweapontrans);
+				_weapon.SetWeaponOwner(this);
+			}
+		}
+
+		public void GetWeaponAttr()
+		{
+			if (_weapon != null)
+				_weapon.GetWeaponAttr();
+		}
 
 		//设置角色属性
 		protected void SetCharactorAttr(ICharactorAttr theCharactorAttr)
@@ -121,9 +211,51 @@ namespace M_CharactorSystem
 			CharactorAi.RemoveAiTarget(theTarget);
 		}
 
+		//检查角色是否位于地面
+		protected void CheckBOnGround()
+		{
+			if (Sensor != null)
+			{
+				//定义射线打向地面，来检查角色是否位于平面
+				RaycastHit hit;
+				if (Physics.Raycast(Sensor.transform.position, Sensor.transform.TransformDirection(Vector3.up) * -1,
+					out hit, _raylength,
+					1 << 10))
+				{
+					OnGround();
+				}
+				else
+				{
+					NotGround();
+				}
+			}
+		}
+
+	#endregion
+
+
+		//----------------------------------------------------------------------
+
+
+	#region Private_Methods
+
+		//角色位于地面上
+		private void OnGround()
+		{
+			MyAnimator.SetBool("BGround", true);
+			Col.radius = 0.5f;
+		}
+
+		//角色不在地面上
+		private void NotGround()
+		{
+			MyAnimator.SetBool("BGround", false);
+			Col.radius = 0f;
+		}
+
 	#endregion
 
 	} //Class_End
-	
+
 } //NameSpace_End
 
