@@ -19,7 +19,8 @@ namespace GameAttr.CharactorAttr
     #region Private_variable
 
         private int _addHp = 0; //每次升级新增加的血量
-        private int _level = 0; //等级
+        private int _addHarmValue = 0;
+        private int _level = 1; //等级
 
     #endregion
         
@@ -32,7 +33,10 @@ namespace GameAttr.CharactorAttr
         //建造者
         public PlayerAttr()
         {
-		
+            InitHp = 100;
+            MaxHp = InitHp;
+            InitHarmValue = 10;
+            MaxHarmValue = InitHarmValue;
         }
 
         //获取等级
@@ -52,11 +56,23 @@ namespace GameAttr.CharactorAttr
         {
             _addHp = addHp;
         }
+        
+        //设置加成伤害
+        public void AddHarmValue(int addHarmValue)
+        {
+            _addHarmValue = addHarmValue;
+        }
 
         //获取最大生命值
         public override int GetMaxHp()
         {
             return MaxHp + _addHp;
+        }
+        
+        //获取最大生命值
+        public override int GetMaxHarmValue()
+        {
+            return MaxHarmValue + _addHarmValue;
         }
 
     #endregion

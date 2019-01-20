@@ -35,9 +35,9 @@ namespace GameAttr.AttrStrategy
             {
                 addHp = (lv - 1) * 2;
             }
-
+            
             theAttr.AddHp(addHp);
-            theAttr.Init(20);
+            theAttr.Init(theAttr.GetMaxHp());
         }
 
         //攻击加成

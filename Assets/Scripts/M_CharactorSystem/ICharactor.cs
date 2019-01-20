@@ -89,7 +89,7 @@ namespace M_CharactorSystem
 	#region Public_Methods
 
 		//取得武器攻击力
-		public int GetAtkValue(int index)
+		public int GetWeaponAtkValue(int index)
 		{
 			return _weapon.GetAtkValue(index);
 		}
@@ -123,7 +123,7 @@ namespace M_CharactorSystem
 		//拥有武器的角色要在重写方法中加入武器伤害的计算
 		public virtual int GetAtkValue()
 		{
-			return 0;
+			return CharactorAttr.GetMaxHarmValue();
 		}
 
 		public virtual void StopMove()
@@ -167,11 +167,13 @@ namespace M_CharactorSystem
 			MyActionManager.SetAnimation(general, eqip, unEqip);
 		}
 
+		//设置武器对象
 		protected void SetWeapon(IWeapon weapon)
 		{
 			_weapon = weapon;
 		}
 
+		//武器对象初始化
 		protected void WeaponInit()
 		{
 			if (_weapon != null)
@@ -181,6 +183,7 @@ namespace M_CharactorSystem
 			}
 		}
 
+		//取得武器属性
 		public void GetWeaponAttr()
 		{
 			if (_weapon != null)

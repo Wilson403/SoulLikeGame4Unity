@@ -88,6 +88,7 @@ namespace M_CharactorSystem
 			SetWeapon(new WeaponSword());
 			WeaponInit();
 			
+			//状态机动画管理
 			InitActionManager();
 			SetAnimation(new PlayerGeneralAnimationMgr(MyActionManager), new PlayerEqipAnimationMgr(MyActionManager),
 				new PlayerUnEqipAnimationMgr(MyActionManager));
@@ -123,12 +124,11 @@ namespace M_CharactorSystem
 			{
 				CameraControl.LockUnLock();
 			}
-			
-			
-			
-			
-			
-			
+
+			if (Input.GetKeyDown(KeyCode.Space))
+			{
+				UnderAttack(this);
+			}
 		}
 
 		private void FixedUpdate()
@@ -149,12 +149,21 @@ namespace M_CharactorSystem
 		public override void UnderAttack(ICharactor theTarget)
 		{
 			//计算伤害值
-			CharactorAttr.GetDmgDesValue(theTarget);
+			CharactorAttr.GetRemainHp(theTarget);
 			if (CharactorAttr.GetNowHp() <= 0)
 			{
 				Debug.Log("你死了");
 			}
-		}  
+
+			Debug.Log("最大生命值" + CharactorAttr.GetMaxHp());
+			Debug.Log("当前生命值" + CharactorAttr.GetNowHp());
+			Debug.Log("当前伤害" + GetAtkValue());
+		}
+		
+		public override int GetAtkValue()
+		{
+			return base.GetAtkValue() + GetWeaponAtkValue(1);
+		}
 
 	#endregion
 
@@ -265,7 +274,6 @@ namespace M_CharactorSystem
 		{
 			Controller.InputEnable = false;
 			BLockmoving = false;
-			Debug.Log("Attack");
 		}
 
 		//翻滚动画状态更新时

@@ -21,11 +21,11 @@ namespace GameAttr.CharactorAttr
 
     #region Protected_variable
 
-        protected int MaxHp; //最大生命值
-        protected float JumpHeight = 3; //跳跃高度
-        protected float RollForwardSpeed = 0.0f; //前滚速度
-        protected Vector3 RollbackSpeed; //后滚速度
-
+        protected int InitHp; //初始最大生命值
+        protected int MaxHp;
+        protected int InitHarmValue;
+        protected int MaxHarmValue;
+        
     #endregion
 
 
@@ -70,20 +70,25 @@ namespace GameAttr.CharactorAttr
             return MaxHp;
         }
 
+        public virtual int GetMaxHarmValue()
+        {
+            return MaxHarmValue;
+        }
+
         //属性初始化
         public void InitAttr()
         {
             _attrStrategy.InitAttr(this);
         }
 
-        //得到武器伤害附加值
+        //得到伤害附加值
         public int GetAtkplusValue()
         {
             return _attrStrategy.GetAtkplusValue(this);
         }
 
         //计算被攻击后的生命值
-        public void GetDmgDesValue(ICharactor theAttacker)
+        public void GetRemainHp(ICharactor theAttacker)
         {
             //获取攻击者的攻击力
             int atkValue = theAttacker.GetAtkValue();

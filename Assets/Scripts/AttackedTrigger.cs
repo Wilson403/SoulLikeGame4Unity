@@ -36,7 +36,7 @@ namespace M_CharactorSystem
 		private void OnTriggerEnter(Collider other)
 		{
 			 _charactor.UnderAttack(_charactor);
-			Debug.Log(other.name + "" + other.tag);
+			Debug.Log("我被攻击了"+other.name + "" + other.tag);
 		}
 
 	#endregion

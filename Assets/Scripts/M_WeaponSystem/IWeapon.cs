@@ -68,11 +68,6 @@ public abstract class IWeapon
 	/// <returns></returns>
 	public int GetAtkValue(int index)
 	{
-		if (index != 0 || index != 1)
-		{
-			Debug.Log("无法获取持有的武器伤害");
-		}
-
 		if (index == 0 && _lweaponAttr)
 		{
 			return _lweaponAttr.AtkValue;
@@ -83,8 +78,8 @@ public abstract class IWeapon
 		}
 		else
 		{
-			return 0;
 			Debug.Log("武器属性获取未知错误");
+			return 0;
 		}
 	}
 
@@ -95,11 +90,6 @@ public abstract class IWeapon
 	/// <returns></returns>
 	public int GetDefenseValue(int index)
 	{
-		if (index != 0 || index != 1)
-		{
-			Debug.Log("无法获取持有的武器伤害");
-		}
-
 		if (index == 0 && _lweaponAttr)
 		{
 			return _lweaponAttr.DedenseValue;
@@ -110,8 +100,8 @@ public abstract class IWeapon
 		}
 		else
 		{
-			return 0;
 			Debug.Log("武器属性获取未知错误");
+			return 0;
 		} 
 	}
 
