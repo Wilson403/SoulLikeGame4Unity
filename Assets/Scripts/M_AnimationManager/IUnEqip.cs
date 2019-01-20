@@ -21,16 +21,6 @@ namespace M_AnimationManager
 
 		}
 
-	#region Public Methods
-
-		public virtual void SetJumpAnimation()
-		{
-
-		}
-
-	#endregion
-
-
 	} //Class_End
 
 } //NameSpace_End

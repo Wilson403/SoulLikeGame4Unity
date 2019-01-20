@@ -56,6 +56,17 @@ namespace M_AnimationManager.PlayerAnimation
 						_player.MovingVec = Vector3.zero;
 					}
 				}
+				
+				//角色方向变更
+				//只有摇杆值不为0时才进行角色方向变更
+				if (_player.Controller.DMag > 0f)
+				{
+					//利用线性插值使角色旋转变得平滑
+					_player.MyModel.transform.forward =
+						Vector3.Slerp(_player.MyModel.transform.forward,
+							_player.Controller.GetRVec(_player.transform),
+							0.3f);
+				}
 
 			} //UnEqipMove_End
 
@@ -91,6 +102,54 @@ namespace M_AnimationManager.PlayerAnimation
 					CurAnimator.SetTrigger("ToUnEqip");
 					CurAnimator.SetBool("B_Eqip", false);
 				}
+			}
+		}
+
+		//触发跳跃躲闪动作
+		public override void SetJumpAnimation()
+		{
+			if (CurAnimator.GetBool("Move"))
+			{
+				if (_player.Controller.BJump)
+				{
+					if (!_player.CameraControl.LockState)
+						CurAnimator.SetTrigger("Jump");
+					else
+					{
+						if (CheckState("EqipMove"))
+						{
+							CurAnimator.SetTrigger("Dodge_Roll");
+						}
+					}
+				}
+
+				else if (_player.Controller.BStep)
+				{
+					if (_player.CameraControl.LockState)
+					{
+						if (CheckState("EqipMove"))
+							CurAnimator.SetTrigger("Dodge_Step");
+					}
+				}
+			}
+		}
+
+		public override void RootMotionValue(Vector3 delta,out Vector3 deltaPos)
+		{
+			/*
+			 1.如果是轻攻击第一击且处于相机锁定状态，会有很长的一段滑动距离
+			 2.滑动距离是根据与锁定物体的距离来动态调整的 
+			 */
+			if (CheckState("LAttack_A") && _player.CameraControl.LockState)
+			{
+				deltaPos = delta * (_player.CameraControl.ObjectDistance > 5
+					           ? 5
+					           : _player.CameraControl.ObjectDistance * 0.6f);
+			}
+			//一般状态下的根运动值
+			else
+			{
+				deltaPos = delta * 0.5f;
 			}
 		}
 

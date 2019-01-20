@@ -114,6 +114,9 @@ namespace M_CharactorSystem
 			
 			MyActionManager.General.ChangeActionState();
 			MyActionManager.General.GetMoveAnimation();
+			MyActionManager.General.SetJumpAnimation();
+			MyActionManager.Eqip.SetAttackAnimation();
+			MyActionManager.Eqip.SetBlockAnimation();
 
 			//触发锁定，相机会锁定敌人
 			if (Controller.BLock)
@@ -121,16 +124,7 @@ namespace M_CharactorSystem
 				CameraControl.LockUnLock();
 			}
 			
-			//角色方向变更
-			//只有摇杆值不为0时才进行角色方向变更
-			if (Controller.DMag > 0f)
-			{
-				//利用线性插值使角色旋转变得平滑
-				MyModel.transform.forward =
-					Vector3.Slerp(MyModel.transform.forward,
-						Controller.GetRVec(transform),
-						0.3f);
-			}
+			
 			
 			
 			
@@ -235,19 +229,7 @@ namespace M_CharactorSystem
 		//使用动画自身的运动
 		public void OnUpdateRm(Vector3 delta)
 		{
-			/*
-			 1.如果是轻攻击第一击且处于相机锁定状态，会有很长的一段滑动距离
-			 2.滑动距离是根据与锁定物体的距离来动态调整的 
-			 */
-//			if (_actionManager.CheckState("LAttack_A") && MCameraControl.LockState)
-//			{
-//				_deltaPos = delta * (MCameraControl.ObjectDistance > 5 ? 5 : MCameraControl.ObjectDistance * 0.6f);
-//			}
-//			//一般状态下的根运动值
-//			else
-//			{
-//				_deltaPos = delta * 0.5f;
-//			}
+			MyActionManager.General.RootMotionValue(delta, out _deltaPos);
 		}
 
 	#endregion

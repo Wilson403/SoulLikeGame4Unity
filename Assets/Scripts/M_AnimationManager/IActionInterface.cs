@@ -35,6 +35,19 @@ namespace M_AnimationManager
         }
 
         /// <summary>
+        /// 状态机层次权重的调整
+        /// </summary>
+        /// <param name="layerName"></param>
+        /// <param name="targetvalue"></param>
+        /// <param name="time"></param>
+        protected void SetAnimLayerWeight(string layerName, float targetvalue, float time)
+        {
+            CurAnimator.SetLayerWeight(CurAnimator.GetLayerIndex(layerName),
+                Mathf.Lerp(CurAnimator.GetLayerWeight(CurAnimator.GetLayerIndex(layerName)),
+                    targetvalue, time));
+        }
+
+        /// <summary>
         /// 检查当前是否处于所指定的动画状态，以状态名为检索依据
         /// </summary>
         /// <param name="stateName">状态名</param>
@@ -57,11 +70,6 @@ namespace M_AnimationManager
             var layerindex = CurAnimator.GetLayerIndex(layerName);
             return CurAnimator.GetCurrentAnimatorStateInfo(layerindex).IsTag(tagName);
         }
-
-//        protected void ReGetSpeed()
-//        {
-//            Am.MPlay.MovingVec = Vector3.zero;
-//        }
 
     }
 }

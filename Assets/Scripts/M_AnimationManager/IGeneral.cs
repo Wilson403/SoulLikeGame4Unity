@@ -29,6 +29,17 @@ namespace M_AnimationManager
 
 		public virtual void ChangeActionState()
 		{
+			
+		}
+		
+		public virtual void SetJumpAnimation()
+		{
+
+		}
+
+		public virtual void RootMotionValue(Vector3 delta,out Vector3 deltaPos)
+		{
+			deltaPos = Vector3.zero;
 		}
 
 	#endregion

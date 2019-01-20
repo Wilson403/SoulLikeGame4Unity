@@ -32,11 +32,6 @@ namespace M_AnimationManager
 			
 		}
 
-		public virtual void SetDodgeAnimation()
-		{
-			
-		}
-
 	#endregion
 
 	} //Class_End
