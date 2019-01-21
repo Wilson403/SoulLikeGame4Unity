@@ -32,9 +32,19 @@ namespace M_AnimationManager
 			
 		}
 		
-		public virtual void SetJumpAnimation()
+		public virtual void GetJumpAnimation()
 		{
 
+		}
+		
+		public virtual void GetDamageAnimation(float x,float z)
+		{
+
+		}
+
+		public virtual void GetDeadAnimation()
+		{
+			
 		}
 
 		public virtual void RootMotionValue(Vector3 delta,out Vector3 deltaPos)

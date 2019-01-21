@@ -138,7 +138,7 @@ namespace AIMgr.CharactorAIMgr
             TheTarget.LookTarget(theTarget);
         }
 
-        public bool UsefulView(ICharactor theTarget)
+        public float UsefulView(ICharactor theTarget)
         {
            return TheTarget.UsefulView(theTarget);
         }

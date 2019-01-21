@@ -20,6 +20,12 @@ AnimatorController:
     m_DefaultInt: 0
     m_DefaultBool: 0
     m_Controller: {fileID: 0}
+  - m_Name: Y
+    m_Type: 1
+    m_DefaultFloat: 0
+    m_DefaultInt: 0
+    m_DefaultBool: 0
+    m_Controller: {fileID: 0}
   - m_Name: AtkDircX
     m_Type: 1
     m_DefaultFloat: 0
@@ -360,6 +366,25 @@ MonoBehaviour:
   EnterClearSignal: []
   ExitClearSignal: []
   UpdateClearSignal: []
+--- !u!114 &114889269961938864
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d52360c918072274d9248e27450cce0b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Type: 0
+  OnEnterMessage: []
+  OnExitMessage: []
+  OnUpdateMassages: []
+  EnterClearSignal: []
+  ExitClearSignal: []
+  UpdateClearSignal:
+  - UnderAttack
 --- !u!114 &114897924838624344
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -457,6 +482,36 @@ MonoBehaviour:
   - WAttack
   ExitClearSignal: []
   UpdateClearSignal: []
+--- !u!206 &206054747663730948
+BlendTree:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: BlendTree
+  m_Childs:
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: 2f7a6e48d3ed2db499d3cbe762d1e7e6, type: 3}
+    m_Threshold: 0
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: X
+    m_Mirror: 0
+  - serializedVersion: 2
+    m_Motion: {fileID: 7400000, guid: e3ecc1f2697b6714ea894e91cf4ed10d, type: 3}
+    m_Threshold: 1
+    m_Position: {x: 0, y: 0}
+    m_TimeScale: 1
+    m_CycleOffset: 0
+    m_DirectBlendParameter: X
+    m_Mirror: 0
+  m_BlendParameter: Y
+  m_BlendParameterY: X
+  m_MinThreshold: 0
+  m_MaxThreshold: 1
+  m_UseAutomaticThresholds: 1
+  m_NormalizedBlendValues: 0
+  m_BlendType: 0
 --- !u!206 &206093900586211808
 BlendTree:
   m_ObjectHideFlags: 1
@@ -537,7 +592,7 @@ BlendTree:
     m_DirectBlendParameter: X
     m_Mirror: 0
   - serializedVersion: 2
-    m_Motion: {fileID: 7400000, guid: 2f7a6e48d3ed2db499d3cbe762d1e7e6, type: 3}
+    m_Motion: {fileID: 206054747663730948}
     m_Threshold: 1
     m_Position: {x: 0, y: 0}
     m_TimeScale: 1
@@ -1187,6 +1242,9 @@ AnimatorStateTransition:
   - m_ConditionMode: 1
     m_ConditionEvent: BDead
     m_EventTreshold: 0
+  - m_ConditionMode: 1
+    m_ConditionEvent: UnderAttack
+    m_EventTreshold: 0
   m_DstStateMachine: {fileID: 0}
   m_DstState: {fileID: 1102212486673276344}
   m_Solo: 0
@@ -1694,9 +1752,9 @@ AnimatorStateTransition:
   m_Mute: 0
   m_IsExit: 1
   serializedVersion: 3
-  m_TransitionDuration: 0.25
+  m_TransitionDuration: 0.33333322
   m_TransitionOffset: 0
-  m_ExitTime: 0.7222222
+  m_ExitTime: 0.72222227
   m_HasExitTime: 1
   m_HasFixedDuration: 1
   m_InterruptionSource: 0
@@ -2921,7 +2979,8 @@ AnimatorState:
   m_CycleOffset: 0
   m_Transitions:
   - {fileID: 1101632257250081326}
-  m_StateMachineBehaviours: []
+  m_StateMachineBehaviours:
+  - {fileID: 114889269961938864}
   m_Position: {x: 50, y: 50, z: 0}
   m_IKOnFeet: 1
   m_WriteDefaultValues: 1

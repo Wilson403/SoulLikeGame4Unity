@@ -62,7 +62,7 @@ namespace AIMgr.CharactorAIMgr
             else //如果不在攻击范围内则切换到追赶状态
             {
                 //在有效视野内才可以进行锁定追击
-                if (CharactorAi.UsefulView(theNearTarget))
+                if (CharactorAi.UsefulView(theNearTarget) < 90)
                 {
                     CharactorAi.StopMove();
                     CharactorAi.ChangeAiState(new ChaseAiState(theTarget: theNearTarget));

@@ -115,7 +115,7 @@ namespace M_CharactorSystem
 			
 			MyActionManager.General.ChangeActionState();
 			MyActionManager.General.GetMoveAnimation();
-			MyActionManager.General.SetJumpAnimation();
+			MyActionManager.General.GetJumpAnimation();
 			MyActionManager.Eqip.SetAttackAnimation();
 			MyActionManager.Eqip.SetBlockAnimation();
 
@@ -148,16 +148,48 @@ namespace M_CharactorSystem
 		//被敌人攻击
 		public override void UnderAttack(ICharactor theTarget)
 		{
+			var dir = Vector3.Normalize(theTarget.transform.position - transform.position);
+			var value = UsefulView(theTarget); 
+
+			//背面
+			if (value >= 0 && value < 60)
+			{
+				//没有找到相应的动画，用正面被攻击的替代
+				MyActionManager.General.GetDamageAnimation(0, 0); //触发被攻击动画
+			}
+
+			//侧面
+			else if (value >= 60 && value < 120)
+			{
+				//右
+				if (dir.x > 0)
+				{
+					MyActionManager.General.GetDamageAnimation(-1, 0); //触发被攻击动画
+				}
+				//左
+				else if (dir.x < 0)
+				{
+					MyActionManager.General.GetDamageAnimation(1, 0); //触发被攻击动画
+				}
+			}
+			
+			//正面
+			else if (value >= 120 && value <= 180)
+			{
+				MyActionManager.General.GetDamageAnimation(0, 0); //触发被攻击动画
+			}
+			
 			//计算伤害值
 			CharactorAttr.GetRemainHp(theTarget);
 			if (CharactorAttr.GetNowHp() <= 0)
 			{
-				Debug.Log("你死了");
+				MyActionManager.General.GetDeadAnimation(); //触发死亡动画
 			}
-
-			Debug.Log("最大生命值" + CharactorAttr.GetMaxHp());
-			Debug.Log("当前生命值" + CharactorAttr.GetNowHp());
-			Debug.Log("当前伤害" + GetAtkValue());
+			
+//			Debug.Log("最大生命值" + CharactorAttr.GetMaxHp());
+//			Debug.Log("当前生命值" + CharactorAttr.GetNowHp());
+//			Debug.Log("当前伤害" + GetAtkValue());
+			
 		}
 		
 		public override int GetAtkValue()

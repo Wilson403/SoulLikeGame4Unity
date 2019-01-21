@@ -168,14 +168,6 @@ namespace M_CharactorSystem
             transform.rotation = Quaternion.Slerp(transform.rotation, lookRotation, 0.1f);
         }
 
-        public override bool UsefulView(ICharactor theTarget)
-        {
-            var direction = theTarget.transform.position - transform.position;
-            var value = Vector3.Dot(direction, transform.forward);
-            return value >= 0 ? true : false;
-        }
-
-
     #endregion
 
 

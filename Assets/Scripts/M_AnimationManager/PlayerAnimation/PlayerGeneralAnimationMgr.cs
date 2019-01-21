@@ -106,7 +106,7 @@ namespace M_AnimationManager.PlayerAnimation
 		}
 
 		//触发跳跃躲闪动作
-		public override void SetJumpAnimation()
+		public override void GetJumpAnimation()
 		{
 			if (CurAnimator.GetBool("Move"))
 			{
@@ -151,6 +151,22 @@ namespace M_AnimationManager.PlayerAnimation
 			{
 				deltaPos = delta * 0.5f;
 			}
+		}
+
+		public override void GetDamageAnimation(float x, float z)
+		{
+			if (!CheckState("DamageDirc"))
+			{
+				CurAnimator.SetFloat("AtkDircX", x);
+				CurAnimator.SetFloat("AtkDircZ", z);
+				CurAnimator.SetTrigger("UnderAttack");
+			}
+		}
+
+		public override void GetDeadAnimation()
+		{
+			if (!CheckState("Dead"))
+				CurAnimator.SetBool("BDead", true);
 		}
 
 	#endregion

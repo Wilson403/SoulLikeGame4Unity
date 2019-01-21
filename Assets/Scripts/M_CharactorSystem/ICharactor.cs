@@ -141,12 +141,14 @@ namespace M_CharactorSystem
 			//盯住目标
 		}
 
-		public virtual bool UsefulView(ICharactor theTarget)
+		//朝向判断
+		public virtual float UsefulView(ICharactor theTarget)
 		{
-			//是否在有效视野
-			return false;
+			var direction = Vector3.Normalize(theTarget.transform.position - transform.position);
+			var value = Vector3.Dot(direction, transform.forward);
+			var rad = Mathf.Acos(value); //反余弦函数求弧度
+			return rad * Mathf.Rad2Deg; //转换为度数返回
 		}
-
 
 
 	#endregion
