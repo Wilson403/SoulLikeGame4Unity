@@ -18,4 +18,6 @@ Version 1下载地址(已停止开发) ： https://github.com/WilsonUnity/MyRPGG
 * （新增）距离自动拉伸
 * 锁定敌人目标
 
-3. 
+**3. （新增）工厂模块**
+* 资源工厂
+* 角色工厂
