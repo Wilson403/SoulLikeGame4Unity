@@ -32,8 +32,6 @@ namespace M_CharactorSystem
 			get { return _rweapontrans; }
 		}
 
-		
-
 	#endregion
 
 

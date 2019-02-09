@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ContentModelStore">
-    <e p="C:\Users\Administrator\.Rider2018.1\system\resharper-host\Local\Transient\ReSharperHost\v12\SolutionCaches\_[ARPG]RE0 Version 2.0.884666349.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Administrator\.Rider2018.3\system\resharper-host\Local\Transient\ReSharperHost\v183\SolutionCaches\_[ARPG]RE0 Version 2.0.884666349.00" t="ExcludeRecursive" />
     <e p="F:\Unity\[ARPG]RE0 Version 2.0" t="IncludeRecursive">
       <e p="[ARPG]RE0 Version 2.0.sln" t="IncludeFlat" />
       <e p="Assembly-CSharp-Editor.csproj" t="IncludeRecursive" />
@@ -10,7 +11,6 @@
         <e p="Editor" t="Include">
           <e p="AIWallPointNetWorkEditor.cs" t="Include" />
         </e>
-        <e p="EnemyFSMStateEvent.cs" t="Include" />
         <e p="Scripts" t="Include">
           <e p="AIMgr" t="Include">
             <e p="AIWallPointNetWork.cs" t="Include" />
@@ -26,6 +26,9 @@
           </e>
           <e p="AnimationEventMgr.cs" t="Include" />
           <e p="AttackedTrigger.cs" t="Include" />
+          <e p="BaseClass" t="Include">
+            <e p="IGameSystem.cs" t="Include" />
+          </e>
           <e p="EventSystem" t="Include">
             <e p="EventMgr.cs" t="Include" />
           </e>
@@ -67,7 +70,13 @@
             <e p="LockGameObject.cs" t="Include" />
           </e>
           <e p="M_CharactorSystem" t="Include">
-            <e p="CharactorTest.cs" t="Include" />
+            <e p="CharactorBuilder" t="Include">
+              <e p="CharactorBuildSystem.cs" t="Include" />
+              <e p="EnemyBuilder.cs" t="Include" />
+              <e p="ICharactorBuilder.cs" t="Include" />
+              <e p="ICharactorBuildParam.cs" t="Include" />
+              <e p="PlayerBuilder.cs" t="Include" />
+            </e>
             <e p="Enemy" t="Include">
               <e p="Enemy.cs" t="Include" />
               <e p="EnemyAnimEvent.cs" t="Include" />
@@ -84,6 +93,17 @@
             <e p="MyButton.cs" t="Include" />
             <e p="MyTimer.cs" t="Include" />
           </e>
+          <e p="M_Factory" t="Include">
+            <e p="AssetFactory" t="Include">
+              <e p="IAssetFactory.cs" t="Include" />
+              <e p="ResourcesProxyFactory.cs" t="Include" />
+              <e p="ResourseFactory.cs" t="Include" />
+            </e>
+            <e p="CharactorFactory" t="Include">
+              <e p="ICharactorFactory.cs" t="Include" />
+            </e>
+            <e p="MainFactory.cs" t="Include" />
+          </e>
           <e p="M_WeaponSystem" t="Include">
             <e p="IWeapon.cs" t="Include" />
             <e p="WeaponSword.cs" t="Include" />
@@ -95,7 +115,7 @@
             <e p="SceneStateController.cs" t="Include" />
             <e p="StartMenuState.cs" t="Include" />
           </e>
-          <e p="tempScript.cs" t="Include" />
+          <e p="TempScript.cs" t="Include" />
           <e p="UnityHelp" t="Include">
             <e p="CheckController.cs" t="Include" />
             <e p="UnityTool.cs" t="Include" />

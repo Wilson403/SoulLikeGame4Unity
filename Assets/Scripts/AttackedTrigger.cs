@@ -35,7 +35,8 @@ namespace M_CharactorSystem
 
 		private void OnTriggerEnter(Collider other)
 		{
-			 _charactor.UnderAttack(_charactor);
+			//other.transform.
+			// _charactor.UnderAttack();
 			//Debug.Log("我被攻击了"+other.name + "" + other.tag);
 		}
 

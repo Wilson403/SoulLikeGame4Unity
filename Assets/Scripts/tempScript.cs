@@ -1,23 +1,29 @@
-﻿using System.Collections;
+﻿/*
+ * TempScript ：
+ * 程序员 ：Wilson
+ * 挂载对象 ：None
+ * 更多描述 ：None
+ * 修改记录 ：None
+ */
+ 
+using System.Collections;
 using System.Collections.Generic;
+using M_Factory.AssetFactory;
 using UnityEngine;
 
-public class tempScript : MonoBehaviour
+namespace MyNamespace
 {
+    public class TempScript : MonoBehaviour 
+    {
+        ResourcesProxyFactory _factory = new ResourcesProxyFactory();
 
-	public GameObject Obj1;
-	
-	private void Update()
-	{
-		//Debug.Log(Vector3.Normalize(Obj1.transform.position - Obj2.transform.position));
-		Debug.Log(UsefulView(Obj1));
-	}
-	
-	public float UsefulView(GameObject theTarget)
-	{
-		var direction = Vector3.Normalize(theTarget.transform.position - transform.position);
-		var value = Vector3.Dot(direction, transform.forward);
-		var rad = Mathf.Acos(value); //反余弦函数求弧度
-		return rad * Mathf.Rad2Deg; //转换为度数返回
-	}
-}
+        private void Start()
+        {
+            for (int i = 0; i < 10; i++)
+            {
+                _factory.LoadPlayer("Cube");
+            }
+            
+        }
+    } 
+} 

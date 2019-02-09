@@ -3,313 +3,97 @@
   <component name="ChangeListManager">
     <list default="true" id="c09f8d51-5f0c-4d47-8fed-58f9e0fef23b" name="默认的" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
-    <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Player.cs" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="196">
-              <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
-              <folding>
-                <marker date="1548078345781" expanded="false" signature="6:278" ph="..." />
-                <marker date="1548078345781" expanded="true" signature="307:8775" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="343:8761" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="1047:1086" ph="{...}" />
-                <marker date="1548078345781" expanded="false" signature="1091:1186" ph="枚举（控制器状态）" />
-                <marker date="1548078345781" expanded="true" signature="1139:1173" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="1210:2130" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="1656:1717" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="2154:2482" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="2507:3041" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="2921:2963" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3004:3037" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3071:3317" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3087:3313" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3320:4504" ph="攻击与被攻击抽象层" />
-                <marker date="1548078345781" expanded="true" signature="3405:4391" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3573:3673" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3722:3946" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3754:3832" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="3864:3941" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="4000:4074" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="4168:4235" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="4240:4383" ph="/* Debug.Log(&quot;最大生命值&quot; + CharactorAttr.GetMaxHp()); ... */" />
-                <marker date="1548078345781" expanded="true" signature="4430:4491" ph="{...}" />
-                <marker date="1548078345781" expanded="false" signature="4507:5724" ph="类私有方法" />
-                <marker date="1548078345781" expanded="true" signature="4565:5005" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="4698:4796" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="4868:4968" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="4976:5000" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5009:5106" ph="/* ---------------------------------------------------------------------------------- ... */" />
-                <marker date="1548078345781" expanded="true" signature="5132:5309" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5165:5230" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5238:5305" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5313:5353" ph="/* 设置状态机的BFollowObject参数 ... */" />
-                <marker date="1548078345781" expanded="true" signature="5384:5547" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5420:5477" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5485:5543" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="5551:5647" ph="/* ---------------------------------------------------------------------------------- ... */" />
-                <marker date="1548078345781" expanded="true" signature="5674:5711" ph="{...}" />
-                <marker date="1548078345781" expanded="false" signature="5727:5882" ph="类公开方法" />
-                <marker date="1548078345781" expanded="true" signature="5795:5869" ph="{...}" />
-                <marker date="1548078345781" expanded="false" signature="5885:7146" ph="动画状态相关方法" />
-                <marker date="1548078345781" expanded="true" signature="5942:6076" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="6118:6184" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="6228:6295" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="6332:6399" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="6444:6679" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="6718:6778" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="6809:7044" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="7073:7133" ph="{...}" />
-                <marker date="1548078345781" expanded="false" signature="7149:8757" ph="动画状态事件" />
-                <marker date="1548078345781" expanded="true" signature="7167:7353" ph="/// StateMachine脚本触发Enter时调用 ... " />
-                <marker date="1548078345781" expanded="true" signature="7449:7764" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="7480:7760" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="7768:7953" ph="/// StateMachine脚本触发Exit时调用 ... " />
-                <marker date="1548078345781" expanded="true" signature="8048:8249" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="8079:8245" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="8253:8440" ph="/// StateMachine脚本触发Update时调用 ... " />
-                <marker date="1548078345781" expanded="true" signature="8537:8744" ph="{...}" />
-                <marker date="1548078345781" expanded="true" signature="8568:8740" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="PlayerGeneralAnimationMgr.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="412">
-              <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
-              <folding>
-                <marker date="1548073178843" expanded="true" signature="0:102" ph="/* PlayerGeneralAnimationMgr ：玩家角色动画管理 ... */" />
-                <marker date="1548073178843" expanded="false" signature="110:221" ph="..." />
-                <marker date="1548073178843" expanded="true" signature="267:3730" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="320:3715" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="423:465" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="468:3711" ph="Public Methods" />
-                <marker date="1548073178843" expanded="true" signature="533:1982" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="600:1494" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="661:789" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="821:885" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="930:1208" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="974:1138" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="1148:1202" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="1218:1251" ph="/* 角色方向变更 ... */" />
-                <marker date="1548073178843" expanded="true" signature="1289:1488" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="1543:1978" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2026:2346" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2071:2342" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2110:2203" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2241:2337" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2402:2889" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2442:2885" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2481:2693" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2578:2687" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2619:2680" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2733:2880" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2781:2874" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2965:3341" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="2973:3048" ph="/* 1.如果是轻攻击第一击且处于相机锁定状态，会有很长的一段滑动距离 ... */" />
-                <marker date="1548073178843" expanded="true" signature="3115:3274" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="3298:3337" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="3402:3579" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="3440:3575" ph="{...}" />
-                <marker date="1548073178843" expanded="true" signature="3622:3698" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="IGeneral.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-              <folding>
-                <marker date="1548073077933" expanded="true" signature="0:83" ph="/* IGeneral ：通用动画管理 ... */" />
-                <marker date="1548073077933" expanded="false" signature="92:164" ph="..." />
-                <marker date="1548073077933" expanded="true" signature="194:766" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="247:751" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="301:310" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="315:747" ph="Public Methods" />
-                <marker date="1548073077933" expanded="true" signature="379:391" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="434:446" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="490:499" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="560:569" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="611:623" ph="{...}" />
-                <marker date="1548073077933" expanded="true" signature="698:734" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICharactor.cs" pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="625">
-              <caret line="149" column="49" selection-start-line="146" selection-start-column="12" selection-end-line="149" selection-end-column="49" />
+            <state relative-caret-position="240">
+              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
               <folding>
-                <marker date="1548077468457" expanded="true" signature="0:115" ph="/* ICharactor ：角色抽象类，定义了一些角色通用的功能 ... */" />
-                <marker date="1548077468457" expanded="false" signature="123:305" ph="..." />
-                <marker date="1548077468457" expanded="true" signature="334:4807" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="386:4792" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="392:581" ph="Public_Attriable" />
-                <marker date="1548077468457" expanded="true" signature="449:490" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="523:564" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="662:991" ph="Public_Variable" />
-                <marker date="1548077468457" expanded="true" signature="1072:1398" ph="Protected_Variable" />
-                <marker date="1548077468457" expanded="true" signature="1479:1670" ph="Private_Variable" />
-                <marker date="1548077468457" expanded="true" signature="1751:1990" ph="Public_Methods" />
-                <marker date="1548077468457" expanded="true" signature="1828:1874" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="1927:1977" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2071:2917" ph="Virtual_Methods" />
-                <marker date="1548077468457" expanded="true" signature="2146:2190" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2248:2267" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2271:2309" ph="/* 计算角色的伤害值 ... */" />
-                <marker date="1548077468457" expanded="true" signature="2344:2395" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2429:2447" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2504:2524" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2580:2598" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2664:2903" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="2998:4453" ph="Protected_Methods" />
-                <marker date="1548077468457" expanded="true" signature="3061:3115" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3190:3254" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3309:3338" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3381:3537" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3409:3533" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3579:3640" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3719:3764" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3829:3867" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="3934:3974" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4038:4088" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4138:4440" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4165:4436" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4363:4392" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4401:4431" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4534:4788" ph="Private_Methods" />
-                <marker date="1548077468457" expanded="true" signature="4596:4666" ph="{...}" />
-                <marker date="1548077468457" expanded="true" signature="4706:4775" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="0:115" ph="/* ICharactor ：角色抽象类，定义了一些角色通用的功能 ... */" />
+                <marker date="1549715137148" expanded="false" signature="123:305" ph="..." />
+                <marker date="1549715137148" expanded="true" signature="334:4803" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="386:4788" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="392:577" ph="Public_Attriable" />
+                <marker date="1549715137148" expanded="true" signature="449:490" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="523:564" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="658:987" ph="Public_Variable" />
+                <marker date="1549715137148" expanded="true" signature="1068:1394" ph="Protected_Variable" />
+                <marker date="1549715137148" expanded="true" signature="1475:1666" ph="Private_Variable" />
+                <marker date="1549715137148" expanded="true" signature="1747:1986" ph="Public_Methods" />
+                <marker date="1549715137148" expanded="true" signature="1824:1870" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="1923:1973" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2067:2913" ph="Virtual_Methods" />
+                <marker date="1549715137148" expanded="true" signature="2142:2186" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2244:2263" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2267:2305" ph="/* 计算角色的伤害值 ... */" />
+                <marker date="1549715137148" expanded="true" signature="2340:2391" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2425:2443" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2500:2520" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2576:2594" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2660:2899" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="2994:4449" ph="Protected_Methods" />
+                <marker date="1549715137148" expanded="true" signature="3057:3111" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3186:3250" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3305:3334" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3377:3533" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3405:3529" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3575:3636" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3715:3760" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3825:3863" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="3930:3970" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4034:4084" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4134:4436" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4161:4432" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4359:4388" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4397:4427" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4530:4784" ph="Private_Methods" />
+                <marker date="1549715137148" expanded="true" signature="4592:4662" ph="{...}" />
+                <marker date="1549715137148" expanded="true" signature="4702:4771" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="IdleAIState.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ChaseAiState.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="168">
-              <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+            <state relative-caret-position="552">
+              <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
               <folding>
-                <marker date="1548075031734" expanded="true" signature="6:104" ph="..." />
-                <marker date="1548075031734" expanded="true" signature="136:1971" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="178:1953" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="272:304" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="370:426" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="464:537" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="600:1938" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="795:1233" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="845:1219" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="1069:1201" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="1324:1376" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="1472:1594" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="1631:1928" ph="{...}" />
-                <marker date="1548075031734" expanded="true" signature="1743:1914" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Enemy.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Enemy/Enemy.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="485">
-              <caret line="165" column="52" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
-              <folding>
-                <marker date="1548063481281" expanded="true" signature="0:99" ph="/* Enemy ：敌人类，实现类 ... */" />
-                <marker date="1548063481281" expanded="false" signature="107:280" ph="..." />
-                <marker date="1548063481281" expanded="true" signature="309:8523" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="347:8508" ph="{...}" />
-                <marker date="1548063481281" expanded="false" signature="359:596" ph="Public_Attribute" />
-                <marker date="1548063481281" expanded="false" signature="675:1081" ph="Private_Attribute" />
-                <marker date="1548063481281" expanded="true" signature="1160:3380" ph="Unity_Message" />
-                <marker date="1548063481281" expanded="true" signature="1211:1845" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="1639:1730" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="1875:2398" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="1920:2012" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="2429:3364" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="2721:2833" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="2850:3028" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="2940:3014" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="3140:3215" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="3232:3304" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="3459:4280" ph="Public_Methods" />
-                <marker date="1548063481281" expanded="true" signature="3537:3597" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="3679:3791" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="3863:3929" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="4007:4264" ph="{...}" />
-                <marker date="1548063481281" expanded="false" signature="4359:7760" ph="Private_Methods" />
-                <marker date="1548063481281" expanded="true" signature="4457:4603" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="4613:4662" ph="/* 导航至下个固定目标点 ... */" />
-                <marker date="1548063481281" expanded="true" signature="4707:5455" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="4764:4966" ph="{...}" />
-                <marker date="1548063481281" expanded="false" signature="4988:5445" ph="旧的巡航解决方案" />
-                <marker date="1548063481281" expanded="true" signature="5018:5425" ph="/* 路径计算完成的情况下 || 无效路径 || 无法到达的路径 ... */" />
-                <marker date="1548063481281" expanded="true" signature="5516:5668" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="5720:6307" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="5892:6297" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="5964:6283" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="6048:6265" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="6095:6161" ph="/* 将检测到的角色加入目标列表 ... */" />
-                <marker date="1548063481281" expanded="true" signature="6431:6526" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="6536:6655" ph="/// 固定路径点导航 ... " />
-                <marker date="1548063481281" expanded="true" signature="6707:7744" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="6900:7733" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="7071:7145" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="7506:7686" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="7871:8343" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="7917:8333" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="8373:8421" ph="{...}" />
-                <marker date="1548063481281" expanded="true" signature="8452:8501" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ICharactorAI.cs" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="700">
-              <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
-              <folding>
-                <marker date="1548063358875" expanded="true" signature="0:141" ph="/* ICharactorAI ：角色AI抽象类，拥有当前的AI状态。 ... */" />
-                <marker date="1548063358875" expanded="true" signature="149:290" ph="..." />
-                <marker date="1548063358875" expanded="true" signature="322:3067" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="363:3052" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="375:588" ph="Protected_Variable" />
-                <marker date="1548063358875" expanded="true" signature="678:832" ph="Private_Variable" />
-                <marker date="1548063358875" expanded="true" signature="922:1020" ph="Attibute" />
-                <marker date="1548063358875" expanded="true" signature="1110:1768" ph="Virtual_Methods" />
-                <marker date="1548063358875" expanded="true" signature="1209:1337" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="1416:1609" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="1458:1560" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="1706:1752" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="1858:3045" ph="Public_Methods" />
-                <marker date="1548063358875" expanded="true" signature="1955:2021" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2096:2151" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2223:2280" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2338:2407" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2454:2508" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2587:2656" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2721:2782" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2836:2901" ph="{...}" />
-                <marker date="1548063358875" expanded="true" signature="2956:3027" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="0:138" ph="/* ChaseAIState ：继承于IAIState,负责Ai对象追赶的逻辑 ... */" />
+                <marker date="1547210107359" expanded="false" signature="147:244" ph="..." />
+                <marker date="1547210107359" expanded="true" signature="276:1924" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="319:1908" ph="{...}" />
+                <marker date="1547210107359" expanded="false" signature="339:461" ph="Private_Variable" />
+                <marker date="1547210107359" expanded="false" signature="583:760" ph="Public_Methods" />
+                <marker date="1547210107359" expanded="true" signature="678:736" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="882:1893" ph="Override_Methods" />
+                <marker date="1547210107359" expanded="true" signature="952:1060" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="1123:1877" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="1228:1342" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="1436:1621" ph="{...}" />
+                <marker date="1547210107359" expanded="true" signature="1711:1801" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -329,42 +113,50 @@
     </findStrings>
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/GeneralActionMgr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationEventMgr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/MyButton.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/KeyBoardInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TempScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/EnemyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMOnSendMessage.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/AttackAIState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/MoveAIState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IAIState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ChaseAiState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/WeaponAttr/WeaponAttr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/AttrStrategy/PlayerAttrStrategy.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/CharactorAttr/PlayerAttr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/CharactorAttr/ICharactorAttr.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/MainFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/ResourcesProxyFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/ResourseFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/IAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/PlayerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseClass/IGameSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/WeaponSword.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/IWeapon.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuildParam.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IUnEqip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/BattleActionMgr.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IEqip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/ActionManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AttackedTrigger.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IActionInterface.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/GeneralActionMgr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerEqipAnimationMgr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerUnEqipAnimationMgr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/AttrStrategy/PlayerAttrStrategy.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/MyButton.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IUnEqip.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/WeaponAttr/WeaponAttr.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/KeyBoardInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/IController.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/tempScript.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/JoyStrickInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IEqip.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CameraController/CameraControl.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IActionInterface.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationEventMgr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/BattleActionMgr.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ChaseAiState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Enemy/Enemy.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IAIState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/MoveAIState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/AttackAIState.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/AttackedTrigger.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/ActionManager.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMOnSendMessage.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/EnemyFSMStateEvent.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/WeaponSword.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/IWeapon.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/JoyStrickInput.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/IController.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -394,32 +186,40 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAttr/CharactorAttr/ICharactorAttr.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/GameAttr/CharactorAttr/PlayerAttr.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/IWeapon.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/AttackedTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Enemy/Enemy.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/tempScript.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/AttackedTrigger.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/TempScript.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/IAssetFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/ResourseFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/ResourcesProxyFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_Factory/MainFactory.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/PlayerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/PlayerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/FSM/FSMOnSendMessage.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/Charactor_System/CharactorBuilder/PlayerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/MyCharactor/CharactorBuilder/PlayerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/EnemyBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuildParam.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/PlayerBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuilder.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/BaseClass/IGameSystem.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs" />
       </list>
     </option>
   </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
-  </component>
-  <component name="NodePackageJsonFileManager">
-    <packageJsonPaths />
-  </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="48" />
-    <option name="y" value="82" />
+    <option name="x" value="-533" />
+    <option name="y" value="85" />
     <option name="width" value="1936" />
-    <option name="height" value="1096" />
+    <option name="height" value="1097" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -427,96 +227,56 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
+      <pane id="FileSystemExplorer" />
       <pane id="UnityExplorer">
         <subPane>
           <expand>
             <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
             </path>
             <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="AIMgr" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="AIMgr" type="1045f7f1:UnityExplorerNode" />
+              <item name="CharactorAIMgr" type="1045f7f1:UnityExplorerNode" />
             </path>
             <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-            </path>
-            <path>
-              <item name="" type="ad4990d8:FileSystemViewPaneBase$ProjectViewPaneTreeStructure$createRoot$1" />
-              <item name="[ARPG]RE0 Version 2.0" type="483dac07:UnityExplorerNode$Root" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
-              <item name="" type="1045f7f1:UnityExplorerNode" />
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_CharactorSystem" type="1045f7f1:UnityExplorerNode" />
             </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
+        <option name="show-project-names" value="true" />
       </pane>
       <pane id="SolutionExplorer">
-        <option name="show-file-system" value="false" />
-        <option name="show-all-items" value="false" />
+        <option name="show-all-files" value="false" />
       </pane>
+      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="SearchEverywhereHistoryKey" value="&#9;FILE&#9;file://F:/Unity/[ARPG]RE0 Version 2.0/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="configurable.group.build" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -530,10 +290,18 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
       <option name="pid" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <method v="2" />
     </configuration>
   </component>
   <component name="SvnConfiguration">
@@ -561,11 +329,20 @@
       <workItem from="1547984055838" duration="7996000" />
       <workItem from="1548039322053" duration="599000" />
       <workItem from="1548054198986" duration="14269000" />
+      <workItem from="1548122758949" duration="2648000" />
+      <workItem from="1548983447005" duration="2678000" />
+      <workItem from="1549093127891" duration="6102000" />
+      <workItem from="1549159467938" duration="3626000" />
+      <workItem from="1549179625889" duration="4850000" />
+      <workItem from="1549583945061" duration="1183000" />
+      <workItem from="1549626301125" duration="4710000" />
+      <workItem from="1549697603676" duration="992000" />
+      <workItem from="1549700143655" duration="7372000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="109498000" />
+    <option name="totallyTimeSpent" value="143659000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -580,119 +357,80 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
-      <window_info anchor="bottom" id="调试" order="7" />
-      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Unit Tests" order="7" />
-      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="运行" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.16311301" />
-      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Unity" order="8" />
-      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Capture Tool" />
+      <window_info id="Image Layers" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="NuGet" order="7" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Find" order="1" />
-    </layout>
-    <layout-to-restore>
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="NuGet" order="7" />
       <window_info anchor="bottom" id="运行" order="8" />
       <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" />
-      <window_info anchor="bottom" id="Unity" order="16" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15671642" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
       <window_info anchor="bottom" id="Unit Tests" order="12" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32827735" />
+      <window_info anchor="bottom" id="调试" order="15" />
+      <window_info anchor="bottom" id="Unity" order="16" />
+      <window_info anchor="right" id="Capture Analysis" />
+      <window_info anchor="right" id="Unit Tests Coverage" weight="0.32995737" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32995737" />
+      <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+    </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="运行" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32897604" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="调试" order="15" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Unity" order="16" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
     </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Enemy/Enemy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1152">
-          <caret line="155" selection-start-line="155" selection-end-line="155" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2448">
-          <caret line="106" column="44" lean-forward="true" selection-start-line="106" selection-start-column="44" selection-end-line="106" selection-end-column="44" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/EnemyFSMStateEvent.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/EnemyFSMStateEvent.cs">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameLoop.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="384">
-          <caret line="18" column="13" lean-forward="true" selection-start-line="18" selection-start-column="13" selection-end-line="18" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/IHuman.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/WeaponAttr/WeaponAttr.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="432">
-          <caret line="21" selection-start-line="21" selection-end-line="22" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/IGeneralActionMgr.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/ActionManager.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/IActionInterface.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/BattleActionMgr.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/GeneralActionMgr.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/IUnEqip.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/IEqip.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ActionManager/IGeneral.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimatonManager/IGeneral.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimatonManager/IUnEqip.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimatonManager/IEqip.cs" />
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/IController.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-216" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/JoyStrickInput.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="556">
@@ -769,20 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/WeaponSword.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
-          <folding>
-            <marker date="1547516540196" expanded="true" signature="0:111" ph="/* WeaponSword ：IWeapon的子类，剑类 ... */" />
-            <marker date="1547516540196" expanded="false" signature="119:216" ph="..." />
-            <marker date="1547516540196" expanded="true" signature="253:370" ph="{...}" />
-            <marker date="1547516540196" expanded="true" signature="315:368" ph="{...}" />
-            <marker date="1547516540196" expanded="true" signature="330:362" ph="/* 声音 ... */" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AnimationEventMgr.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="628">
@@ -794,20 +518,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="624">
           <caret line="31" column="26" selection-start-line="31" selection-start-column="26" selection-end-line="31" selection-end-column="26" />
-          <folding>
-            <marker date="1547987301297" expanded="true" signature="0:97" ph="/* PlayerAttrStrategy ：计算策略子类（玩家） ... */" />
-            <marker date="1547987301297" expanded="false" signature="105:250" ph="..." />
-            <marker date="1547987301297" expanded="true" signature="283:1386" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="337:1372" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="349:1357" ph="Override_Methods" />
-            <marker date="1547987301297" expanded="true" signature="461:876" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="562:614" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="707:773" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="969:1011" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="1021:1050" ph="/* 获取减少伤害值 ... */" />
-            <marker date="1547987301297" expanded="true" signature="1126:1341" ph="{...}" />
-            <marker date="1547987301297" expanded="true" signature="1227:1281" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -815,53 +525,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="528">
           <caret line="22" column="30" selection-start-line="22" selection-start-column="30" selection-end-line="22" selection-end-column="30" />
-          <folding>
-            <marker date="1547991721224" expanded="true" signature="0:88" ph="/* PlayerAttr ：玩家角色专用属性类 ... */" />
-            <marker date="1547991721224" expanded="true" signature="96:231" ph="..." />
-            <marker date="1547991721224" expanded="true" signature="265:1539" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="313:1525" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="320:482" ph="Private_variable" />
-            <marker date="1547991721224" expanded="true" signature="596:1510" ph="Public_Methods" />
-            <marker date="1547991721224" expanded="true" signature="661:809" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="855:902" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="949:994" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="1052:1100" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="1177:1239" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="1297:1352" ph="{...}" />
-            <marker date="1547991721224" expanded="true" signature="1425:1494" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/IWeapon.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2376">
-          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
-          <folding>
-            <marker date="1547992079207" expanded="true" signature="0:153" ph="/* IWeapon ：武器抽象接口 ... */" />
-            <marker date="1547992079207" expanded="false" signature="161:285" ph="..." />
-            <marker date="1547992079207" expanded="true" signature="316:2803" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="757:980" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1020:1426" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1181:1283" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1321:1423" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1492:1528" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1531:1649" ph="/// 取得武器的攻击力。0:L,1:R ... " />
-            <marker date="1547992079207" expanded="true" signature="1684:1901" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1721:1762" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1801:1842" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1849:1898" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="1907:2017" ph="/// 取得武器的防御力。0:L,1:R ... " />
-            <marker date="1547992079207" expanded="true" signature="2056:2282" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="2093:2138" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="2177:2222" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="2229:2278" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="2437:2516" ph="/* 设置武器是否具有攻击的效果 ... */" />
-            <marker date="1547992079207" expanded="true" signature="2518:2798" ph="WeaponEnable" />
-            <marker date="1547992079207" expanded="true" signature="2582:2612" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="2656:2686" ph="{...}" />
-            <marker date="1547992079207" expanded="true" signature="2730:2786" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -869,47 +532,235 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="604">
           <caret line="97" column="31" selection-start-line="97" selection-start-column="31" selection-end-line="97" selection-end-column="31" />
-          <folding>
-            <marker date="1547989329775" expanded="true" signature="0:243" ph="/* ICharactorAttr ：从ICharactor类中独立出来的属性类 ... */" />
-            <marker date="1547989329775" expanded="false" signature="251:377" ph="..." />
-            <marker date="1547989329775" expanded="true" signature="411:2170" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="454:2167" ph="{...}" />
-            <marker date="1547989329775" expanded="false" signature="466:659" ph="Protected_variable" />
-            <marker date="1547989329775" expanded="false" signature="757:896" ph="Private_variable" />
-            <marker date="1547989329775" expanded="true" signature="994:2160" ph="Public_Methods" />
-            <marker date="1547989329775" expanded="true" signature="1101:1166" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1219:1294" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1343:1390" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1449:1495" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1541:1594" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1642:1704" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1760:1836" ph="{...}" />
-            <marker date="1547989329775" expanded="true" signature="1914:2144" ph="{...}" />
-          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IAIState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-731" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/MoveAIState.cs">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/AttackAIState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-92" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3384">
+          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1032">
+          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="146" selection-start-line="146" selection-end-line="146" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/WeaponSword.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="20" column="12" selection-start-line="20" selection-start-column="12" selection-end-line="20" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/IWeapon.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2376">
+          <caret line="103" column="21" selection-start-line="103" selection-start-column="21" selection-end-line="103" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/GameAttr/WeaponAttr/WeaponAttr.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="21" column="11" selection-start-line="21" selection-start-column="11" selection-end-line="24" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Enemy/Enemy.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5256">
+          <caret line="219" column="17" selection-start-line="219" selection-start-column="17" selection-end-line="219" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="768">
+          <caret line="41" column="9" selection-start-line="41" selection-start-column="9" selection-end-line="41" selection-end-column="9" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AttackedTrigger.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="10" column="18" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+        <state relative-caret-position="408">
+          <caret line="23" column="8" lean-forward="true" selection-start-line="23" selection-start-column="8" selection-end-line="23" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TempScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="69" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="360">
+          <caret line="21" selection-start-line="21" selection-end-line="21" />
           <folding>
-            <marker date="1548056095310" expanded="true" signature="0:84" ph="/* AttackedTrigger ： ... */" />
-            <marker date="1548056095310" expanded="false" signature="93:165" ph="..." />
-            <marker date="1548056095310" expanded="true" signature="194:733" ph="{...}" />
-            <marker date="1548056095310" expanded="true" signature="242:718" ph="{...}" />
-            <marker date="1548056095310" expanded="false" signature="248:321" ph="Private Variable" />
-            <marker date="1548056095310" expanded="true" signature="394:671" ph="Unity Messages" />
-            <marker date="1548056095310" expanded="true" signature="440:509" ph="{...}" />
-            <marker date="1548056095310" expanded="true" signature="557:658" ph="{...}" />
-            <marker date="1548056095310" expanded="false" signature="677:714" ph="Override Methods" />
+            <marker date="1549095963079" expanded="true" signature="0:86" ph="/* ICharactorFactory ： ... */" />
+            <marker date="1549095963079" expanded="false" signature="95:192" ph="..." />
+            <marker date="1549095963079" expanded="true" signature="230:383" ph="{...}" />
+            <marker date="1549095963079" expanded="true" signature="276:380" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/ResourseFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="31" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
+          <folding>
+            <marker date="1549183690208" expanded="true" signature="0:95" ph="/* ResourseFactory ：Resourcse加载 ... */" />
+            <marker date="1549183690208" expanded="false" signature="104:193" ph="..." />
+            <marker date="1549183690208" expanded="true" signature="227:1865" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="278:1863" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="680:776" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="855:950" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="1030:1126" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="1136:1270" ph="/// 实例化GameObject ... " />
+            <marker date="1549183690208" expanded="true" signature="1329:1463" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="1473:1605" ph="/// Resourcse加载 ... " />
+            <marker date="1549183690208" expanded="true" signature="1667:1857" ph="{...}" />
+            <marker date="1549183690208" expanded="true" signature="1750:1822" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/ResourcesProxyFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="15" column="54" selection-start-line="15" selection-start-column="54" selection-end-line="15" selection-end-column="54" />
+          <folding>
+            <marker date="1549627337644" expanded="true" signature="0:136" ph="/* ResourcesProxyFactory ：ResourceFactory代理，在ResourceFactory的基础上加入了缓存的功能 ... */" />
+            <marker date="1549627337644" expanded="false" signature="145:234" ph="..." />
+            <marker date="1549627337644" expanded="true" signature="268:2356" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="325:2354" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="744:997" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="1077:1449" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="1140:1361" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="1528:1896" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="1590:1809" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="1976:2348" ph="{...}" />
+            <marker date="1549627337644" expanded="true" signature="2039:2260" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/IAssetFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
+          <folding>
+            <marker date="1549183414454" expanded="true" signature="0:89" ph="/* IAssetFactory ：资源工厂抽象类 ... */" />
+            <marker date="1549183414454" expanded="false" signature="98:170" ph="..." />
+            <marker date="1549183414454" expanded="true" signature="204:455" ph="{...}" />
+            <marker date="1549183414454" expanded="true" signature="246:452" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/MainFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
+          <folding>
+            <marker date="1549700226754" expanded="true" signature="0:80" ph="/* MainFactory ： ... */" />
+            <marker date="1549700226754" expanded="false" signature="89:191" ph="..." />
+            <marker date="1549700226754" expanded="true" signature="212:614" ph="{...}" />
+            <marker date="1549700226754" expanded="true" signature="219:267" ph="/// 取得所有的工厂 ... " />
+            <marker date="1549700226754" expanded="true" signature="303:611" ph="{...}" />
+            <marker date="1549700226754" expanded="true" signature="422:605" ph="{...}" />
+            <marker date="1549700226754" expanded="true" signature="471:560" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/PlayerBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/CharactorBuildSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/ICharactorBuildParam.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/PlayerBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor_System/CharactorBuilder/PlayerBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MyCharactor/CharactorBuilder/PlayerBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMOnSendMessage.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1656">
+        <state relative-caret-position="212">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
           <folding>
             <marker date="1547258170995" expanded="true" signature="0:109" ph="/* FSMOnSendMessage ：动画状态事件 ... */" />
             <marker date="1547258170995" expanded="false" signature="117:189" ph="..." />
@@ -934,68 +785,104 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IAIState.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuilder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-731">
+        <state relative-caret-position="168">
+          <caret line="7" column="1" selection-start-line="7" selection-start-column="1" selection-end-line="7" selection-end-column="1" />
           <folding>
-            <marker date="1547210099806" expanded="true" signature="0:127" ph="/* IAIState ：角色的AI状态抽象类。 ... */" />
-            <marker date="1547210099806" expanded="false" signature="135:232" ph="..." />
-            <marker date="1547210099806" expanded="true" signature="263:314" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="346:1404" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="383:1385" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="403:518" ph="Protected_Variable" />
-            <marker date="1547210099806" expanded="true" signature="624:810" ph="Public_Methods" />
-            <marker date="1547210099806" expanded="true" signature="735:794" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="916:1378" ph="Virtual_Methods" />
-            <marker date="1547210099806" expanded="true" signature="1004:1047" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="1084:1143" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="1205:1262" ph="{...}" />
-            <marker date="1547210099806" expanded="true" signature="1323:1362" ph="{...}" />
+            <marker date="1549705983722" expanded="true" signature="0:86" ph="/* ICharactorBuilder ： ... */" />
+            <marker date="1549705983722" expanded="false" signature="95:167" ph="..." />
+            <marker date="1549705983722" expanded="true" signature="213:426" ph="{...}" />
+            <marker date="1549705983722" expanded="true" signature="259:423" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/MoveAIState.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuildParam.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="336">
+          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
           <folding>
-            <marker date="1546589062625" expanded="true" signature="0:98" ph="/* MoveAIState ： ... */" />
-            <marker date="1546589062625" expanded="false" signature="107:179" ph="..." />
-            <marker date="1546589062625" expanded="true" signature="211:284" ph="{...}" />
-            <marker date="1546589062625" expanded="true" signature="254:268" ph="{...}" />
+            <marker date="1549703686188" expanded="true" signature="0:89" ph="/* ICharactorBuildParam ： ... */" />
+            <marker date="1549703686188" expanded="true" signature="98:170" ph="..." />
+            <marker date="1549703686188" expanded="true" signature="216:399" ph="{...}" />
+            <marker date="1549703686188" expanded="true" signature="266:396" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/AttackAIState.cs">
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/EnemyBuilder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-92">
+        <state relative-caret-position="288">
+          <caret line="14" column="55" lean-forward="true" selection-start-line="14" selection-start-column="55" selection-end-line="14" selection-end-column="55" />
           <folding>
-            <marker date="1547210018475" expanded="true" signature="0:100" ph="/* AttackAIState ： ... */" />
-            <marker date="1547210018475" expanded="false" signature="109:253" ph="..." />
-            <marker date="1547210018475" expanded="true" signature="285:1234" ph="{...}" />
-            <marker date="1547210018475" expanded="true" signature="329:1218" ph="{...}" />
-            <marker date="1547210018475" expanded="true" signature="497:562" ph="{...}" />
-            <marker date="1547210018475" expanded="true" signature="600:775" ph="{...}" />
-            <marker date="1547210018475" expanded="true" signature="785:830" ph="/* 测试阶段，Ai一直处于锁敌状态 ... */" />
-            <marker date="1547210018475" expanded="true" signature="892:1211" ph="{...}" />
-            <marker date="1547210018475" expanded="true" signature="1024:1103" ph="{...}" />
-            <marker date="1547210018475" expanded="true" signature="1120:1201" ph="{...}" />
+            <marker date="1549702201434" expanded="true" signature="0:81" ph="/* EnemyBuilder ： ... */" />
+            <marker date="1549702201434" expanded="false" signature="90:162" ph="..." />
+            <marker date="1549702201434" expanded="true" signature="208:326" ph="{...}" />
+            <marker date="1549702201434" expanded="true" signature="266:279" ph="{...}" />
+            <marker date="1549702201434" expanded="true" signature="310:323" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/PlayerBuilder.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="465">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <marker date="1549705616022" expanded="true" signature="0:82" ph="/* PlayerBuilder ： ... */" />
+            <marker date="1549705616022" expanded="true" signature="91:163" ph="..." />
+            <marker date="1549705616022" expanded="true" signature="209:613" ph="{...}" />
+            <marker date="1549705616022" expanded="true" signature="268:281" ph="{...}" />
+            <marker date="1549705616022" expanded="true" signature="333:611" ph="{...}" />
+            <marker date="1549705616022" expanded="true" signature="463:534" ph="{...}" />
+            <marker date="1549705616022" expanded="true" signature="575:605" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/BaseClass/IGameSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="13" column="1" lean-forward="true" selection-start-line="13" selection-start-column="1" selection-end-line="13" selection-end-column="1" />
+          <folding>
+            <marker date="1549706569982" expanded="true" signature="0:80" ph="/* IGameSystem ： ... */" />
+            <marker date="1549706569982" expanded="false" signature="89:161" ph="..." />
+            <marker date="1549706569982" expanded="true" signature="182:584" ph="{...}" />
+            <marker date="1549706569982" expanded="true" signature="213:581" ph="{...}" />
+            <marker date="1549706569982" expanded="true" signature="314:357" ph="{...}" />
+            <marker date="1549706569982" expanded="true" signature="399:432" ph="{...}" />
+            <marker date="1549706569982" expanded="true" signature="470:503" ph="{...}" />
+            <marker date="1549706569982" expanded="true" signature="542:575" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+          <folding>
+            <marker date="1549706558652" expanded="true" signature="0:89" ph="/* CharactorBuildSystem ： ... */" />
+            <marker date="1549706558652" expanded="true" signature="98:187" ph="..." />
+            <marker date="1549706558652" expanded="true" signature="233:414" ph="{...}" />
+            <marker date="1549706558652" expanded="true" signature="296:411" ph="{...}" />
+            <marker date="1549706558652" expanded="true" signature="372:405" ph="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ChaseAiState.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="63" column="39" lean-forward="true" selection-start-line="63" selection-start-column="39" selection-end-line="63" selection-end-column="39" />
+        <state relative-caret-position="552">
+          <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
           <folding>
             <marker date="1547210107359" expanded="true" signature="0:138" ph="/* ChaseAIState ：继承于IAIState,负责Ai对象追赶的逻辑 ... */" />
-            <marker date="1547210107359" expanded="true" signature="147:244" ph="..." />
+            <marker date="1547210107359" expanded="false" signature="147:244" ph="..." />
             <marker date="1547210107359" expanded="true" signature="276:1924" ph="{...}" />
             <marker date="1547210107359" expanded="true" signature="319:1908" ph="{...}" />
-            <marker date="1547210107359" expanded="true" signature="339:461" ph="Private_Variable" />
-            <marker date="1547210107359" expanded="true" signature="583:760" ph="Public_Methods" />
+            <marker date="1547210107359" expanded="false" signature="339:461" ph="Private_Variable" />
+            <marker date="1547210107359" expanded="false" signature="583:760" ph="Public_Methods" />
             <marker date="1547210107359" expanded="true" signature="678:736" ph="{...}" />
             <marker date="1547210107359" expanded="true" signature="882:1893" ph="Override_Methods" />
             <marker date="1547210107359" expanded="true" signature="952:1060" ph="{...}" />
@@ -1007,305 +894,51 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="700">
-          <caret line="141" column="9" selection-start-line="141" selection-start-column="9" selection-end-line="141" selection-end-column="9" />
-          <folding>
-            <marker date="1548063358875" expanded="true" signature="0:141" ph="/* ICharactorAI ：角色AI抽象类，拥有当前的AI状态。 ... */" />
-            <marker date="1548063358875" expanded="true" signature="149:290" ph="..." />
-            <marker date="1548063358875" expanded="true" signature="322:3067" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="363:3052" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="375:588" ph="Protected_Variable" />
-            <marker date="1548063358875" expanded="true" signature="678:832" ph="Private_Variable" />
-            <marker date="1548063358875" expanded="true" signature="922:1020" ph="Attibute" />
-            <marker date="1548063358875" expanded="true" signature="1110:1768" ph="Virtual_Methods" />
-            <marker date="1548063358875" expanded="true" signature="1209:1337" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="1416:1609" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="1458:1560" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="1706:1752" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="1858:3045" ph="Public_Methods" />
-            <marker date="1548063358875" expanded="true" signature="1955:2021" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2096:2151" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2223:2280" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2338:2407" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2454:2508" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2587:2656" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2721:2782" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2836:2901" ph="{...}" />
-            <marker date="1548063358875" expanded="true" signature="2956:3027" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Enemy/Enemy.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="485">
-          <caret line="165" column="52" selection-start-line="165" selection-start-column="52" selection-end-line="165" selection-end-column="52" />
-          <folding>
-            <marker date="1548063481281" expanded="true" signature="0:99" ph="/* Enemy ：敌人类，实现类 ... */" />
-            <marker date="1548063481281" expanded="false" signature="107:280" ph="..." />
-            <marker date="1548063481281" expanded="true" signature="309:8523" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="347:8508" ph="{...}" />
-            <marker date="1548063481281" expanded="false" signature="359:596" ph="Public_Attribute" />
-            <marker date="1548063481281" expanded="false" signature="675:1081" ph="Private_Attribute" />
-            <marker date="1548063481281" expanded="true" signature="1160:3380" ph="Unity_Message" />
-            <marker date="1548063481281" expanded="true" signature="1211:1845" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="1639:1730" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="1875:2398" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="1920:2012" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="2429:3364" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="2721:2833" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="2850:3028" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="2940:3014" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="3140:3215" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="3232:3304" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="3459:4280" ph="Public_Methods" />
-            <marker date="1548063481281" expanded="true" signature="3537:3597" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="3679:3791" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="3863:3929" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="4007:4264" ph="{...}" />
-            <marker date="1548063481281" expanded="false" signature="4359:7760" ph="Private_Methods" />
-            <marker date="1548063481281" expanded="true" signature="4457:4603" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="4613:4662" ph="/* 导航至下个固定目标点 ... */" />
-            <marker date="1548063481281" expanded="true" signature="4707:5455" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="4764:4966" ph="{...}" />
-            <marker date="1548063481281" expanded="false" signature="4988:5445" ph="旧的巡航解决方案" />
-            <marker date="1548063481281" expanded="true" signature="5018:5425" ph="/* 路径计算完成的情况下 || 无效路径 || 无法到达的路径 ... */" />
-            <marker date="1548063481281" expanded="true" signature="5516:5668" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="5720:6307" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="5892:6297" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="5964:6283" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="6048:6265" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="6095:6161" ph="/* 将检测到的角色加入目标列表 ... */" />
-            <marker date="1548063481281" expanded="true" signature="6431:6526" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="6536:6655" ph="/// 固定路径点导航 ... " />
-            <marker date="1548063481281" expanded="true" signature="6707:7744" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="6900:7733" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="7071:7145" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="7506:7686" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="7871:8343" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="7917:8333" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="8373:8421" ph="{...}" />
-            <marker date="1548063481281" expanded="true" signature="8452:8501" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="43" column="39" selection-start-line="43" selection-start-column="39" selection-end-line="43" selection-end-column="39" />
-          <folding>
-            <marker date="1548075031734" expanded="true" signature="6:104" ph="..." />
-            <marker date="1548075031734" expanded="true" signature="136:1971" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="178:1953" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="272:304" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="370:426" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="464:537" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="600:1938" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="795:1233" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="845:1219" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="1069:1201" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="1324:1376" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="1472:1594" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="1631:1928" ph="{...}" />
-            <marker date="1548075031734" expanded="true" signature="1743:1914" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
-          <folding>
-            <marker date="1548073077933" expanded="true" signature="0:83" ph="/* IGeneral ：通用动画管理 ... */" />
-            <marker date="1548073077933" expanded="false" signature="92:164" ph="..." />
-            <marker date="1548073077933" expanded="true" signature="194:766" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="247:751" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="301:310" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="315:747" ph="Public Methods" />
-            <marker date="1548073077933" expanded="true" signature="379:391" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="434:446" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="490:499" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="560:569" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="611:623" ph="{...}" />
-            <marker date="1548073077933" expanded="true" signature="698:734" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/tempScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="33" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="33" />
-          <folding>
-            <marker date="1548076632242" expanded="false" signature="6:78" ph="..." />
-            <marker date="1548076632242" expanded="true" signature="119:578" ph="{...}" />
-            <marker date="1548076632242" expanded="true" signature="172:294" ph="{...}" />
-            <marker date="1548076632242" expanded="true" signature="343:576" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="412">
-          <caret line="161" column="42" selection-start-line="161" selection-start-column="42" selection-end-line="161" selection-end-column="42" />
-          <folding>
-            <marker date="1548073178843" expanded="true" signature="0:102" ph="/* PlayerGeneralAnimationMgr ：玩家角色动画管理 ... */" />
-            <marker date="1548073178843" expanded="false" signature="110:221" ph="..." />
-            <marker date="1548073178843" expanded="true" signature="267:3730" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="320:3715" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="423:465" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="468:3711" ph="Public Methods" />
-            <marker date="1548073178843" expanded="true" signature="533:1982" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="600:1494" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="661:789" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="821:885" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="930:1208" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="974:1138" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="1148:1202" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="1218:1251" ph="/* 角色方向变更 ... */" />
-            <marker date="1548073178843" expanded="true" signature="1289:1488" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="1543:1978" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2026:2346" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2071:2342" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2110:2203" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2241:2337" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2402:2889" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2442:2885" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2481:2693" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2578:2687" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2619:2680" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2733:2880" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2781:2874" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2965:3341" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="2973:3048" ph="/* 1.如果是轻攻击第一击且处于相机锁定状态，会有很长的一段滑动距离 ... */" />
-            <marker date="1548073178843" expanded="true" signature="3115:3274" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="3298:3337" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="3402:3579" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="3440:3575" ph="{...}" />
-            <marker date="1548073178843" expanded="true" signature="3622:3698" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="625">
-          <caret line="149" column="49" selection-start-line="146" selection-start-column="12" selection-end-line="149" selection-end-column="49" />
+        <state relative-caret-position="240">
+          <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
           <folding>
-            <marker date="1548077468457" expanded="true" signature="0:115" ph="/* ICharactor ：角色抽象类，定义了一些角色通用的功能 ... */" />
-            <marker date="1548077468457" expanded="false" signature="123:305" ph="..." />
-            <marker date="1548077468457" expanded="true" signature="334:4807" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="386:4792" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="392:581" ph="Public_Attriable" />
-            <marker date="1548077468457" expanded="true" signature="449:490" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="523:564" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="662:991" ph="Public_Variable" />
-            <marker date="1548077468457" expanded="true" signature="1072:1398" ph="Protected_Variable" />
-            <marker date="1548077468457" expanded="true" signature="1479:1670" ph="Private_Variable" />
-            <marker date="1548077468457" expanded="true" signature="1751:1990" ph="Public_Methods" />
-            <marker date="1548077468457" expanded="true" signature="1828:1874" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="1927:1977" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2071:2917" ph="Virtual_Methods" />
-            <marker date="1548077468457" expanded="true" signature="2146:2190" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2248:2267" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2271:2309" ph="/* 计算角色的伤害值 ... */" />
-            <marker date="1548077468457" expanded="true" signature="2344:2395" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2429:2447" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2504:2524" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2580:2598" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2664:2903" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="2998:4453" ph="Protected_Methods" />
-            <marker date="1548077468457" expanded="true" signature="3061:3115" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3190:3254" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3309:3338" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3381:3537" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3409:3533" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3579:3640" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3719:3764" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3829:3867" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="3934:3974" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4038:4088" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4138:4440" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4165:4436" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4363:4392" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4401:4431" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4534:4788" ph="Private_Methods" />
-            <marker date="1548077468457" expanded="true" signature="4596:4666" ph="{...}" />
-            <marker date="1548077468457" expanded="true" signature="4706:4775" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="196">
-          <caret line="145" column="21" lean-forward="true" selection-start-line="145" selection-start-column="21" selection-end-line="145" selection-end-column="21" />
-          <folding>
-            <marker date="1548078345781" expanded="false" signature="6:278" ph="..." />
-            <marker date="1548078345781" expanded="true" signature="307:8775" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="343:8761" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="1047:1086" ph="{...}" />
-            <marker date="1548078345781" expanded="false" signature="1091:1186" ph="枚举（控制器状态）" />
-            <marker date="1548078345781" expanded="true" signature="1139:1173" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="1210:2130" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="1656:1717" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="2154:2482" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="2507:3041" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="2921:2963" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3004:3037" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3071:3317" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3087:3313" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3320:4504" ph="攻击与被攻击抽象层" />
-            <marker date="1548078345781" expanded="true" signature="3405:4391" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3573:3673" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3722:3946" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3754:3832" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="3864:3941" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="4000:4074" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="4168:4235" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="4240:4383" ph="/* Debug.Log(&quot;最大生命值&quot; + CharactorAttr.GetMaxHp()); ... */" />
-            <marker date="1548078345781" expanded="true" signature="4430:4491" ph="{...}" />
-            <marker date="1548078345781" expanded="false" signature="4507:5724" ph="类私有方法" />
-            <marker date="1548078345781" expanded="true" signature="4565:5005" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="4698:4796" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="4868:4968" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="4976:5000" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5009:5106" ph="/* ---------------------------------------------------------------------------------- ... */" />
-            <marker date="1548078345781" expanded="true" signature="5132:5309" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5165:5230" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5238:5305" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5313:5353" ph="/* 设置状态机的BFollowObject参数 ... */" />
-            <marker date="1548078345781" expanded="true" signature="5384:5547" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5420:5477" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5485:5543" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="5551:5647" ph="/* ---------------------------------------------------------------------------------- ... */" />
-            <marker date="1548078345781" expanded="true" signature="5674:5711" ph="{...}" />
-            <marker date="1548078345781" expanded="false" signature="5727:5882" ph="类公开方法" />
-            <marker date="1548078345781" expanded="true" signature="5795:5869" ph="{...}" />
-            <marker date="1548078345781" expanded="false" signature="5885:7146" ph="动画状态相关方法" />
-            <marker date="1548078345781" expanded="true" signature="5942:6076" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="6118:6184" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="6228:6295" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="6332:6399" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="6444:6679" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="6718:6778" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="6809:7044" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="7073:7133" ph="{...}" />
-            <marker date="1548078345781" expanded="false" signature="7149:8757" ph="动画状态事件" />
-            <marker date="1548078345781" expanded="true" signature="7167:7353" ph="/// StateMachine脚本触发Enter时调用 ... " />
-            <marker date="1548078345781" expanded="true" signature="7449:7764" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="7480:7760" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="7768:7953" ph="/// StateMachine脚本触发Exit时调用 ... " />
-            <marker date="1548078345781" expanded="true" signature="8048:8249" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="8079:8245" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="8253:8440" ph="/// StateMachine脚本触发Update时调用 ... " />
-            <marker date="1548078345781" expanded="true" signature="8537:8744" ph="{...}" />
-            <marker date="1548078345781" expanded="true" signature="8568:8740" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="0:115" ph="/* ICharactor ：角色抽象类，定义了一些角色通用的功能 ... */" />
+            <marker date="1549715137148" expanded="false" signature="123:305" ph="..." />
+            <marker date="1549715137148" expanded="true" signature="334:4803" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="386:4788" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="392:577" ph="Public_Attriable" />
+            <marker date="1549715137148" expanded="true" signature="449:490" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="523:564" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="658:987" ph="Public_Variable" />
+            <marker date="1549715137148" expanded="true" signature="1068:1394" ph="Protected_Variable" />
+            <marker date="1549715137148" expanded="true" signature="1475:1666" ph="Private_Variable" />
+            <marker date="1549715137148" expanded="true" signature="1747:1986" ph="Public_Methods" />
+            <marker date="1549715137148" expanded="true" signature="1824:1870" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="1923:1973" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2067:2913" ph="Virtual_Methods" />
+            <marker date="1549715137148" expanded="true" signature="2142:2186" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2244:2263" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2267:2305" ph="/* 计算角色的伤害值 ... */" />
+            <marker date="1549715137148" expanded="true" signature="2340:2391" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2425:2443" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2500:2520" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2576:2594" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2660:2899" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="2994:4449" ph="Protected_Methods" />
+            <marker date="1549715137148" expanded="true" signature="3057:3111" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3186:3250" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3305:3334" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3377:3533" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3405:3529" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3575:3636" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3715:3760" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3825:3863" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="3930:3970" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4034:4084" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4134:4436" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4161:4432" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4359:4388" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4397:4427" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4530:4784" ph="Private_Methods" />
+            <marker date="1549715137148" expanded="true" signature="4592:4662" ph="{...}" />
+            <marker date="1549715137148" expanded="true" signature="4702:4771" ph="{...}" />
           </folding>
         </state>
       </provider>
