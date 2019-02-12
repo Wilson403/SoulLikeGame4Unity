@@ -9,6 +9,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using M_Factory.AssetFactory;
+using M_Factory.CharactorFactory;
 using UnityEngine;
 
 namespace M_Factory
@@ -19,6 +20,7 @@ namespace M_Factory
     public static class MainFactory
     {
         private static IAssetFactory _assetFactory = null;
+        private static ICharactorFactory _charactorFactory = null;
         public static IAssetFactory GetAssetFactory()
         {
             if (_assetFactory == null)
@@ -27,6 +29,16 @@ namespace M_Factory
             }
 
             return _assetFactory;
+        }
+
+        public static ICharactorFactory GetCharactorFactory()
+        {
+            if(_charactorFactory == null)
+            {
+                _charactorFactory = new CharactorFactory_General();
+            }
+
+            return _charactorFactory;
         }
     } 
 } 

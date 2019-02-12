@@ -8,13 +8,15 @@
  
 using System.Collections;
 using System.Collections.Generic;
+using M_Factory;
+using M_Factory.AssetFactory;
 using UnityEngine;
 
 namespace M_CharactorSystem.CharactorBuilder
 {
     public class PlayerBuildParam : ICharactorBuildParam
     {
-
+        public int Lv;
     }
 
     public class PlayerBuilder : ICharactorBuilder
@@ -28,7 +30,8 @@ namespace M_CharactorSystem.CharactorBuilder
 
        public override void LoadAsset()
        {
-           
+           var assetFactory = MainFactory.GetAssetFactory();
+           var go = assetFactory.LoadPlayer(_theParam.NewCharactor.GetAssetName());
        }
     }
 } 

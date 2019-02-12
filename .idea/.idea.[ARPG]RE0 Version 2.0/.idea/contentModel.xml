@@ -82,9 +82,11 @@
               <e p="EnemyAnimEvent.cs" t="Include" />
             </e>
             <e p="ICharactor.cs" t="Include" />
+            <e p="ICharactor_New.cs" t="Include" />
             <e p="Player" t="Include">
               <e p="Player.cs" t="Include" />
             </e>
+            <e p="Player_New.cs" t="Include" />
           </e>
           <e p="M_ControllerSystem" t="Include">
             <e p="IController.cs" t="Include" />
@@ -100,6 +102,7 @@
               <e p="ResourseFactory.cs" t="Include" />
             </e>
             <e p="CharactorFactory" t="Include">
+              <e p="CharactorFactory_General.cs" t="Include" />
               <e p="ICharactorFactory.cs" t="Include" />
             </e>
             <e p="MainFactory.cs" t="Include" />

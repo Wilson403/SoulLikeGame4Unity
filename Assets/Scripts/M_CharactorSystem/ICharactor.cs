@@ -19,6 +19,8 @@ namespace M_CharactorSystem
 {
 	public abstract class ICharactor : MonoBehaviour
 	{
+		
+		
 
 	#region Public_Attriable
 

@@ -14,7 +14,7 @@ namespace M_CharactorSystem.CharactorBuilder
 { 
     public abstract class ICharactorBuildParam
     {
-        public ICharactor NewCharactor = null;
+        public ICharactor_New NewCharactor = null;
         public Vector3 SpawnPosition;
         public string AssetName;
     } 

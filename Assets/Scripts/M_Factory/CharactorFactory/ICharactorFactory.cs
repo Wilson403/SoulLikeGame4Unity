@@ -15,7 +15,7 @@ namespace M_Factory.CharactorFactory
 {
     public abstract class ICharactorFactory
     {
-        public abstract Player CreatePlayer();
-        public abstract Enemy CreateEnemy();
+        public abstract ICharactor_New CreatePlayer(string assetname,int lv);
+        public abstract ICharactor_New CreateEnemy();
     } 
 } 

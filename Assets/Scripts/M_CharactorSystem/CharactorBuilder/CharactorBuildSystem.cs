@@ -13,11 +13,25 @@ using UnityEngine;
 
 namespace M_CharactorSystem.CharactorBuilder
 {
-    public abstract class CharactorBuildSystem : IGameSystem
+    /// <summary>
+    /// 角色组装指示者，游戏子系统之一
+    /// </summary>
+    public class CharactorBuildSystem : IGameSystem
     {
-        protected CharactorBuildSystem(GameManageHub hub) : base(hub)
+        public CharactorBuildSystem(GameManageHub hub) : base(hub)
         {
             
         }
+
+        public override void Update()
+        {
+            
+        }
+
+        public void Construct(ICharactorBuilder theBuilder)
+        {
+            theBuilder.LoadAsset();
+        }
+
     } 
 } 

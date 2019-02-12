@@ -8,6 +8,7 @@
  
 using System.Collections;
 using System.Collections.Generic;
+using M_Factory;
 using M_Factory.AssetFactory;
 using UnityEngine;
 
@@ -15,15 +16,10 @@ namespace MyNamespace
 {
     public class TempScript : MonoBehaviour 
     {
-        ResourcesProxyFactory _factory = new ResourcesProxyFactory();
 
         private void Start()
         {
-            for (int i = 0; i < 10; i++)
-            {
-                _factory.LoadPlayer("Cube");
-            }
-            
+            MainFactory.GetCharactorFactory().CreatePlayer("Cube", 4);
         }
     } 
 } 
