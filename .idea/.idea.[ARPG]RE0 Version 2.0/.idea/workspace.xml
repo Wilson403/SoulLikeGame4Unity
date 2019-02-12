@@ -25,75 +25,99 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/tempScript.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="25" column="9" lean-forward="true" selection-start-line="25" selection-start-column="9" selection-end-line="25" selection-end-column="9" />
+            <state relative-caret-position="24">
+              <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
               <folding>
-                <marker date="1549715137148" expanded="true" signature="0:115" ph="/* ICharactor ：角色抽象类，定义了一些角色通用的功能 ... */" />
-                <marker date="1549715137148" expanded="false" signature="123:305" ph="..." />
-                <marker date="1549715137148" expanded="true" signature="334:4803" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="386:4788" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="392:577" ph="Public_Attriable" />
-                <marker date="1549715137148" expanded="true" signature="449:490" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="523:564" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="658:987" ph="Public_Variable" />
-                <marker date="1549715137148" expanded="true" signature="1068:1394" ph="Protected_Variable" />
-                <marker date="1549715137148" expanded="true" signature="1475:1666" ph="Private_Variable" />
-                <marker date="1549715137148" expanded="true" signature="1747:1986" ph="Public_Methods" />
-                <marker date="1549715137148" expanded="true" signature="1824:1870" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="1923:1973" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2067:2913" ph="Virtual_Methods" />
-                <marker date="1549715137148" expanded="true" signature="2142:2186" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2244:2263" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2267:2305" ph="/* 计算角色的伤害值 ... */" />
-                <marker date="1549715137148" expanded="true" signature="2340:2391" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2425:2443" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2500:2520" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2576:2594" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2660:2899" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="2994:4449" ph="Protected_Methods" />
-                <marker date="1549715137148" expanded="true" signature="3057:3111" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3186:3250" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3305:3334" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3377:3533" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3405:3529" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3575:3636" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3715:3760" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3825:3863" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="3930:3970" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4034:4084" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4134:4436" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4161:4432" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4359:4388" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4397:4427" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4530:4784" ph="Private_Methods" />
-                <marker date="1549715137148" expanded="true" signature="4592:4662" ph="{...}" />
-                <marker date="1549715137148" expanded="true" signature="4702:4771" ph="{...}" />
+                <marker date="1549932452246" expanded="true" signature="0:85" ph="/* TempScript ： ... */" />
+                <marker date="1549932452246" expanded="false" signature="94:196" ph="..." />
+                <marker date="1549932452246" expanded="true" signature="219:528" ph="{...}" />
+                <marker date="1549932452246" expanded="true" signature="266:525" ph="{...}" />
+                <marker date="1549932452246" expanded="true" signature="372:519" ph="{...}" />
+                <marker date="1549932452246" expanded="true" signature="423:496" ph="{...}" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ChaseAiState.cs">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/MainFactory.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="552">
-              <caret line="74" column="45" selection-start-line="74" selection-start-column="45" selection-end-line="74" selection-end-column="45" />
+            <state relative-caret-position="369">
+              <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
               <folding>
-                <marker date="1547210107359" expanded="true" signature="0:138" ph="/* ChaseAIState ：继承于IAIState,负责Ai对象追赶的逻辑 ... */" />
-                <marker date="1547210107359" expanded="false" signature="147:244" ph="..." />
-                <marker date="1547210107359" expanded="true" signature="276:1924" ph="{...}" />
-                <marker date="1547210107359" expanded="true" signature="319:1908" ph="{...}" />
-                <marker date="1547210107359" expanded="false" signature="339:461" ph="Private_Variable" />
-                <marker date="1547210107359" expanded="false" signature="583:760" ph="Public_Methods" />
-                <marker date="1547210107359" expanded="true" signature="678:736" ph="{...}" />
-                <marker date="1547210107359" expanded="true" signature="882:1893" ph="Override_Methods" />
-                <marker date="1547210107359" expanded="true" signature="952:1060" ph="{...}" />
-                <marker date="1547210107359" expanded="true" signature="1123:1877" ph="{...}" />
-                <marker date="1547210107359" expanded="true" signature="1228:1342" ph="{...}" />
-                <marker date="1547210107359" expanded="true" signature="1436:1621" ph="{...}" />
-                <marker date="1547210107359" expanded="true" signature="1711:1801" ph="{...}" />
+                <marker date="1549932392786" expanded="true" signature="0:80" ph="/* MainFactory ： ... */" />
+                <marker date="1549932392786" expanded="true" signature="89:191" ph="..." />
+                <marker date="1549932392786" expanded="true" signature="212:614" ph="{...}" />
+                <marker date="1549932392786" expanded="true" signature="219:267" ph="/// 取得所有的工厂 ... " />
+                <marker date="1549932392786" expanded="true" signature="303:611" ph="{...}" />
+                <marker date="1549932392786" expanded="true" signature="422:605" ph="{...}" />
+                <marker date="1549932392786" expanded="true" signature="471:560" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
+              <folding>
+                <marker date="1549932392784" expanded="true" signature="0:86" ph="/* ICharactorFactory ： ... */" />
+                <marker date="1549932392784" expanded="false" signature="95:192" ph="..." />
+                <marker date="1549932392784" expanded="true" signature="230:383" ph="{...}" />
+                <marker date="1549932392784" expanded="true" signature="276:380" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="408">
+              <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
+              <folding>
+                <marker date="1549932392771" expanded="true" signature="0:89" ph="/* CharactorBuildSystem ： ... */" />
+                <marker date="1549932392771" expanded="false" signature="98:187" ph="..." />
+                <marker date="1549932392771" expanded="true" signature="233:414" ph="{...}" />
+                <marker date="1549932392771" expanded="true" signature="296:411" ph="{...}" />
+                <marker date="1549932392771" expanded="true" signature="372:405" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuildParam.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="360">
+              <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
+              <folding>
+                <marker date="1549932392775" expanded="true" signature="0:89" ph="/* ICharactorBuildParam ： ... */" />
+                <marker date="1549932392775" expanded="false" signature="98:170" ph="..." />
+                <marker date="1549932392775" expanded="true" signature="216:399" ph="{...}" />
+                <marker date="1549932392775" expanded="true" signature="266:396" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/PlayerBuilder.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="624">
+              <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
+              <folding>
+                <marker date="1549932392777" expanded="true" signature="0:82" ph="/* PlayerBuilder ： ... */" />
+                <marker date="1549932392777" expanded="true" signature="91:163" ph="..." />
+                <marker date="1549932392777" expanded="true" signature="209:613" ph="{...}" />
+                <marker date="1549932392777" expanded="true" signature="268:281" ph="{...}" />
+                <marker date="1549932392777" expanded="true" signature="333:611" ph="{...}" />
+                <marker date="1549932392777" expanded="true" signature="463:534" ph="{...}" />
+                <marker date="1549932392777" expanded="true" signature="575:605" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -116,8 +140,9 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AnimationEventMgr.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/MyButton.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_ControllerSystem/KeyBoardInput.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/TempScript.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/tempScript.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/EnemyBuilder.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/GameManageHub.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMOnSendMessage.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/AttackAIState.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/ICharactorAI.cs" root0="SKIP_HIGHLIGHTING" />
@@ -136,6 +161,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/AssetFactory/IAssetFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/PlayerBuilder.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/BaseClass/IGameSystem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/M_WeaponSystem/WeaponSword.cs" root0="FORCE_HIGHLIGHTING" />
@@ -191,7 +217,6 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/IGeneral.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_AnimationManager/PlayerAnimation/PlayerGeneralAnimationMgr.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AIMgr/CharactorAIMgr/IdleAIState.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/tempScript.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/Player/Player.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/AttackedTrigger.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs" />
@@ -212,6 +237,7 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/BaseClass/IGameSystem.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/ICharactor.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/tempScript.cs" />
       </list>
     </option>
   </component>
@@ -224,6 +250,7 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator currentView="UnityExplorer" proportions="" version="1">
+      <autoscrollToSource UnityExplorer="false" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
@@ -259,16 +286,57 @@
               <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
               <item name="M_CharactorSystem" type="1045f7f1:UnityExplorerNode" />
             </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_CharactorSystem" type="1045f7f1:UnityExplorerNode" />
+              <item name="CharactorBuilder" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_CharactorSystem" type="1045f7f1:UnityExplorerNode" />
+              <item name="Enemy" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_CharactorSystem" type="1045f7f1:UnityExplorerNode" />
+              <item name="Player" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_Factory" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_Factory" type="1045f7f1:UnityExplorerNode" />
+              <item name="AssetFactory" type="1045f7f1:UnityExplorerNode" />
+            </path>
+            <path>
+              <item name="Project" type="e068e287:UnityExplorerRootNode" />
+              <item name="Assets" type="48f920db:UnityExplorerNode$AssetsRoot" />
+              <item name="Scripts" type="1045f7f1:UnityExplorerNode" />
+              <item name="M_Factory" type="1045f7f1:UnityExplorerNode" />
+              <item name="CharactorFactory" type="1045f7f1:UnityExplorerNode" />
+            </path>
           </expand>
           <select />
         </subPane>
         <option name="show-hidden-items" value="false" />
         <option name="show-project-names" value="true" />
       </pane>
+      <pane id="AssemblyExplorer" />
       <pane id="SolutionExplorer">
         <option name="show-all-files" value="false" />
       </pane>
-      <pane id="AssemblyExplorer" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -342,7 +410,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="143659000" />
+    <option name="totallyTimeSpent" value="143697000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -357,11 +425,11 @@
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Capture Tool" />
-      <window_info id="Image Layers" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.1673774" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17537314" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info id="Image Layers" order="3" />
+      <window_info id="Capture Tool" order="4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -379,13 +447,13 @@
       <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" weight="0.32827735" />
       <window_info anchor="bottom" id="调试" order="15" />
       <window_info anchor="bottom" id="Unity" order="16" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Unit Tests Coverage" weight="0.32995737" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Errors In Solution" order="3" weight="0.32995737" />
       <window_info anchor="right" id="Database" order="4" weight="0.32995737" />
+      <window_info anchor="right" id="Capture Analysis" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" weight="0.32995737" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17110874" />
@@ -618,22 +686,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/TempScript.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="69" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/CharactorFactory/ICharactorFactory.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="21" selection-start-line="21" selection-end-line="21" />
+        <state relative-caret-position="288">
+          <caret line="17" column="46" selection-start-line="17" selection-start-column="46" selection-end-line="17" selection-end-column="46" />
           <folding>
-            <marker date="1549095963079" expanded="true" signature="0:86" ph="/* ICharactorFactory ： ... */" />
-            <marker date="1549095963079" expanded="false" signature="95:192" ph="..." />
-            <marker date="1549095963079" expanded="true" signature="230:383" ph="{...}" />
-            <marker date="1549095963079" expanded="true" signature="276:380" ph="{...}" />
+            <marker date="1549932392784" expanded="true" signature="0:86" ph="/* ICharactorFactory ： ... */" />
+            <marker date="1549932392784" expanded="false" signature="95:192" ph="..." />
+            <marker date="1549932392784" expanded="true" signature="230:383" ph="{...}" />
+            <marker date="1549932392784" expanded="true" signature="276:380" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -692,71 +753,13 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/MainFactory.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="15" column="17" selection-start-line="15" selection-start-column="17" selection-end-line="15" selection-end-column="17" />
-          <folding>
-            <marker date="1549700226754" expanded="true" signature="0:80" ph="/* MainFactory ： ... */" />
-            <marker date="1549700226754" expanded="false" signature="89:191" ph="..." />
-            <marker date="1549700226754" expanded="true" signature="212:614" ph="{...}" />
-            <marker date="1549700226754" expanded="true" signature="219:267" ph="/// 取得所有的工厂 ... " />
-            <marker date="1549700226754" expanded="true" signature="303:611" ph="{...}" />
-            <marker date="1549700226754" expanded="true" signature="422:605" ph="{...}" />
-            <marker date="1549700226754" expanded="true" signature="471:560" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/PlayerBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="25" selection-start-line="12" selection-start-column="10" selection-end-line="12" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/CharactorBuildSystem.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="15" lean-forward="true" selection-start-line="14" selection-start-column="15" selection-end-line="14" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/ICharactorBuildParam.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="288">
-          <caret line="14" column="17" selection-start-line="14" selection-start-column="17" selection-end-line="14" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/PlayerBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor_System/CharactorBuilder/PlayerBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="26" selection-start-line="12" selection-start-column="26" selection-end-line="12" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MyCharactor/CharactorBuilder/PlayerBuilder.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="16" column="8" selection-start-line="16" selection-start-column="8" selection-end-line="16" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/CharactorSystem/CharactorBuilder/PlayerBuilder.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/CharactorBuildSystem.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/ICharactorBuildParam.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor/CharactorBuilder/PlayerBuilder.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/Charactor_System/CharactorBuilder/PlayerBuilder.cs" />
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/MyCharactor/CharactorBuilder/PlayerBuilder.cs" />
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/FSM/FSMOnSendMessage.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="212">
@@ -800,13 +803,13 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/ICharactorBuildParam.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="336">
-          <caret line="14" column="46" lean-forward="true" selection-start-line="14" selection-start-column="46" selection-end-line="14" selection-end-column="46" />
+        <state relative-caret-position="360">
+          <caret line="18" column="32" selection-start-line="18" selection-start-column="32" selection-end-line="18" selection-end-column="32" />
           <folding>
-            <marker date="1549703686188" expanded="true" signature="0:89" ph="/* ICharactorBuildParam ： ... */" />
-            <marker date="1549703686188" expanded="true" signature="98:170" ph="..." />
-            <marker date="1549703686188" expanded="true" signature="216:399" ph="{...}" />
-            <marker date="1549703686188" expanded="true" signature="266:396" ph="{...}" />
+            <marker date="1549932392775" expanded="true" signature="0:89" ph="/* ICharactorBuildParam ： ... */" />
+            <marker date="1549932392775" expanded="false" signature="98:170" ph="..." />
+            <marker date="1549932392775" expanded="true" signature="216:399" ph="{...}" />
+            <marker date="1549932392775" expanded="true" signature="266:396" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -827,16 +830,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/PlayerBuilder.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="465">
-          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+        <state relative-caret-position="624">
+          <caret line="31" column="8" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="8" />
           <folding>
-            <marker date="1549705616022" expanded="true" signature="0:82" ph="/* PlayerBuilder ： ... */" />
-            <marker date="1549705616022" expanded="true" signature="91:163" ph="..." />
-            <marker date="1549705616022" expanded="true" signature="209:613" ph="{...}" />
-            <marker date="1549705616022" expanded="true" signature="268:281" ph="{...}" />
-            <marker date="1549705616022" expanded="true" signature="333:611" ph="{...}" />
-            <marker date="1549705616022" expanded="true" signature="463:534" ph="{...}" />
-            <marker date="1549705616022" expanded="true" signature="575:605" ph="{...}" />
+            <marker date="1549932392777" expanded="true" signature="0:82" ph="/* PlayerBuilder ： ... */" />
+            <marker date="1549932392777" expanded="true" signature="91:163" ph="..." />
+            <marker date="1549932392777" expanded="true" signature="209:613" ph="{...}" />
+            <marker date="1549932392777" expanded="true" signature="268:281" ph="{...}" />
+            <marker date="1549932392777" expanded="true" signature="333:611" ph="{...}" />
+            <marker date="1549932392777" expanded="true" signature="463:534" ph="{...}" />
+            <marker date="1549932392777" expanded="true" signature="575:605" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -860,14 +863,14 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_CharactorSystem/CharactorBuilder/CharactorBuildSystem.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="456">
-          <caret line="19" column="12" lean-forward="true" selection-start-line="19" selection-start-column="12" selection-end-line="19" selection-end-column="12" />
+        <state relative-caret-position="408">
+          <caret line="21" column="6" selection-start-line="21" selection-start-column="6" selection-end-line="21" selection-end-column="6" />
           <folding>
-            <marker date="1549706558652" expanded="true" signature="0:89" ph="/* CharactorBuildSystem ： ... */" />
-            <marker date="1549706558652" expanded="true" signature="98:187" ph="..." />
-            <marker date="1549706558652" expanded="true" signature="233:414" ph="{...}" />
-            <marker date="1549706558652" expanded="true" signature="296:411" ph="{...}" />
-            <marker date="1549706558652" expanded="true" signature="372:405" ph="{...}" />
+            <marker date="1549932392771" expanded="true" signature="0:89" ph="/* CharactorBuildSystem ： ... */" />
+            <marker date="1549932392771" expanded="false" signature="98:187" ph="..." />
+            <marker date="1549932392771" expanded="true" signature="233:414" ph="{...}" />
+            <marker date="1549932392771" expanded="true" signature="296:411" ph="{...}" />
+            <marker date="1549932392771" expanded="true" signature="372:405" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -939,6 +942,37 @@
             <marker date="1549715137148" expanded="true" signature="4530:4784" ph="Private_Methods" />
             <marker date="1549715137148" expanded="true" signature="4592:4662" ph="{...}" />
             <marker date="1549715137148" expanded="true" signature="4702:4771" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/M_Factory/MainFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="369">
+          <caret line="16" column="15" lean-forward="true" selection-start-line="16" selection-start-column="15" selection-end-line="16" selection-end-column="15" />
+          <folding>
+            <marker date="1549932392786" expanded="true" signature="0:80" ph="/* MainFactory ： ... */" />
+            <marker date="1549932392786" expanded="true" signature="89:191" ph="..." />
+            <marker date="1549932392786" expanded="true" signature="212:614" ph="{...}" />
+            <marker date="1549932392786" expanded="true" signature="219:267" ph="/// 取得所有的工厂 ... " />
+            <marker date="1549932392786" expanded="true" signature="303:611" ph="{...}" />
+            <marker date="1549932392786" expanded="true" signature="422:605" ph="{...}" />
+            <marker date="1549932392786" expanded="true" signature="471:560" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/tempScript.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="24">
+          <caret line="1" column="19" selection-start-line="1" selection-start-column="19" selection-end-line="1" selection-end-column="19" />
+          <folding>
+            <marker date="1549932452246" expanded="true" signature="0:85" ph="/* TempScript ： ... */" />
+            <marker date="1549932452246" expanded="false" signature="94:196" ph="..." />
+            <marker date="1549932452246" expanded="true" signature="219:528" ph="{...}" />
+            <marker date="1549932452246" expanded="true" signature="266:525" ph="{...}" />
+            <marker date="1549932452246" expanded="true" signature="372:519" ph="{...}" />
+            <marker date="1549932452246" expanded="true" signature="423:496" ph="{...}" />
           </folding>
         </state>
       </provider>

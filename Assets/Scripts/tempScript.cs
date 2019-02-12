@@ -1,5 +1,5 @@
 ﻿/*
- * TempScript ：
+ * TempScript ：临时测试脚本
  * 程序员 ：Wilson
  * 挂载对象 ：None
  * 更多描述 ：None
