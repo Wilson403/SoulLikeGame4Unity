@@ -12,12 +12,11 @@ using System.Collections.Generic;
 using M_CharactorSystem;
 using UnityEngine;
 
-public class WeaponSword : IWeapon 
+namespace M_WeaponSystem
 {
-    public override void WeaponAttack(ICharactor theTarget)
-    {
-        //声音
-        //粒子特效
-        //动作
-    }
+  public class WeaponSword : IWeapon 
+  {
+     
+  }
 }
+

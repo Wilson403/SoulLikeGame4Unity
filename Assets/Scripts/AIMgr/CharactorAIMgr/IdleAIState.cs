@@ -38,7 +38,7 @@ namespace AIMgr.CharactorAIMgr
                     if (target.BKilled)
                         continue;
 
-                    float dist = Vector3.Distance(nowPosition, target.transform.position);
+                    float dist = Vector3.Distance(nowPosition, target.GetModel().transform.position);
                     if (dist < minDist)
                     {
                         minDist = dist;

@@ -18,44 +18,19 @@ namespace AIMgr.CharactorAIMgr
 {
     public abstract class ICharactorAI
     {
-
-    #region Protected_Variable
-
         protected float AttackRadius = 2; //可以攻击的检测范围
 
         protected Vector3 AttackPostion = Vector3.zero;
 
         protected ICharactor TheTarget = null; //受Ai控制的对象
 
-    #endregion
-
-
-        //----------------------------------------------------------------------
-
-
-    #region Private_Variable
-
         private bool _beginRunStart = false; //是否首次执行初始化方法
 
         private IAIState _aiState = null; //拥有一个AI状态
 
-    #endregion
-
-
-        //----------------------------------------------------------------------
-
-
-    #region Attibute
-
+        private GameObject m_GameObject;
         public AiState CurAiState { get; private set; } //当前Ai状态
 
-    #endregion
-
-
-        //----------------------------------------------------------------------
-
-
-    #region Virtual_Methods
 
         //更换AI状态
         public virtual void ChangeAiState(IAIState state)
@@ -83,14 +58,6 @@ namespace AIMgr.CharactorAIMgr
             return false;
         }
 
-    #endregion
-
-
-        //----------------------------------------------------------------------
-
-
-    #region Public_Methods
-
         //移除AI对象
         public void RemoveAiTarget(ICharactor theTarget)
         {
@@ -101,6 +68,7 @@ namespace AIMgr.CharactorAIMgr
         public void SetAiCharactor(ICharactor theTarget)
         {
             TheTarget = theTarget;
+            m_GameObject = TheTarget.GetModel();
         }
 
         //设置Ai状态
@@ -112,7 +80,7 @@ namespace AIMgr.CharactorAIMgr
         //获取AI角色的位置
         public Vector3 GetPosition()
         {
-            return TheTarget.transform.position;
+            return m_GameObject.transform.position;
         }
 
         //停止移动
@@ -120,7 +88,7 @@ namespace AIMgr.CharactorAIMgr
         {
             TheTarget.StopMove();
         }
-        
+
         //移动至目标
         public void Moveto(Vector3 theTargetPosition)
         {
@@ -140,12 +108,8 @@ namespace AIMgr.CharactorAIMgr
 
         public float UsefulView(ICharactor theTarget)
         {
-           return TheTarget.UsefulView(theTarget);
+            return TheTarget.UsefulView(theTarget);
         }
-
-
-
-    #endregion
 
     } //Class_End
 

@@ -18,7 +18,7 @@ namespace AIMgr.CharactorAIMgr
         public override bool TargetRange(ICharactor theNearTarget,int range)
         {
             float targetdist;
-            targetdist = Vector3.Distance(TheTarget.transform.position, theNearTarget.transform.position);
+            targetdist = Vector3.Distance(TheTarget.GetModel().transform.position, theNearTarget.GetModel().transform.position);
             if (targetdist <= range)
             {
                 return true;

@@ -40,6 +40,11 @@
               <e p="IAttrStrategy.cs" t="Include" />
               <e p="PlayerAttrStrategy.cs" t="Include" />
             </e>
+            <e p="Base" t="Include">
+              <e p="BaseAttr.cs" t="Include" />
+              <e p="BaseCharactorAttr.cs" t="Include" />
+              <e p="BaseEnemyAttr.cs" t="Include" />
+            </e>
             <e p="CharactorAttr" t="Include">
               <e p="EnemyAttr.cs" t="Include" />
               <e p="ICharactorAttr.cs" t="Include" />
@@ -77,12 +82,15 @@
               <e p="ICharactorBuildParam.cs" t="Include" />
               <e p="PlayerBuilder.cs" t="Include" />
             </e>
-            <e p="Enemy" t="Include">
+            <e p="CharactorSystem.cs" t="Include" />
+            <e p="ICharactor.cs" t="Include" />
+            <e p="M_Enemy" t="Include">
               <e p="Enemy.cs" t="Include" />
               <e p="EnemyAnimEvent.cs" t="Include" />
+              <e p="IEnemy.cs" t="Include" />
             </e>
-            <e p="ICharactor.cs" t="Include" />
-            <e p="Player" t="Include">
+            <e p="M_Player" t="Include">
+              <e p="IPlayer.cs" t="Include" />
               <e p="Player.cs" t="Include" />
             </e>
           </e>
@@ -99,13 +107,23 @@
               <e p="ResourcesProxyFactory.cs" t="Include" />
               <e p="ResourseFactory.cs" t="Include" />
             </e>
+            <e p="AttriableFactory" t="Include">
+              <e p="AttrFactory.cs" t="Include" />
+              <e p="IAttrFactory.cs" t="Include" />
+            </e>
             <e p="CharactorFactory" t="Include">
+              <e p="CharactorFactory_Switch.cs" t="Include" />
               <e p="ICharactorFactory.cs" t="Include" />
             </e>
             <e p="MainFactory.cs" t="Include" />
+            <e p="WeaponFactory" t="Include">
+              <e p="IWeaonFactory.cs" t="Include" />
+              <e p="WeaponFactory.cs" t="Include" />
+            </e>
           </e>
           <e p="M_WeaponSystem" t="Include">
             <e p="IWeapon.cs" t="Include" />
+            <e p="WeaponShield.cs" t="Include" />
             <e p="WeaponSword.cs" t="Include" />
           </e>
           <e p="SceneStateMgr" t="Include">

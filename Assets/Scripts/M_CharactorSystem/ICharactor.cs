@@ -1,220 +1,342 @@
-﻿/*
- * ICharactor ：角色抽象类，定义了一些角色通用的功能
- * 程序员 ：Wilson
- * 日期 ：2018/12/15
- * 挂载对象 ：None
- * 更多描述 ：None
- * 修改记录 ：None
- */
-
-using UnityEngine;
+﻿using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 using AIMgr.CharactorAIMgr;
+using BaseClass;
 using GameAttr.CharactorAttr;
 using M_AnimationManager;
 using M_ControllerSystem;
+using M_WeaponSystem;
 
 namespace M_CharactorSystem
 {
-	public abstract class ICharactor : MonoBehaviour
+	public abstract class ICharactor
 	{
+		//名字
+		protected string m_Name;
 
-	#region Public_Attriable
+		//模型名
+		protected string m_Assetname;
 
-		public Transform LWeapontrans
-		{
-			get { return _lweapontrans; }
-		}
+		//角色控制柄
+		protected GameObject m_CharactorHandle;
+		
+		//角色模型
+		protected GameObject m_Model = null;
 
-		public Transform RWeapontrans
-		{
-			get { return _rweapontrans; }
-		}
+		//角色ID
+		protected int m_Id;
 
-	#endregion
+		protected int m_AttrID;
+		
+		//左手武器
+		protected IWeapon m_LWeapon = null;
+		protected IWeapon m_RWeapon = null;
 
+		//属性
+		protected ICharactorAttr m_Attribute = null;
 
-		//----------------------------------------------------------------------
+		//AI
+		protected ICharactorAI m_AI = null;
 
+		protected CameraControl m_CameraControl;
+		
+		//控制器对象
+		protected IController m_Controller;
+		
+		//控制器状态
+		protected ControllerState m_ControllerState; 
 
-	#region Public_Variable
+		protected GameObject m_CameraPoint;
 
-		public bool BKilled; //是否阵亡
-		public Animator MyAnimator; //角色控制柄挂载的动画组件
-		public GameObject MyModel; //角色模型
-		public bool BAttack; //是否可以攻击
-		public Vector3 MovingVec; //移动值
-		public Vector3 DeltaPos; //动画自身的移动量
-		public float WalkSpeed = 2; //走路（散步）速度
-		public float RunSpeed = 2; //奔跑速度
+		//碰撞体
+		protected CapsuleCollider m_Col;
 
-	#endregion
+		//刚体
+		protected Rigidbody m_Rig;
 
+		//动画组件
+		protected Animator m_Animator;
 
-		//----------------------------------------------------------------------
+		//传感器,用于检测地面
+		protected GameObject Sensor;
 
-
-	#region Protected_Variable
-
-		protected CapsuleCollider Col; //获取角色控制柄的碰撞体
-		protected Rigidbody Rig; //角色控制柄挂载的刚体
-		protected ICharactorAttr CharactorAttr = null; //角色属性引用
-		protected ICharactorAI CharactorAi = null; //角色AI引用
-		protected GameObject Sensor; //传感器,用于检测地面
+		//动作管理器
 		protected ActionManager MyActionManager;
 
-	#endregion
-
-
-		//----------------------------------------------------------------------
-
-
-	#region Private_Variable
-
-		private Transform _lweapontrans;
-		private Transform _rweapontrans;
-		private float _raylength = 2f; //射线长度
-		private IWeapon _weapon; //武器对象（桥接模式）
+		//射线长度
+		private const float _raylength = 2f;
 		
 
-	#endregion
+		public float WalkSpeed; //走路（散步）速度
+		public float RunSpeed; //奔跑速度
+		public float JumpHeight; //跳跃高度，变量_jumpHeight的y轴分量
+		
+		//武器手持挂载点
+		public Transform m_Lweapontrans;
+		public Transform m_Rweapontrans;
+		
+		//武器背部挂载点
+		public Transform m_SwordPos;
+		public Transform m_ShieldPos;
+
+		private AnimationEventMgr _animationeventMgr;
+
+		//设置模型-
+		public void SetCharactorModel(GameObject go)
+		{
+			m_CharactorHandle = go;
+			m_Model = m_CharactorHandle.transform.Find("model").gameObject;
+			
+			Sensor = m_CharactorHandle.transform.Find("Sensor").gameObject;
+			m_CameraPoint = m_CharactorHandle.transform.Find("CameraController").GetChild(0).gameObject;
+			m_Col = m_CharactorHandle.GetComponent<CapsuleCollider>();
+			m_Rig = m_CharactorHandle.GetComponent<Rigidbody>();
+			m_Animator = m_Model.GetComponent<Animator>();
+			_animationeventMgr = m_Model.GetComponent<AnimationEventMgr>();
+			_animationeventMgr.SetCharactor(this);
+		}
+		
+		//设置武器的挂载点信息
+		protected void SetWeaponPoint()
+		{
+			m_Lweapontrans = UnityTool.DeepFind(m_Model.transform, "weaponHandleL").transform;
+			m_Rweapontrans = UnityTool.DeepFind(m_Model.transform, "weaponHandleR").transform;
+
+			m_SwordPos = UnityTool.DeepFind(m_Model.transform, "SwordPos").transform;
+			m_ShieldPos = UnityTool.DeepFind(m_Model.transform, "ShieldPos").transform;
+		}
+
+		public GameObject GetCharactorHandle()
+		{
+			return m_CharactorHandle;
+		}
+
+		//取得模型
+		public GameObject GetModel()
+		{
+			return m_Model;
+		}
+
+		//取得相机点
+		public GameObject GetCameraPoint()
+		{
+			return m_CameraPoint;
+		}
+
+		public void SetCameraControl(CameraControl theCameraControl)
+		{
+			m_CameraControl = theCameraControl;
+		}
+
+		public CameraControl GetCameraControl()
+		{
+			return m_CameraControl;
+		}
+
+		public void SetController(IController theController,ControllerState state)
+		{
+			m_Controller = theController;
+			m_ControllerState = state;
+		}
+
+		//取得模型名
+		public string GetAssetName()
+		{
+			return m_Assetname;
+		}
+
+		public Animator GetAnimator()
+		{
+			return m_Animator;
+		}
+
+		//销毁模型
+		public void Release()
+		{
+			if (m_Model != null)
+				Object.Destroy(m_Model);
+		}
+
+		//取得名字
+		public string GetName()
+		{
+			return m_Name;
+		}
+
+		public int GetAttrID()
+		{
+			return m_AttrID;
+		}
+
+		public void SetID(int id)
+		{
+			m_Id = id;
+		}
+
+		public int GetID()
+		{
+			return m_Id;
+		}
 
 
-		//----------------------------------------------------------------------
+		public void SetActionManager(ActionManager theActionManager)
+		{
+			MyActionManager = theActionManager;
+		}
 
+		//设置左手武器
+		public void SetLWeapon(IWeapon weapon)
+		{
+			m_LWeapon = weapon;
+			m_LWeapon.SetWeaponOwner(this);
+		}
 
-	#region Public_Methods
+		//设置右手武器
+		public void SetRWeapon(IWeapon weapon)
+		{
+			m_RWeapon = weapon;
+			m_RWeapon.SetWeaponOwner(this);
+		}
 
 		//取得武器攻击力
 		public int GetWeaponAtkValue(int index)
 		{
-			return _weapon.GetAtkValue(index);
+			int value;
+			switch (index)
+			{
+				case 0:
+					value = m_LWeapon.GetAtkValue();
+					break;
+				case 1:
+					value = m_RWeapon.GetAtkValue();
+					break;
+				default:
+					value = 0;
+					break;
+			}
+
+			return value;
 		}
 
 		//取得武器防御力
 		public int GetDefenseValue(int index)
 		{
-			return _weapon.GetDefenseValue(index);
+			int value;
+			switch (index)
+			{
+				case 0:
+					value = m_LWeapon.GetDefenseValue();
+					break;
+				case 1:
+					value = m_RWeapon.GetDefenseValue();
+					break;
+				default:
+					value = 0;
+					break;
+			}
+
+			return value;
 		}
 
-	#endregion
-
-
-		//----------------------------------------------------------------------
-
-
-	#region Virtual_Methods
-
-		public virtual void Attack(ICharactor theTarget)
+		protected void SetWeaponPos()
 		{
-			_weapon.WeaponAttack(theTarget);
+			var lweapon = GetLWeaponModel();
+			UnityTool.SetParent(m_ShieldPos, lweapon);
+
+			var rweapon = GetRWeaponModel();
+			UnityTool.SetParent(m_SwordPos, rweapon);
 		}
 
-
-		public virtual void UnderAttack(ICharactor theTarget)
+		public Transform GetLWeaponModel()
 		{
-			//被敌人攻击
+			return m_LWeapon.GetGameObject().transform;
 		}
 
+		public Transform GetRWeaponModel()
+		{
+			return m_RWeapon.GetGameObject().transform;
+		}
+
+		//攻击
+		public void Attack(ICharactor theTarget)
+		{
+			//m_Weapon.WeaponAttack(theTarget);
+		}
+		
+		
+		//设置AI
+		public void SetAiTarget(ICharactorAI theAiTarget)
+		{
+			m_AI = theAiTarget;
+		}
+
+		//更新AI
+		public void AiStateUpdate(List<ICharactor> targets)
+		{
+			m_AI.Update(targets);
+		}
+
+		//通知AI有角色被移除
+		public void RemoveAi(ICharactor theTarget)
+		{
+			m_AI.RemoveAiTarget(theTarget);
+		}
+		
+		//设置角色属性
+		public void SetCharactorAttr(ICharactorAttr theCharactorAttr)
+		{
+			m_Attribute = theCharactorAttr;
+			m_Attribute.InitAttr();
+
+			WalkSpeed = m_Attribute.GetWalkSpeed();
+			RunSpeed = m_Attribute.GetRunSpeed();
+			JumpHeight = m_Attribute.GetJumpHeight();
+		}
+		
 		//计算角色的伤害值
 		//拥有武器的角色要在重写方法中加入武器伤害的计算
 		public virtual int GetAtkValue()
 		{
-			return CharactorAttr.GetMaxHarmValue();
+			return m_Attribute.GetMaxHarmValue();
 		}
 
+		//停止移动
 		public virtual void StopMove()
 		{
-			//停止移动
+			
 		}
 
+		//移动至目标点
 		public virtual void MoveTo(Vector3 theTargetPosition)
 		{
-			//移动至目标点
+			
 		}
 
+		//盯住目标
 		public virtual void LookTarget(ICharactor theTarget)
 		{
-			//盯住目标
+			
 		}
+		
+		
 
-		//朝向判断
-		public virtual float UsefulView(ICharactor theTarget)
+		//被敌人攻击
+		public virtual void UnderAttack(ICharactor theTarget)
 		{
-			var direction = Vector3.Normalize(theTarget.transform.position - transform.position);
-			var value = Vector3.Dot(direction, transform.forward);
-			var rad = Mathf.Acos(value); //反余弦函数求弧度
-			return rad * Mathf.Rad2Deg; //转换为度数返回
+			
 		}
 
-
-	#endregion
-
-
-		//----------------------------------------------------------------------
-
-
-	#region Protected_Methods
-
-		protected void InitActionManager()
+		//加入相机
+		public virtual void AddCamera(CameraControl theCamera)
 		{
-			MyActionManager = new ActionManager(this);
+			
 		}
 
-		protected void SetAnimation(IGeneral general,IEqip eqip,IUnEqip unEqip)
-		{
-			MyActionManager.SetAnimation(general, eqip, unEqip);
-		}
 
-		//设置武器对象
-		protected void SetWeapon(IWeapon weapon)
-		{
-			_weapon = weapon;
-		}
-
-		//武器对象初始化
-		protected void WeaponInit()
-		{
-			if (_weapon != null)
-			{
-				_weapon.SetWeapon(MyModel.transform, out _lweapontrans, out _rweapontrans);
-				_weapon.SetWeaponOwner(this);
-			}
-		}
-
-		//取得武器属性
-		public void GetWeaponAttr()
-		{
-			if (_weapon != null)
-				_weapon.GetWeaponAttr();
-		}
-
-		//设置角色属性
-		protected void SetCharactorAttr(ICharactorAttr theCharactorAttr)
-		{
-			CharactorAttr = theCharactorAttr;
-		}
-
-		//设置AI
-		protected void SetAiTarget(ICharactorAI theAiTarget)
-		{
-			CharactorAi = theAiTarget;
-		}
-
-		//更新AI
-		protected void AiStateUpdate(List<ICharactor> targets)
-		{
-			CharactorAi.Update(targets);
-		}
-
-		//通知AI有角色被移除
-		protected void RemoveAi(ICharactor theTarget)
-		{
-			CharactorAi.RemoveAiTarget(theTarget);
-		}
-
-		//检查角色是否位于地面
+		/// <summary>
+		/// 检查是否位于地面
+		/// </summary>
 		protected void CheckBOnGround()
 		{
 			if (Sensor != null)
@@ -233,30 +355,50 @@ namespace M_CharactorSystem
 				}
 			}
 		}
-
-	#endregion
-
-
-		//----------------------------------------------------------------------
-
-
-	#region Private_Methods
+		
 
 		//角色位于地面上
 		private void OnGround()
 		{
-			MyAnimator.SetBool("BGround", true);
-			Col.radius = 0.5f;
+			m_Animator.SetBool("BGround", true);
+			m_Col.radius = 0.5f;
 		}
 
 		//角色不在地面上
 		private void NotGround()
 		{
-			MyAnimator.SetBool("BGround", false);
-			Col.radius = 0f;
+			m_Animator.SetBool("BGround", false);
+			m_Col.radius = 0f;
+		}
+		
+		
+
+		public void SetAnimation(IGeneral general,IEqip eqip,IUnEqip unEqip)
+		{
+			MyActionManager.SetAnimation(general, eqip, unEqip);
+		}
+		
+		//朝向判断
+		public virtual float UsefulView(ICharactor theTarget)
+		{
+			var direction = Vector3.Normalize(theTarget.GetModel().transform.position - m_Model.transform.position);
+			var value = Vector3.Dot(direction, m_Model.transform.forward);
+			var rad = Mathf.Acos(value); //反余弦函数求弧度
+			return rad * Mathf.Rad2Deg; //转换为度数返回
 		}
 
-	#endregion
+//=============================旧代码===============================================================
+
+		
+
+
+
+		public bool BKilled; //是否阵亡
+		public bool BAttack; //是否可以攻击
+		public Vector3 MovingVec; //移动值
+		public Vector3 DeltaPos; //动画自身的移动量
+		
+		
 
 	} //Class_End
 

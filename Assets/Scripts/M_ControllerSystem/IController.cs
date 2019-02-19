@@ -11,8 +11,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
+
 namespace M_ControllerSystem
 {
+	public enum ControllerState
+	{
+		JoyStrick,
+		KeyBoard
+	}
+	
 	public abstract class IController
 	{
 		

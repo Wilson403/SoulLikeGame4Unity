@@ -12,26 +12,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using M_CharactorSystem;
+using M_CharactorSystem.M_Player;
 using UnityEngine;
 
 public class AnimationEventMgr : MonoBehaviour
 {
-	private Player _player; //角色类对象
+	private ICharactor _charactor; //角色类对象
 	private Animator _anim; //动画状态机
-	
+
 	private void Awake()
 	{
-		_player = this.GetComponentInParent<Player>();
+		//_player = this.GetComponentInParent<Player>();
 		_anim = GetComponent<Animator>();
 	}
-	
-	
+
+	public void SetCharactor(ICharactor theCharactor)
+	{
+		_charactor = theCharactor;
+	}
+
 	//----------------------------------------------------------------------------------------
 	
 
 	private void OnAnimatorMove()
 	{
-		_player.OnUpdateRm(_anim.deltaPosition);
+		//_player.OnUpdateRm(_anim.deltaPosition);
 	}
 	
 	
@@ -42,10 +47,11 @@ public class AnimationEventMgr : MonoBehaviour
 	//拔剑，持盾
 	public void RHandTakeWeapon()
 	{
+		
 		//剑父对象的替换
-		UnityTool.SetParent(_player.RWeapontrans, _player.Sword.transform);
-		UnityTool.SetParent(_player.LWeapontrans, _player.Shield.transform);
-		_player.GetWeaponAttr();
+		UnityTool.SetParent(_charactor.m_Lweapontrans, _charactor.GetLWeaponModel());
+		UnityTool.SetParent(_charactor.m_Rweapontrans, _charactor.GetRWeaponModel());
+		//_player.GetWeaponAttr();
 	}
 
 	
@@ -57,8 +63,8 @@ public class AnimationEventMgr : MonoBehaviour
 	public void RHandNoWeapon()
 	{
 		//剑父对象的替换
-		UnityTool.SetParent(_player.SwordPos.transform, _player.Sword.transform);
-		UnityTool.SetParent(_player.ShieldPos.transform, _player.Shield.transform);
+		UnityTool.SetParent(_charactor.m_SwordPos.transform, _charactor.GetRWeaponModel());
+		UnityTool.SetParent(_charactor.m_ShieldPos.transform, _charactor.GetLWeaponModel());
 	}
 	
 

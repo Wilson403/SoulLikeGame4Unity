@@ -8,14 +8,20 @@
  
 using System.Collections;
 using System.Collections.Generic;
+using GameAttr.WeaponAttr;
 using M_CharactorSystem;
+using M_CharactorSystem.M_Enemy;
+using M_CharactorSystem.M_Player;
 using UnityEngine;
 
 namespace M_Factory.CharactorFactory
 {
     public abstract class ICharactorFactory
     {
-        public abstract Player CreatePlayer();
+        //产生玩家角色
+        public abstract Player CreatePlayer(Vector3 spawnPos, int lv, WeaponType ltype, WeaponType rtype);
+       
+        //产生敌方角色
         public abstract Enemy CreateEnemy();
     } 
 } 

@@ -1,7 +1,4 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace GameAttr.WeaponAttr
 {
@@ -12,17 +9,18 @@ namespace GameAttr.WeaponAttr
         None
     }
 
-    public class WeaponAttr : MonoBehaviour
+    public class WeaponAttr
     {
-//        public int Atk { get; private set; }
-//
-//        public WeaponAttr(int atkValue)
-//        {
-//            this.Atk = atkValue;
-//        }
-        public WeaponType TheWeaponType = WeaponType.None; //武器类型
-        public int AtkValue; //伤害值
-        public int DedenseValue; //防御值
+        //public readonly WeaponType TheWeaponType;
+        public readonly int AtkValue; //伤害值
+        public readonly int DefenseValue; //防御值
+
+        public WeaponAttr(int atkValue, int defenseValue)
+        {
+            //TheWeaponType = type;
+            AtkValue = atkValue;
+            DefenseValue = defenseValue;
+        }
     }
 }
 

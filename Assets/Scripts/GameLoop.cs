@@ -9,12 +9,18 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using GameAttr.WeaponAttr;
 using UnityEngine;
+using M_Factory;
+using M_Factory.AssetFactory;
 
 public class GameLoop : MonoBehaviour {
     
     //场景状态切换的控制器
-    private SceneStateController _controller = new SceneStateController();
+    private readonly SceneStateController _controller = new SceneStateController();
+
+    private bool _bStart = true;
+    //private readonly GameManageHub _hub = new GameManageHub();
     
     private void Awake()
     {
@@ -23,13 +29,37 @@ public class GameLoop : MonoBehaviour {
 
     private void Start()
     {
+        
         //设置初始场景
-        _controller.SetState("", new LogoMenuState(_controller));
+        GameManageHub.GetInstance().Awake();
+        CreatePlayer();
+       
+      //  _controller.SetState("", new LogoMenuState(_controller));
     }
 
     private void Update()
     {
         //更新
-        _controller.StateUpdate();
+       // _controller.StateUpdate();
+       if (_bStart)
+       {
+           GameManageHub.GetInstance().Start();
+           _bStart = false;
+       }
+
+       GameManageHub.GetInstance().Update();
     }
+
+    private void FixedUpdate()
+    {
+        GameManageHub.GetInstance().FixedUpdate();
+    }
+
+    public void CreatePlayer()
+    {
+        var factory = MainFactory.GetCharactorFactory();
+        factory.CreatePlayer(Vector3.zero, 10, WeaponType.Shield, WeaponType.Sword);
+    }
+
+   
 }

@@ -10,12 +10,14 @@ namespace M_AnimationManager
         protected ActionManager Am;
         protected readonly Animator CurAnimator;
         protected readonly ICharactor Charactor;
+        protected readonly CameraControl M_CameraControl;
         
         protected IActionInterface(ActionManager am)
         {
             Am = am;
-            CurAnimator = am.Charactor.MyAnimator;
+            CurAnimator = am.Charactor.GetAnimator();
             Charactor = am.Charactor;
+            M_CameraControl = am.M_CameraControl;
         }
 
 

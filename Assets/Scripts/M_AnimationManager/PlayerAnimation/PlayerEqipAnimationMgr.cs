@@ -10,6 +10,7 @@ using System.Collections;
 using System.Collections.Generic;
 using M_AnimationManager;
 using M_CharactorSystem;
+using M_CharactorSystem.M_Player;
 using UnityEngine;
 
 namespace M_AnimationManager.PlayerAnimation
@@ -28,13 +29,13 @@ namespace M_AnimationManager.PlayerAnimation
 			//轻攻击动画触发
 			if (_player.Controller.LAttack)
 			{
-				_player.MyAnimator.SetTrigger("LAttack");
+				_player.GetAnimator().SetTrigger("LAttack");
 			}
 			
 			//重攻击动画触发
 			if (_player.Controller.WAttack)
 			{
-				_player.MyAnimator.SetTrigger("WAttack");
+				_player.GetAnimator().SetTrigger("WAttack");
 			}
 			
 //================================旧代码，可删除========================================================

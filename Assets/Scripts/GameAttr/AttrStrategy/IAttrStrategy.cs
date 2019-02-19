@@ -20,7 +20,7 @@ namespace GameAttr.AttrStrategy
         //伤害加成
         public abstract int GetAtkplusValue(ICharactorAttr theCharactorAttr);
         //减伤
-        public abstract int GetDmgDesValue(ICharactorAttr theCharactorAttr);
+        public abstract int GetDmgDesValue(ICharactorAttr theCharactorAttr);                                         
     }
 }
 

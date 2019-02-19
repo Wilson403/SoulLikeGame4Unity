@@ -11,20 +11,21 @@
 
 
 using M_CharactorSystem;
+using M_CharactorSystem.M_Player;
 using UnityEngine;
 using UnityEngine.UI;
 
 public class CameraControl : MonoBehaviour
 {
 	[Header("===== 相机灵敏度 ======")]
-	public float AxixSpeed;
-	public float AxiySpeed;
+	public float AxixSpeed = 150;
+	public float AxiySpeed = 150;
 	
 	//镜头缩放范围
 	public float MaxSuo = 100.0f;
 	public float MinSuo = 35f;
 	
-	public float DampTime; //相机延迟时间
+	public float DampTime = 0.1f; //相机延迟时间
 	public bool LockState; //当前是否锁定
 	public float ObjectDistance;
 	public Image LockIco;
@@ -35,7 +36,7 @@ public class CameraControl : MonoBehaviour
 	private GameObject _walkPosOb; //奔跑拉远距离坐标物件（弃用）
 	private GameObject _cameraController; //相机控制器
 	private GameObject _camera; //主相机
-	private Player _player; //角色对象
+	private IPlayer _player; //角色对象
 	private GameObject _playerController; //角色控制器
 	private GameObject _model; //角色模型
 	private float _tempEuler; //保存限制过后的欧拉角
@@ -55,9 +56,19 @@ public class CameraControl : MonoBehaviour
 		_playerController = _cameraController.transform.parent.gameObject;
 		_keepCameraPosOb = _cameraController.transform.Find("KeepCameraPos").gameObject;
 		_walkPosOb = _cameraController.transform.Find("CameraWalkPos").gameObject;
-		_model = _playerController.GetComponent<ICharactor>().MyModel;
-		_player = _playerController.GetComponent<Player>();
+		//_model = _playerController.GetComponent<ICharactor>().GetModel();
+		//_player = _playerController.GetComponent<Player>();
 		_distanceAway = Vector3.Distance(transform.position, _playerController.transform.position);
+	}
+
+	public void SetModel(GameObject theGo)
+	{
+		_model = theGo;
+	}
+
+	public void SetCharactor(ICharactor theCharactor)
+	{
+		_player = theCharactor as IPlayer;
 	}
 
 	private void FixedUpdate()
@@ -65,16 +76,18 @@ public class CameraControl : MonoBehaviour
 		if (!LockState) //非相机锁定
 		{
 			//将人物model的欧拉角保存在临时变量
-			Vector3 tempModelEuler = _model.transform.eulerAngles;
+			var tempModelEuler = _model.transform.eulerAngles;
 
 			if (!_isDie) //非死亡状态下
 			{
 				//旋转人物控制柄(即手动控制相机旋转)
-				_playerController.transform.Rotate(Vector3.up, _player.Controller.Jright * AxixSpeed * Time.fixedDeltaTime);
-
+				_playerController.transform.Rotate(Vector3.up,
+					_player.Controller.Jright * AxixSpeed * Time.fixedDeltaTime);
+				
 				//随着角色模型的移动旋转相机（即自动旋转相机，不过只有X轴移动才会旋转）
 				_playerController.transform.Rotate(Vector3.up,
 					(_player.Controller.GetVelocityX()) * AxixSpeed * 0.5f * Time.fixedDeltaTime);
+
 			
 				//绕x轴旋转度数进行限制
 				_tempEuler -= _player.Controller.Jup * AxiySpeed * Time.fixedDeltaTime;
@@ -92,7 +105,7 @@ public class CameraControl : MonoBehaviour
 		else //相机锁定
 		{
 			//将人物控制柄的z轴对准locktarget
-			Vector3 tempPos = LockTarget.Obj.transform.position - _model.transform.position;
+			var tempPos = LockTarget.Obj.transform.position - _model.transform.position;
 			tempPos.y = 0;
 			_playerController.transform.forward = tempPos;
 
@@ -100,7 +113,7 @@ public class CameraControl : MonoBehaviour
 			_cameraController.transform.LookAt(LockTarget.Obj.transform);
 
 			//规定相机能调整的范围
-			float tempX = Mathf.Clamp(_cameraController.transform.localEulerAngles.x, 0f, 10f);
+			var tempX = Mathf.Clamp(_cameraController.transform.localEulerAngles.x, 0f, 10f);
 			_cameraController.transform.localEulerAngles = new Vector3(tempX, 0, 0);
 				
 			CameraFollow(0);
@@ -121,7 +134,7 @@ public class CameraControl : MonoBehaviour
 	private void Update()
 	{
 		//缩放
-		Zoom();
+		//Zoom();
 
 		//计算角色与所锁定物体的距离
 		if (LockTarget != null)

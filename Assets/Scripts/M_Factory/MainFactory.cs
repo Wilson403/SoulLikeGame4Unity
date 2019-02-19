@@ -8,7 +8,11 @@
  
 using System.Collections;
 using System.Collections.Generic;
+using GameAttr.CharactorAttr;
 using M_Factory.AssetFactory;
+using M_Factory.AttriableFactory;
+using M_Factory.CharactorFactory;
+using M_Factory.WeaponFactory;
 using UnityEngine;
 
 namespace M_Factory
@@ -19,14 +23,43 @@ namespace M_Factory
     public static class MainFactory
     {
         private static IAssetFactory _assetFactory = null;
+        private static ICharactorFactory _charactorFactory = null;
+        private static IAttrFactory _attrfactory = null;
+        private static IWeaonFactory _weaonFactory = null;
+        
         public static IAssetFactory GetAssetFactory()
         {
             if (_assetFactory == null)
-            {
                 _assetFactory = new ResourcesProxyFactory();
-            }
 
             return _assetFactory;
         }
+
+        public static ICharactorFactory GetCharactorFactory()
+        {
+            if (_charactorFactory == null)
+                _charactorFactory = new CharactorFactory_Switch();
+  
+            return _charactorFactory;
+        }
+        
+        public static IAttrFactory GetrAttrFactory()
+        {
+            if (_attrfactory == null)
+                _attrfactory = new AttrFactory();
+
+            return _attrfactory;
+        }
+        
+        public static IWeaonFactory GetWeaponFactory()
+        {
+            if (_weaonFactory == null)
+                _weaonFactory = new M_WeaponFactory();
+
+            return _weaonFactory;
+        }
+
+
+
     } 
 } 

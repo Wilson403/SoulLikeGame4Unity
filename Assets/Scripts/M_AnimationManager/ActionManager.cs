@@ -8,6 +8,7 @@ using UnityEngine.Experimental.UIElements;
 public class ActionManager
 {
     public ICharactor Charactor { get; private set; }
+    public CameraControl M_CameraControl { get; private set; }
     public IGeneral General { get; private set; }
     public IEqip Eqip { get; private set; }
     public IUnEqip UnEqip { get; private set; }
@@ -15,7 +16,7 @@ public class ActionManager
     public ActionManager(ICharactor charactor)
     {
         Charactor = charactor;
-        
+        M_CameraControl = Charactor.GetCameraControl();
     }
 
     public void SetAnimation(IGeneral general, IEqip eqip, IUnEqip unEqip)

@@ -25,32 +25,14 @@ namespace AIMgr.CharactorAIMgr
 {
     public abstract class IAIState
     {
-        
-    #region Protected_Variable
 
         protected ICharactorAI CharactorAi = null; //角色AI，状态拥有者
         
-    #endregion
-        
-
-        //----------------------------------------------------------------------
-
-        
-    #region Public_Methods
-
         //设置ICharactorAI对象
         public void SetCharactorAi(ICharactorAI charactorAi)
         {
             CharactorAi = charactorAi;
         }
-
-    #endregion
-        
-
-        //----------------------------------------------------------------------
-
-        
-    #region Virtual_Methods
 
         public virtual void SetAttackPosition(Vector3 attckPos)
         {
@@ -71,8 +53,6 @@ namespace AIMgr.CharactorAIMgr
         {
             //移除目标
         }
-
-    #endregion
 
     } //Class_End
     

@@ -9,34 +9,31 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.InteropServices;
+using GameAttr.Base;
 using M_CharactorSystem;
 using UnityEngine;
 
 namespace GameAttr.CharactorAttr
 {
-    public class PlayerAttr : ICharactorAttr {
+    public class PlayerAttr : ICharactorAttr
+    {
+        //每次升级新增加的血量
+        private int _addHp;
+        private int _addHarmValue;
+        //等级
+        private int _level;
 
-    #region Private_variable
-
-        private int _addHp = 0; //每次升级新增加的血量
-        private int _addHarmValue = 0;
-        private int _level = 1; //等级
-
-    #endregion
-        
-        
-        //------------------------------------------------------------------------------
-
-
-    #region Public_Methods
-
-        //建造者
-        public PlayerAttr()
+        public void SetPlayerAttr(BaseAttr baseAttr)
         {
-            InitHp = 100;
-            MaxHp = InitHp;
-            InitHarmValue = 10;
-            MaxHarmValue = InitHarmValue;
+            SetAttr(baseAttr);
+            _addHp = 0;
+            _addHarmValue = 0;
+        }
+
+
+        public void SetLevel(int level)
+        {
+            _level = level;
         }
 
         //获取等级
@@ -44,6 +41,8 @@ namespace GameAttr.CharactorAttr
         {
             return _level;
         }
+        
+        
 
         //提升等级
         public void AddLevel()
@@ -66,16 +65,14 @@ namespace GameAttr.CharactorAttr
         //获取最大生命值
         public override int GetMaxHp()
         {
-            return MaxHp + _addHp;
+            return base.GetMaxHp() + _addHp;
         }
         
-        //获取最大生命值
         public override int GetMaxHarmValue()
         {
             return MaxHarmValue + _addHarmValue;
         }
 
-    #endregion
         
     } //Class_End
 }

@@ -37,7 +37,7 @@ namespace GameAttr.AttrStrategy
             }
             
             theAttr.AddHp(addHp);
-            theAttr.Init(theAttr.GetMaxHp());
+            //theAttr.Init(theAttr.GetMaxHp());
         }
 
         //攻击加成

@@ -10,135 +10,180 @@
 
 using System.Collections;
 using System.Collections.Generic;
+using System.Resources;
 using M_CharactorSystem;
 using UnityEngine;
 using GameAttr.WeaponAttr;
 
-public abstract class IWeapon
+namespace M_WeaponSystem
 {
-	private Transform _lweapontrans; //角色武器的左手挂载点
-	private Transform _rweapontrans; //角色武器的右手挂载点
-
-	private Collider _colL; //角色左手武器碰撞器
-	private Collider _colR; //角色右手武器碰撞器
-
-	protected ICharactor WeaponOwner = null; //武器的拥有者
-
-	private WeaponAttr _lweaponAttr = null; //左手武器属性
-	private WeaponAttr _rweaponAttr = null; //右手武器属性
-
-
-	//设置武器手持挂载点信息
-	public void SetWeapon(Transform theTarget, out Transform lweapontrans, out Transform rweapontrans)
+	public abstract class IWeapon
 	{
-		_lweapontrans = UnityTool.DeepFind(theTarget, "weaponHandleL").transform;
-		_rweapontrans = UnityTool.DeepFind(theTarget, "weaponHandleR").transform;
+		private Transform _weapontrans; //角色武器的左手挂载点
+		//private Transform _rweapontrans; //角色武器的右手挂载点
 
-		lweapontrans = _lweapontrans;
-		rweapontrans = _rweapontrans;
-	}
+		private Collider _col; //角色左手武器碰撞器
+		//private Collider _colR; //角色右手武器碰撞器
 
-	//获取武器属性
-	public void GetWeaponAttr()
-	{
-		_colL = _lweapontrans.GetComponentInChildren<Collider>();
-		_colR = _rweapontrans.GetComponentInChildren<Collider>();
+		private ICharactor WeaponOwner = null; //武器的拥有者
 
-		if (_lweapontrans.childCount != 0)
+		private WeaponAttr _weaponAttr = null; //左手武器属性
+		//private WeaponAttr _rweaponAttr = null; //右手武器属性
+
+		private GameObject _weaponObject; //左手武器模型
+		//private GameObject _rweaponObject; //右手武器模型
+
+		//设置Unity模型
+		public void SetGameObject(GameObject lweaponObject)
 		{
-			_lweaponAttr = _lweapontrans.transform.GetChild(0).GetChild(0).GetComponent<WeaponAttr>();
+			_weaponObject = lweaponObject;
+			//_rweaponObject = rweaponObject;
 		}
 
-		if (_rweapontrans.childCount != 0)
+		public GameObject GetGameObject()
 		{
-			_rweaponAttr = _rweapontrans.transform.GetChild(0).GetChild(0).GetComponent<WeaponAttr>();
+			return _weaponObject;
 		}
-	}
 
-	//设置武器的拥有者
-	public void SetWeaponOwner(ICharactor theCharactor)
-	{
-		WeaponOwner = theCharactor;
-	}
-
-	/// <summary>
-	/// 取得武器的攻击力。0:L,1:R
-	/// </summary>
-	/// <param name="index">（0 or 1)</param>
-	/// <returns></returns>
-	public int GetAtkValue(int index)
-	{
-		if (index == 0 && _lweaponAttr)
+		public void SetWeaponAttr(WeaponAttr lAttr)
 		{
-			return _lweaponAttr.AtkValue;
+			_weaponAttr = lAttr;
+			//_rweaponAttr = rAttr;
 		}
-		else if (index == 1 && _rweaponAttr)
+
+//		//设置武器手持挂载点信息
+//		public void SetWeapon(Transform theTarget, out Transform lweapontrans, out Transform rweapontrans)
+//		{
+//			_lweapontrans = UnityTool.DeepFind(theTarget, "weaponHandleL").transform;
+//			_rweapontrans = UnityTool.DeepFind(theTarget, "weaponHandleR").transform;
+//
+//			lweapontrans = _lweapontrans;
+//			rweapontrans = _rweapontrans;
+//		}
+
+		//设置武器的拥有者
+		public void SetWeaponOwner(ICharactor theCharactor)
 		{
-			return _rweaponAttr.AtkValue;
+			WeaponOwner = theCharactor;
 		}
-		else
+
+	#region 获取武器属性旧代码
+
+		//_colL = _lweapontrans.GetComponentInChildren<Collider>();
+//		_colR = _rweapontrans.GetComponentInChildren<Collider>();
+//
+//		if (_lweapontrans.childCount != 0)
+//		{
+//			_lweaponAttr = _lweapontrans.transform.GetChild(0).GetChild(0).GetComponent<WeaponAttr>();
+//		}
+//
+//		if (_rweapontrans.childCount != 0)
+//		{
+//			_rweaponAttr = _rweapontrans.transform.GetChild(0).GetChild(0).GetComponent<WeaponAttr>();
+//		}
+
+	#endregion
+
+		//获取左手武器属性
+		public WeaponAttr GetWeaponAttr()
 		{
-			Debug.Log("武器属性获取未知错误");
-			return 0;
+			_col = _weaponObject.GetComponent<Collider>();
+			return _weaponAttr;
 		}
-	}
 
-    /// <summary>
-	/// 取得武器的防御力。0:L,1:R
-	/// </summary>
-	/// <param name="index"></param>
-	/// <returns></returns>
-	public int GetDefenseValue(int index)
-	{
-		if (index == 0 && _lweaponAttr)
+//		//获取右手武器属性
+//		public WeaponAttr GetRWeaponAttr()
+//		{
+//			_col = _weaponObject.GetComponent<Collider>();
+//			return _weaponAttr;
+//		}
+
+
+
+		/// <summary>
+		/// 取得武器的攻击力。0:L,1:R
+		/// </summary>
+		/// <param name="index">（0 or 1)</param>
+		/// <returns></returns>
+		public int GetAtkValue()
 		{
-			return _lweaponAttr.DedenseValue;
+//			if (index == 0 && _lweaponAttr != null)
+//			{
+//				return _lweaponAttr.AtkValue;
+//			}
+//			else if (index == 1 && _rweaponAttr != null)
+//			{
+//				return _rweaponAttr.AtkValue;
+//			}
+//			else
+//			{
+//				Debug.Log("武器属性获取未知错误");
+//				return 0;
+//			}
+			return _weaponAttr.AtkValue;
 		}
-		else if (index == 1 && _rweaponAttr)
+
+		/// <summary>
+		/// 取得武器的防御力。0:L,1:R
+		/// </summary>
+		/// <param name="index"></param>
+		/// <returns></returns>
+		public int GetDefenseValue()
 		{
-			return _rweaponAttr.DedenseValue;
+//			if (index == 0 && _lweaponAttr != null)
+//			{
+//				return _lweaponAttr.DefenseValue;
+//			}
+//			else if (index == 1 && _rweaponAttr != null)
+//			{
+//				return _rweaponAttr.DefenseValue;
+//			}
+//			else
+//			{
+//				Debug.Log("武器属性获取未知错误");
+//				return 0;
+//			}
+			return _weaponAttr.DefenseValue;
 		}
-		else
+
+
+		//武器攻击
+		public void WeaponAttack(ICharactor theTarget)
 		{
-			Debug.Log("武器属性获取未知错误");
-			return 0;
-		} 
+			theTarget.UnderAttack(WeaponOwner);
+		}
+
+
+		//-----------------------------------------------------------------------------
+
+
+		//设置武器是否具有攻击的效果
+		//为什么不让武器一直具备攻击的效果？
+		//因为攻击判定是靠触发器判断的，如果一直保持碰撞体的启用，有时会无意触发攻击效果
+
+	#region WeaponEnable
+
+//	//启用左武器的攻击功能
+//	public void LWeaponEnable()
+//	{
+//		_colL.enabled = true;
+//	}
+//
+//	//启用右武器的攻击功能
+//	public void RWeaponEnable()
+//	{
+//		_colR.enabled = true;
+//	}
+//
+//	//禁用武器触发功能
+//	public void WeaponDisenable()
+//	{
+//		_colL.enabled = false;
+//		_colR.enabled = false;
+//	}
+
+	#endregion
+
+
 	}
-
-
-	//武器攻击
-	public abstract void WeaponAttack(ICharactor theTarget);
-
-
-	//-----------------------------------------------------------------------------
-
-
-	//设置武器是否具有攻击的效果
-	//为什么不让武器一直具备攻击的效果？
-	//因为攻击判定是靠触发器判断的，如果一直保持碰撞体的启用，有时会无意触发攻击效果
-
-#region WeaponEnable
-
-	//启用左武器的攻击功能
-	public void LWeaponEnable()
-	{
-		_colL.enabled = true;
-	}
-
-	//启用右武器的攻击功能
-	public void RWeaponEnable()
-	{
-		_colR.enabled = true;
-	}
-
-	//禁用武器触发功能
-	public void WeaponDisenable()
-	{
-		_colL.enabled = false;
-		_colR.enabled = false;
-	}
-
-#endregion
-
-	
 }

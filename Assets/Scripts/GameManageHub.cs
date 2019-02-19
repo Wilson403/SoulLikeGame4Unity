@@ -10,21 +10,50 @@
 using System.Collections;
 using System.Collections.Generic;
 using System.Runtime.CompilerServices;
+using M_CharactorSystem;
+using M_CharactorSystem.CharactorBuilder;
+using M_CharactorSystem.M_Player;
 using UnityEngine;
 
 public class GameManageHub
 {
-	#region 单例模式（singleton mode）
-
 	private static GameManageHub _instance;
-    public static GameManageHub GetInstance()
+	private CharactorSystem _charactorSystem = null;
+	
+	public static GameManageHub GetInstance()
 	{
-		if (_instance == null)
-		{
+		if(_instance == null)
 			_instance = new GameManageHub();
-		}
-
 		return _instance;
 	}
-	#endregion
+
+	public void Awake()
+	{
+		_charactorSystem = new CharactorSystem(this);
+	}
+
+	public void Start()
+	{
+		_charactorSystem.Initialize();
+	}
+
+	public void Update()
+	{
+		_charactorSystem.Update();
+	}
+
+	public void FixedUpdate()
+	{
+		_charactorSystem.FixedUpdate();
+	}
+
+	public void Release()
+	{
+		
+	}
+
+	public void AddPlayer(IPlayer theCharactor)
+	{
+		_charactorSystem.AddPlayer(theCharactor);
+	}
 }

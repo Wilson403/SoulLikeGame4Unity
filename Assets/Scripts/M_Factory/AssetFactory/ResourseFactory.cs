@@ -22,7 +22,7 @@ namespace M_Factory.AssetFactory
         public const string EnemyPath = "Charactor/Enemy";
 
         //武器路径
-        public const string WeaponPath = "Charactor/Weapon";
+        public const string WeaponPath = "Weapon";
 
 
         //==========================================================================

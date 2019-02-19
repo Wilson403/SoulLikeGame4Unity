@@ -13,61 +13,52 @@ using System.Collections.Generic;
 using M_CharactorSystem;
 using UnityEngine;
 using GameAttr.AttrStrategy;
+using GameAttr.Base;
 
 namespace GameAttr.CharactorAttr
 {
     public abstract class ICharactorAttr
     {
-
-    #region Protected_variable
-
-        protected int InitHp; //初始最大生命值
-        protected int MaxHp;
+        protected BaseAttr m_BaseAttr = null;
         protected int InitHarmValue;
         protected int MaxHarmValue;
-        
-    #endregion
-
-
-        //------------------------------------------------------------------------------
-
-
-    #region Private_variable
-
         private int _nowHp; //当前生命值
         private IAttrStrategy _attrStrategy = null; //属性的计算策略
 
-    #endregion
+        //设置基础属性
+        public void SetAttr(BaseAttr baseAttr)
+        {
+            m_BaseAttr = baseAttr;
+        }
 
-
-        //------------------------------------------------------------------------------
-
-
-    #region Public_Methods
+        //取得基础属性
+        public BaseAttr GetAttr()
+        {
+            return m_BaseAttr;
+        }
 
         //设置计算策略
         public void SetAttrStrategy(IAttrStrategy theAttrStrategy)
         {
             _attrStrategy = theAttrStrategy;
         }
-
-        //血量初始化
-        public void Init(int maxHp)
+        
+        //获取当前生命最大值
+        public virtual int GetMaxHp()
         {
-            MaxHp = maxHp;
-            _nowHp = MaxHp;
+            return m_BaseAttr.GetMaxHp();
+        }
+
+        //回满血
+        public void FullHp()
+        {
+            _nowHp = GetMaxHp();
         }
 
         //获取当前生命值
         public int GetNowHp()
         {
             return _nowHp;
-        }
-
-        //获取当前生命最大值
-        public virtual int GetMaxHp()
-        {
-            return MaxHp;
         }
 
         public virtual int GetMaxHarmValue()
@@ -79,6 +70,7 @@ namespace GameAttr.CharactorAttr
         public void InitAttr()
         {
             _attrStrategy.InitAttr(this);
+            FullHp();
         }
 
         //得到伤害附加值
@@ -91,14 +83,33 @@ namespace GameAttr.CharactorAttr
         public void GetRemainHp(ICharactor theAttacker)
         {
             //获取攻击者的攻击力
-            int atkValue = theAttacker.GetAtkValue();
+            var atkValue = theAttacker.GetAtkValue();
             //减少伤害值
             atkValue -= _attrStrategy.GetDmgDesValue(this);
             //计算生命值
             _nowHp -= atkValue;
         }
 
-    #endregion
+        public float GetWalkSpeed()
+        {
+            return m_BaseAttr.GetWalkSpeed();
+        }
+
+        public float GetRunSpeed()
+        {
+            return m_BaseAttr.GetRunSpeed();
+        }
+
+        public float GetJumpHeight()
+        {
+            return m_BaseAttr.GetJumpHeight();
+        }
+
+        public string GetAssetName()
+        {
+            return m_BaseAttr.GetAssetName();
+        }
+
 
     }
 

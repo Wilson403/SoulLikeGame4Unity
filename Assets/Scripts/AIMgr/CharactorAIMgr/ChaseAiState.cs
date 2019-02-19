@@ -17,17 +17,16 @@ namespace AIMgr.CharactorAIMgr
     public class ChaseAiState : IAIState
     {
         
-    #region Private_Variable
+   
         
         private readonly ICharactor _chasetarget = null; //追击的目标
         
-    #endregion
+
         
         
-        //----------------------------------------------------------------------
+      
         
-        
-    #region Public_Methods
+    
         
         //建造者
         public ChaseAiState(ICharactor theTarget)
@@ -35,13 +34,7 @@ namespace AIMgr.CharactorAIMgr
             _chasetarget = theTarget;
         }
         
-    #endregion
-        
-        
-        //----------------------------------------------------------------------
-        
-        
-    #region Override_Methods
+    
         
         public override void Start()
         {
@@ -72,10 +65,10 @@ namespace AIMgr.CharactorAIMgr
                 CharactorAi.ChangeAiState(new IdleAIState());
             }
 
-            CharactorAi.Moveto(_chasetarget.transform.position);
+            CharactorAi.Moveto(_chasetarget.GetModel().transform.position);
         }
 
-    #endregion
+
         
     } //Class_End
 	
