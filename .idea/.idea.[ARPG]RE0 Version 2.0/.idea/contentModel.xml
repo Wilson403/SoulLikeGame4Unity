@@ -37,6 +37,7 @@
           </e>
           <e p="GameAttr" t="Include">
             <e p="AttrStrategy" t="Include">
+              <e p="EnemyAttrStrategy.cs" t="Include" />
               <e p="IAttrStrategy.cs" t="Include" />
               <e p="PlayerAttrStrategy.cs" t="Include" />
             </e>

@@ -22,6 +22,10 @@ namespace M_Factory.CharactorFactory
         public abstract Player CreatePlayer(Vector3 spawnPos, int lv, WeaponType ltype, WeaponType rtype);
        
         //产生敌方角色
-        public abstract Enemy CreateEnemy();
+        public abstract Enemy CreateEnemy(Vector3 spawnPos);
+
+        public abstract IPlayer GetPlayer(int key);
+
+        public abstract IEnemy GetEnemy(int key);
     } 
 } 

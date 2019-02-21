@@ -15,16 +15,12 @@ namespace AIMgr.CharactorAIMgr
         }
 
         //检测是否进入了进攻范围
-        public override bool TargetRange(ICharactor theNearTarget,int range)
+        public override bool TargetRange(ICharactor theNearTarget, int range)
         {
-            float targetdist;
-            targetdist = Vector3.Distance(TheTarget.GetModel().transform.position, theNearTarget.GetModel().transform.position);
-            if (targetdist <= range)
-            {
-                return true;
-            }
+            var targetdist = Vector3.Distance(TheTarget.GetModel().transform.position,
+                theNearTarget.GetModel().transform.position);
 
-            return false;
+            return targetdist <= range;
         }
     }
 }

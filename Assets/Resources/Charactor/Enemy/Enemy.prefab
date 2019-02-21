@@ -1014,7 +1014,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!1 &1746815283490262
 GameObject:
   m_ObjectHideFlags: 1
@@ -1221,7 +1221,7 @@ GameObject:
   - component: {fileID: 95683176485243622}
   - component: {fileID: 114923727408747320}
   m_Layer: 9
-  m_Name: ybot
+  m_Name: model
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2528,7 +2528,7 @@ Animator:
   m_GameObject: {fileID: 1956037458805334}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: 2f9d958fbcd96e44ca35a77a15e3187a, type: 3}
-  m_Controller: {fileID: 9100000, guid: 9f318693acac3cb458a1fd3d974229ca, type: 2}
+  m_Controller: {fileID: 9100000, guid: 07898b806f6b176408d8a89fb7f509f3, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 1
   m_ApplyRootMotion: 0

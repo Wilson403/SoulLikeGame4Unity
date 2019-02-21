@@ -27,9 +27,9 @@ namespace AIMgr.CharactorAIMgr
 
         public override void Update(List<ICharactor> targets)
         {
-            Vector3 nowPosition = CharactorAi.GetPosition();
+            var nowPosition = CharactorAi.GetPosition();
             ICharactor theNearTarget = null;
-            float minDist = 999f;
+            var minDist = 999f;
 
             foreach (var target in targets)
             {
@@ -38,7 +38,7 @@ namespace AIMgr.CharactorAIMgr
                     if (target.BKilled)
                         continue;
 
-                    float dist = Vector3.Distance(nowPosition, target.GetModel().transform.position);
+                    var dist = Vector3.Distance(nowPosition, target.GetModel().transform.position);
                     if (dist < minDist)
                     {
                         minDist = dist;
@@ -55,14 +55,14 @@ namespace AIMgr.CharactorAIMgr
             }
 
             //如果检测到目标在攻击范围内，则切换到攻击状态
-            if (CharactorAi.TargetRange(theNearTarget,2))
+            if (CharactorAi.TargetRange(theNearTarget, 2))
             {
                 CharactorAi.ChangeAiState(new AttackAIState(theAttackTarget: theNearTarget));
             }
             else //如果不在攻击范围内则切换到追赶状态
             {
                 //在有效视野内才可以进行锁定追击
-                if (CharactorAi.UsefulView(theNearTarget) < 90)
+                if (CharactorAi.UsefulView(theNearTarget) < 90 && !CharactorAi.UsefulPath())
                 {
                     CharactorAi.StopMove();
                     CharactorAi.ChangeAiState(new ChaseAiState(theTarget: theNearTarget));

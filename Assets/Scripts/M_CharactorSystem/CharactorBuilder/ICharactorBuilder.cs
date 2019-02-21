@@ -51,5 +51,10 @@ namespace M_CharactorSystem.CharactorBuilder
         /// 加入武器
         /// </summary>
         public abstract void AddWeapon();
+
+        /// <summary>
+        /// 加入AI
+        /// </summary>
+        public virtual void AddAI(){}
     } 
 } 

@@ -33,6 +33,7 @@ public class GameLoop : MonoBehaviour {
         //设置初始场景
         GameManageHub.GetInstance().Awake();
         CreatePlayer();
+        CreateEnemy();
        
       //  _controller.SetState("", new LogoMenuState(_controller));
     }
@@ -55,11 +56,18 @@ public class GameLoop : MonoBehaviour {
         GameManageHub.GetInstance().FixedUpdate();
     }
 
-    public void CreatePlayer()
+    private void CreatePlayer()
     {
         var factory = MainFactory.GetCharactorFactory();
         factory.CreatePlayer(Vector3.zero, 10, WeaponType.Shield, WeaponType.Sword);
+        
     }
 
-   
+    private void CreateEnemy()
+    {
+        var factory = MainFactory.GetCharactorFactory();
+        factory.CreateEnemy(new Vector3(50, 0, 50));
+    }
+
+
 }

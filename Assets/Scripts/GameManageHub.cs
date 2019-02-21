@@ -12,6 +12,7 @@ using System.Collections.Generic;
 using System.Runtime.CompilerServices;
 using M_CharactorSystem;
 using M_CharactorSystem.CharactorBuilder;
+using M_CharactorSystem.M_Enemy;
 using M_CharactorSystem.M_Player;
 using UnityEngine;
 
@@ -55,5 +56,10 @@ public class GameManageHub
 	public void AddPlayer(IPlayer theCharactor)
 	{
 		_charactorSystem.AddPlayer(theCharactor);
+	}
+
+	public void AddEnemy(IEnemy theCharactor)
+	{
+		_charactorSystem.AddEnemy(theCharactor);
 	}
 }

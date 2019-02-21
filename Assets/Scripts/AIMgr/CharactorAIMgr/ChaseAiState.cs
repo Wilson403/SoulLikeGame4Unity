@@ -11,22 +11,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using M_CharactorSystem;
+using M_CharactorSystem.M_Enemy;
+using UnityEngine.AI;
 
 namespace AIMgr.CharactorAIMgr
 {
     public class ChaseAiState : IAIState
     {
-        
-   
-        
         private readonly ICharactor _chasetarget = null; //追击的目标
-        
-
-        
-        
-      
-        
-    
         
         //建造者
         public ChaseAiState(ICharactor theTarget)
@@ -34,7 +26,6 @@ namespace AIMgr.CharactorAIMgr
             _chasetarget = theTarget;
         }
         
-    
         
         public override void Start()
         {
@@ -61,6 +52,11 @@ namespace AIMgr.CharactorAIMgr
 
             //追赶的目标距离过远，回到待机
             if (!CharactorAi.TargetRange(_chasetarget, 15))
+            {
+                CharactorAi.ChangeAiState(new IdleAIState());
+            }
+
+            if (CharactorAi.UsefulPath())
             {
                 CharactorAi.ChangeAiState(new IdleAIState());
             }

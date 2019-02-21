@@ -25,33 +25,51 @@ namespace AIMgr.CharactorAIMgr
 {
     public abstract class IAIState
     {
-
-        protected ICharactorAI CharactorAi = null; //角色AI，状态拥有者
+        //角色AI，状态拥有者
+        protected ICharactorAI CharactorAi = null; 
         
-        //设置ICharactorAI对象
+        /// <summary>
+        /// 设置ICharactorAI对象
+        /// </summary>
+        /// <param name="charactorAi"></param>
         public void SetCharactorAi(ICharactorAI charactorAi)
         {
             CharactorAi = charactorAi;
         }
 
+        /// <summary>
+        /// 设置要攻击的目标
+        /// </summary>
+        /// <param name="attckPos"></param>
         public virtual void SetAttackPosition(Vector3 attckPos)
         {
-            //设置要攻击的目标
+            
         }
 
+        /// <summary>
+        /// 只执行一次（非Unity生命周期函数Start）
+        /// </summary>
         public virtual void Start()
         {
-            //只执行一次（非Unity生命周期函数Start）
+            
         }
 
+        /// <summary>
+        /// 更新（非Unity生命周期函数Update）
+        /// </summary>
+        /// <param name="targets"></param>
         public virtual void Update(List<ICharactor> targets)
         {
-            //更新（非Unity生命周期函数Update）
+            
         }
 
+        /// <summary>
+        /// 移除目标
+        /// </summary>
+        /// <param name="target"></param>
         public virtual void RemoveTarget(ICharactor target)
         {
-            //移除目标
+            
         }
 
     } //Class_End

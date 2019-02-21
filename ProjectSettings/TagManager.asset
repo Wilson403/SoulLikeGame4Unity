@@ -7,6 +7,7 @@ TagManager:
   - Enemy
   - Close-in Weapon
   - Shield
+  - WallPoints
   layers:
   - Default
   - TransparentFX

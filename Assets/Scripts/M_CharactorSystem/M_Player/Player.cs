@@ -16,7 +16,7 @@ namespace M_CharactorSystem.M_Player
 	{
 		public Player()
 		{
-			m_Name = "Soldier";
+			m_Name = "Soldier001";
 			m_Assetname = "Player";
 			m_AttrID = 1;
 		}

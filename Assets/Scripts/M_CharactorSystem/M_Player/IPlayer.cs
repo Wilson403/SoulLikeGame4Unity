@@ -14,13 +14,6 @@ namespace M_CharactorSystem.M_Player
        
         public bool BArmedSword = false;
 
-//		[Header("===剑设置===")] 
-//		
-//		public GameObject Sword;
-//
-//		[Header("===盾设置===")] 
-//		
-//		public GameObject Shield;
 
         protected float _currentValue; //动画权重的当前值
         protected Vector3 _jumpVec; //跳跃高度
@@ -34,7 +27,16 @@ namespace M_CharactorSystem.M_Player
             get { return m_Controller; }
         }
 
-        public virtual void Init()
+        public override void SetCharactorModel(GameObject go)
+        {
+            base.SetCharactorModel(go);
+            
+            m_CameraPoint = m_CharactorHandle.transform.Find("CameraController").GetChild(0).gameObject;
+			_animationeventMgr = m_Model.GetComponent<AnimationEventMgr>();
+            _animationeventMgr.SetCharactor(this);
+        }
+
+        public override void Init()
         {
             //首帧就要检查是否位于地面
             CheckBOnGround();
@@ -43,12 +45,12 @@ namespace M_CharactorSystem.M_Player
             SetWeaponPos();
         }
         
-        public virtual void Update()
+        public override void Update()
         {
             ChangeController();
             Controller.Update(); //控制器内部更新逻辑
             BCanMove(); 
-           // BFollowObject();
+            BFollowObject();
             CheckBOnGround();
             
             //触发锁定，相机会锁定敌人

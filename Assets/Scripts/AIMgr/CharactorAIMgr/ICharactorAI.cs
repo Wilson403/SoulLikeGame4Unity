@@ -7,9 +7,12 @@
  * 修改记录 ：None
  */
 
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using GameAttr.CharactorAttr;
 using M_CharactorSystem;
+using M_Factory;
 using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
@@ -31,6 +34,8 @@ namespace AIMgr.CharactorAIMgr
         private GameObject m_GameObject;
         public AiState CurAiState { get; private set; } //当前Ai状态
 
+        private NavMeshPathStatus _pathStatus;
+
 
         //更换AI状态
         public virtual void ChangeAiState(IAIState state)
@@ -40,6 +45,7 @@ namespace AIMgr.CharactorAIMgr
             _beginRunStart = true;
         }
 
+        
         //AI状态更新
         public virtual void Update(List<ICharactor> targets)
         {
@@ -69,6 +75,18 @@ namespace AIMgr.CharactorAIMgr
         {
             TheTarget = theTarget;
             m_GameObject = TheTarget.GetModel();
+        }
+
+        public ICharactor GetAICharactor()
+        {
+            return TheTarget;
+        }
+
+        public bool UsefulPath()
+        {
+            _pathStatus = TheTarget.GetAgent().pathStatus;
+            return _pathStatus == NavMeshPathStatus.PathInvalid ||
+                    _pathStatus == NavMeshPathStatus.PathPartial;
         }
 
         //设置Ai状态

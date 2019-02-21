@@ -25,16 +25,8 @@ namespace M_Factory.CharactorFactory
         private readonly CharactorBuildSystem theCharactorBuildSystem =
             new CharactorBuildSystem(GameManageHub.GetInstance());
 
-        private void InitPlayer()
-        {
-            m_PlayerDict.Add(1, new Player());
-        }
-
-        private void InitEnemy()
-        {
-            m_EnemyDict.Add(1, new Enemy());
-        }
-
+        private int a = 0;
+        
         //产生玩家角色
         public override Player CreatePlayer(Vector3 spawnPos, int lv, WeaponType ltype, WeaponType rtype)
         {
@@ -52,14 +44,52 @@ namespace M_Factory.CharactorFactory
 
             theCharactorBuildSystem.ConstructPlayer(theBuilder);
 
+            m_PlayerDict.Add(theParam.GameObjectID, (IPlayer) theParam.NewCharactor);
+
             return (Player) theParam.NewCharactor;
         }
 
         //产生敌方角色
-        public override Enemy CreateEnemy()
+        public override Enemy CreateEnemy(Vector3 spawnPos)
         {
-            var theParam = new EnemyBuildParam();
-            return null;
+            var theParam = new EnemyBuildParam()
+            {
+                NewCharactor = new Enemy(),
+                SpawnPosition = spawnPos,
+                //LWeaponType = ltype,
+                //RWeaponType = rtype
+            };
+
+            var theBuilder = new EnemyBuilder();
+            theBuilder.SetBuildParam(theParam);
+
+            theCharactorBuildSystem.ConstructEnemy(theBuilder);
+
+            m_EnemyDict.Add(theParam.GameObjectID, (IEnemy) theParam.NewCharactor);
+
+            return (Enemy) theParam.NewCharactor;
+        }
+
+        public override IPlayer GetPlayer(int key)
+        {
+            if (!m_PlayerDict.ContainsKey(key))
+            {
+                Debug.Log("Player未知Key");
+                return null;
+            }
+
+            return m_PlayerDict[key];
+        }
+
+        public override IEnemy GetEnemy(int key)
+        {
+            if (!m_EnemyDict.ContainsKey(key))
+            {
+                Debug.Log("Enemy未知key");
+                return null;
+            }
+            
+            return m_EnemyDict[key];
         }
     }
 } 

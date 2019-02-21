@@ -7,6 +7,7 @@ using GameAttr.CharactorAttr;
 using M_AnimationManager;
 using M_ControllerSystem;
 using M_WeaponSystem;
+using UnityEngine.AI;
 
 namespace M_CharactorSystem
 {
@@ -80,21 +81,22 @@ namespace M_CharactorSystem
 		public Transform m_SwordPos;
 		public Transform m_ShieldPos;
 
-		private AnimationEventMgr _animationeventMgr;
+		protected AnimationEventMgr _animationeventMgr;
+		protected NavMeshAgent _agent; //代理组件
 
+		public abstract void Init();
+		public abstract void Update();
+		
 		//设置模型-
-		public void SetCharactorModel(GameObject go)
+		public virtual void SetCharactorModel(GameObject go)
 		{
 			m_CharactorHandle = go;
 			m_Model = m_CharactorHandle.transform.Find("model").gameObject;
 			
 			Sensor = m_CharactorHandle.transform.Find("Sensor").gameObject;
-			m_CameraPoint = m_CharactorHandle.transform.Find("CameraController").GetChild(0).gameObject;
 			m_Col = m_CharactorHandle.GetComponent<CapsuleCollider>();
 			m_Rig = m_CharactorHandle.GetComponent<Rigidbody>();
 			m_Animator = m_Model.GetComponent<Animator>();
-			_animationeventMgr = m_Model.GetComponent<AnimationEventMgr>();
-			_animationeventMgr.SetCharactor(this);
 		}
 		
 		//设置武器的挂载点信息
@@ -258,21 +260,16 @@ namespace M_CharactorSystem
 			return m_RWeapon.GetGameObject().transform;
 		}
 
-		//攻击
-		public void Attack(ICharactor theTarget)
-		{
-			//m_Weapon.WeaponAttack(theTarget);
-		}
-		
-		
+	#region SetAI
+
 		//设置AI
-		public void SetAiTarget(ICharactorAI theAiTarget)
+		public void SetCharactorAI(ICharactorAI theAi)
 		{
-			m_AI = theAiTarget;
+			m_AI = theAi;
 		}
 
 		//更新AI
-		public void AiStateUpdate(List<ICharactor> targets)
+		protected void AiStateUpdate(List<ICharactor> targets)
 		{
 			m_AI.Update(targets);
 		}
@@ -282,6 +279,17 @@ namespace M_CharactorSystem
 		{
 			m_AI.RemoveAiTarget(theTarget);
 		}
+
+	#endregion
+		
+		//攻击
+		public virtual void Attack(ICharactor theTarget)
+		{
+			//m_Weapon.WeaponAttack(theTarget);
+		}
+		
+		
+		
 		
 		//设置角色属性
 		public void SetCharactorAttr(ICharactorAttr theCharactorAttr)
@@ -298,7 +306,7 @@ namespace M_CharactorSystem
 		//拥有武器的角色要在重写方法中加入武器伤害的计算
 		public virtual int GetAtkValue()
 		{
-			return m_Attribute.GetMaxHarmValue();
+			return m_Attribute.GetMaxHarmValue() + m_Attribute.GetAtkplusValue();
 		}
 
 		//停止移动
@@ -332,7 +340,10 @@ namespace M_CharactorSystem
 		{
 			
 		}
-
+		public NavMeshAgent GetAgent()
+		{
+			return _agent;
+		}
 
 		/// <summary>
 		/// 检查是否位于地面

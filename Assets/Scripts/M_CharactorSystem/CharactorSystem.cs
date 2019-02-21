@@ -41,6 +41,11 @@ namespace M_CharactorSystem
             {
                 player.Init();
             }
+            
+            foreach (var enemy in _enemies)
+            {
+                enemy.Init();
+            }
         }
 
         public override void Update()
@@ -52,7 +57,7 @@ namespace M_CharactorSystem
 
             foreach (var enemy in _enemies)
             {
-                
+                enemy.Update();
             }
         }
 

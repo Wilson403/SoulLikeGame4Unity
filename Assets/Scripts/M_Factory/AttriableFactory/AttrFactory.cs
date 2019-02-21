@@ -13,7 +13,7 @@ namespace M_Factory.AttriableFactory
     public class AttrFactory : IAttrFactory
     {
         private Dictionary<int, BaseAttr> PlayerDB;
-        private Dictionary<int, BaseAttr> EnemyDB;
+        private Dictionary<int, BaseEnemyAttr> EnemyDB; 
         private Dictionary<int, WeaponAttr> WeaponDB;
 
         public AttrFactory()
@@ -23,6 +23,7 @@ namespace M_Factory.AttriableFactory
             InitWeaponAttr();
         }
 
+        //初始化玩家基础属性
         private void InitPlayerAttr()
         {
             PlayerDB = new Dictionary<int, BaseAttr>()
@@ -31,14 +32,18 @@ namespace M_Factory.AttriableFactory
             };
         }
         
+        //初始化敌人基础属性
         private void InitEnemyAttr()
         {
-            EnemyDB = new Dictionary<int, BaseAttr>()
+            EnemyDB = new Dictionary<int, BaseEnemyAttr>()
             {
-                {1, new BaseEnemyAttr(2, 4, 2, "EnemyB", 100)}
+                {1, new BaseEnemyAttr(2, 4, 2, "EnemyA", 100, 5)},
+                {2, new BaseEnemyAttr(2, 4, 2, "EnemyB", 200, 10)},
+                {3, new BaseEnemyAttr(2, 4, 2, "EnemyC", 300, 15)}
             };
         }
         
+        //初始化武器的属性
         private void InitWeaponAttr()
         {
             WeaponDB = new Dictionary<int, WeaponAttr>()
@@ -48,6 +53,7 @@ namespace M_Factory.AttriableFactory
             };
         }
 
+        //获取玩家的基础属性
         public override PlayerAttr GetPlayerAttr(int attrID)
         {
             if (!PlayerDB.ContainsKey(attrID)) return null;
@@ -56,14 +62,16 @@ namespace M_Factory.AttriableFactory
             return playerAttr;
         }
 
+        //获取敌人的基础属性
         public override EnemyAttr GetEnemyAttr(int attrID)
         {
             if (!EnemyDB.ContainsKey(attrID)) return null;
             var enemyAttr = new EnemyAttr();
-            //enemyAttr.SetPlayerAttr(PlayerDB[attrID]);
-            return null;
+            enemyAttr.SetEnemyAttr(EnemyDB[attrID]);
+            return enemyAttr;
         }
 
+        //获取武器的属性
         public override WeaponAttr GetWeaponAttr(int attrID)
         {
             if (!WeaponDB.ContainsKey(attrID)) return null;

@@ -41,6 +41,7 @@ namespace M_CharactorSystem.CharactorBuilder
            go.gameObject.name = "Player" + gameobjectID;
            
            _theParam.NewCharactor.SetCharactorModel(go);
+           _theParam.GameObjectID = go.GetInstanceID();
        }
 
        public override void AddCamera()
