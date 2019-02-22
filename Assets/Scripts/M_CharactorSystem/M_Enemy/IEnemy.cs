@@ -16,6 +16,7 @@ namespace M_CharactorSystem.M_Enemy
         protected float FindRadius = 10; //寻敌范围
         protected float StayTime = 2f;
         protected float Timer = 0.0f;
+        private EnemyAnimEvent _enemyAnimEvent;
 
         protected List<ICharactor> Targets; //捕捉到的目标列表
 
@@ -31,6 +32,9 @@ namespace M_CharactorSystem.M_Enemy
         public override void Init()
         {
             CheckBOnGround();
+            SetWeaponPoint();
+            SetWeaponPos();
+            
             WallpointNetWork = GameObject.FindWithTag("WallPoints").GetComponent<AIWallPointNetWork>();
             if (!WallpointNetWork) Debug.Log("路径网格获取失败");
         }
@@ -39,13 +43,51 @@ namespace M_CharactorSystem.M_Enemy
 
         public override void Update()
         {
-
+            
+        }
+        
+        public override int GetAtkValue()
+        {
+           return base.GetAtkValue() + GetWeaponAtkValue(1);
+   
         }
 
+        protected override void SetWeaponPoint()
+        {
+            m_Lweapontrans = UnityTool.DeepFind(m_Model.transform, "weaponHandleL").transform;
+            m_Rweapontrans = UnityTool.DeepFind(m_Model.transform, "weaponHandleR").transform;
+        }
+        
+        protected override void SetWeaponPos()
+        {
+            var lweapon = GetLWeaponModel();
+            UnityTool.SetParent(m_Lweapontrans, lweapon);
+
+            var rweapon = GetRWeaponModel();
+            UnityTool.SetParent(m_Rweapontrans, rweapon);
+        }
+        
         public override void SetCharactorModel(GameObject go)
         {
             base.SetCharactorModel(go);
             _agent = m_CharactorHandle.GetComponent<NavMeshAgent>();
+            
+            _enemyAnimEvent = m_Model.GetComponent<EnemyAnimEvent>();
+            _enemyAnimEvent.SetCharactor(this);
+        }
+        
+        public override void UnderAttack(ICharactor theTarget)
+        {
+           
+            m_Animator.SetTrigger("UnderAttack");
+            //计算伤害值
+            m_Attribute.GetRemainHp(theTarget);
+            if (m_Attribute.GetNowHp() <= 0)
+            {
+                m_Animator.SetBool("BDead", true);
+                BKilled = true;
+                
+            }
         }
     }
 } 

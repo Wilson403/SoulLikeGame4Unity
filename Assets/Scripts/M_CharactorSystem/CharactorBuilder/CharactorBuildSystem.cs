@@ -36,7 +36,7 @@ namespace M_CharactorSystem.CharactorBuilder
         {
             theBuilder.LoadAsset(++_gameobjectID);
             theBuilder.AddCharactorAttr();
-            //theBuilder.AddWeapon();
+            theBuilder.AddWeapon();
             theBuilder.AddAI();
             theBuilder.AddCharactorSystem(Hub);
         }

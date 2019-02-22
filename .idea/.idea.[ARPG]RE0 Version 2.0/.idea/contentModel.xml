@@ -17,15 +17,14 @@
             <e p="CharactorAIMgr" t="Include">
               <e p="AttackAIState.cs" t="Include" />
               <e p="ChaseAiState.cs" t="Include" />
+              <e p="DeadAIState.cs" t="Include" />
               <e p="EnemyAI.cs" t="Include" />
               <e p="IAIState.cs" t="Include" />
               <e p="ICharactorAI.cs" t="Include" />
               <e p="IdleAIState.cs" t="Include" />
-              <e p="MoveAIState.cs" t="Include" />
             </e>
           </e>
           <e p="AnimationEventMgr.cs" t="Include" />
-          <e p="AttackedTrigger.cs" t="Include" />
           <e p="BaseClass" t="Include">
             <e p="IGameSystem.cs" t="Include" />
           </e>
@@ -84,6 +83,7 @@
               <e p="PlayerBuilder.cs" t="Include" />
             </e>
             <e p="CharactorSystem.cs" t="Include" />
+            <e p="EnemyAttackedTrigger.cs" t="Include" />
             <e p="ICharactor.cs" t="Include" />
             <e p="M_Enemy" t="Include">
               <e p="Enemy.cs" t="Include" />
@@ -94,6 +94,7 @@
               <e p="IPlayer.cs" t="Include" />
               <e p="Player.cs" t="Include" />
             </e>
+            <e p="PlayerAttackedTrigger.cs" t="Include" />
           </e>
           <e p="M_ControllerSystem" t="Include">
             <e p="IController.cs" t="Include" />

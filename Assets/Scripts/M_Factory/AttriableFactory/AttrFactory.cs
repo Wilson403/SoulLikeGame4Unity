@@ -37,9 +37,9 @@ namespace M_Factory.AttriableFactory
         {
             EnemyDB = new Dictionary<int, BaseEnemyAttr>()
             {
-                {1, new BaseEnemyAttr(2, 4, 2, "EnemyA", 100, 5)},
-                {2, new BaseEnemyAttr(2, 4, 2, "EnemyB", 200, 10)},
-                {3, new BaseEnemyAttr(2, 4, 2, "EnemyC", 300, 15)}
+                {1, new BaseEnemyAttr(2, 4, 2, "EnemyA", 100, 0)},
+                {2, new BaseEnemyAttr(2, 4, 2, "EnemyB", 200, 5)},
+                {3, new BaseEnemyAttr(2, 4, 2, "EnemyC", 300, 10)}
             };
         }
         

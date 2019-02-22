@@ -32,6 +32,7 @@ public class GameLoop : MonoBehaviour {
         
         //设置初始场景
         GameManageHub.GetInstance().Awake();
+        Cursor.lockState = CursorLockMode.Locked; 
         CreatePlayer();
         CreateEnemy();
        
@@ -59,14 +60,14 @@ public class GameLoop : MonoBehaviour {
     private void CreatePlayer()
     {
         var factory = MainFactory.GetCharactorFactory();
-        factory.CreatePlayer(Vector3.zero, 10, WeaponType.Shield, WeaponType.Sword);
+        factory.CreatePlayer(new Vector3(10,0,10), 10, WeaponType.Shield, WeaponType.Sword);
         
     }
 
     private void CreateEnemy()
     {
         var factory = MainFactory.GetCharactorFactory();
-        factory.CreateEnemy(new Vector3(50, 0, 50));
+        factory.CreateEnemy(new Vector3(50, 0, 50), WeaponType.Shield, WeaponType.Sword);
     }
 
 

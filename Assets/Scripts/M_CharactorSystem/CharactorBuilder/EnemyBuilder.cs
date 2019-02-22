@@ -42,7 +42,7 @@ namespace M_CharactorSystem.CharactorBuilder
            
             _theParam.NewCharactor.SetCharactorModel(go);
 
-            _theParam.GameObjectID = go.GetInstanceID();
+            _theParam.CharactorID = go.GetInstanceID();
         }
 
         //加入角色管理器
@@ -65,10 +65,14 @@ namespace M_CharactorSystem.CharactorBuilder
         {
             //取得武器工厂
             var weaponFactory = MainFactory.GetWeaponFactory();
-           
+            var weapon = weaponFactory.CreatWeapon(_theParam.RWeaponType);
+            var weapongo = weapon.GetGameObject();
+            
             //左右手武器的设置
             _theParam.NewCharactor.SetLWeapon(weaponFactory.CreatWeapon(_theParam.LWeaponType));
-            _theParam.NewCharactor.SetRWeapon(weaponFactory.CreatWeapon(_theParam.RWeaponType));
+            _theParam.NewCharactor.SetRWeapon(weapon);
+
+            _theParam.WeaponID = weapongo.GetInstanceID();
         }
 
         public override void AddAI()

@@ -37,11 +37,16 @@ namespace AIMgr.CharactorAIMgr
         //配合动画事件调整锁敌频率(未实现)
         public override void Update(List<ICharactor> targets)
         {
+            base.Update(targets);
             CharactorAi.LookTarget(_attackTarget);
             
             if (CharactorAi.TargetRange(_attackTarget,2))
             {
                 CharactorAi.Attack(_attackTarget);
+                if (_attackTarget.GetHpState())
+                {
+                    CharactorAi.ChangeAiState(new IdleAIState());
+                }
             }
             else
             {

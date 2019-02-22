@@ -27,6 +27,7 @@ namespace AIMgr.CharactorAIMgr
 
         public override void Update(List<ICharactor> targets)
         {
+            base.Update(targets);
             var nowPosition = CharactorAi.GetPosition();
             ICharactor theNearTarget = null;
             var minDist = 999f;

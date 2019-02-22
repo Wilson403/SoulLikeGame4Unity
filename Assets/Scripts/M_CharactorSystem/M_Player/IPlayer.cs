@@ -1,7 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics;
 using M_ControllerSystem;
 using UnityEngine;
+using Debug = UnityEngine.Debug;
 
 namespace M_CharactorSystem.M_Player
 {   
@@ -10,10 +12,9 @@ namespace M_CharactorSystem.M_Player
         public bool LeftIsShield = true; //是否左手持盾
         public bool BLockmoving = false;
         public bool BLock = false;
-
+        private AnimationEventMgr _animationeventMgr;
        
         public bool BArmedSword = false;
-
 
         protected float _currentValue; //动画权重的当前值
         protected Vector3 _jumpVec; //跳跃高度
@@ -58,6 +59,8 @@ namespace M_CharactorSystem.M_Player
             {
                 m_CameraControl.LockUnLock();
             }
+            
+            Debug.Log(m_Attribute.GetNowHp());
         }
 
         public virtual void FixedUpdate()
@@ -68,6 +71,12 @@ namespace M_CharactorSystem.M_Player
         //被敌人攻击
         public override void UnderAttack(ICharactor theTarget)
         {
+            if (m_Animator.GetBool("Block"))
+            {
+                m_Animator.SetTrigger("Block_Guard");
+                return;
+            }
+
             var dir = Vector3.Normalize(theTarget.GetModel().transform.position - m_Model.transform.position);
             var value = UsefulView(theTarget); 
 
@@ -104,6 +113,7 @@ namespace M_CharactorSystem.M_Player
             if (m_Attribute.GetNowHp() <= 0)
             {
                 MyActionManager.General.GetDeadAnimation(); //触发死亡动画
+                BKilled = true;
             }
         }
         

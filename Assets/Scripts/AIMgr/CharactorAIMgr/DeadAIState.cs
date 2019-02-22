@@ -13,7 +13,7 @@ using UnityEngine;
 
 namespace AIMgr.CharactorAIMgr
 {
-    public class MoveAIState : IAIState 
+    public class DeadAIState : IAIState 
     {
 	
     } //Class_End

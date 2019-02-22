@@ -24,7 +24,7 @@ namespace M_ControllerSystem
 	public abstract class IController
 	{
 		
-		#region variable
+
 		
 		protected float Target_Vertical;
 		protected float Target_Horizontal;
@@ -57,27 +57,36 @@ namespace M_ControllerSystem
 		protected bool BCheckToPress = false;
 		protected bool BCheckToMove = false;
 
-		#endregion
-		
-		#region 无效变量，可以删除
-        //public  bool isjumplast;
-		//public  bool BAttacklast; //是否攻击
-        //public bool B;
-        //public bool lt;
-        //public bool rb;
-        //public bool rt;
-		//public bool isStart;
-         #endregion
 		
 		
-		//---------------------------------------------------------
+			public MyButton buttonA = new MyButton();
+			public MyButton buttonB = new MyButton();
+			public MyButton buttonX = new MyButton();
+			public MyButton buttonY = new MyButton();
+	 
+			public MyButton buttonRB = new MyButton();
+			public MyButton buttonRT = new MyButton();
+			public MyButton buttonLB = new MyButton();
+			public MyButton buttonLT = new MyButton();
+	
+			public MyButton buttonL3 = new MyButton();
+			public MyButton buttonR3 = new MyButton();	
+	
+			public MyButton buttonSelect = new MyButton();
+			public MyButton buttonStart = new MyButton();
+		
+			public MyButton ButtonLeft = new MyButton();
+			public MyButton ButtonRight = new MyButton();
+		
+		
+		
 		
 		
 		//逻辑更新
 		public virtual void Update(){}
 		
 		
-		//---------------------------------------------------------
+		
 		
 
 		/// <summary>

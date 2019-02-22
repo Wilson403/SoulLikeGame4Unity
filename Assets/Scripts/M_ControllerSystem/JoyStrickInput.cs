@@ -52,24 +52,7 @@ namespace M_ControllerSystem
 		//想继续定制某按钮的功能在这里实例化
 		#region MyButton实例化
 	
-		public MyButton buttonA = new MyButton();
-		public MyButton buttonB = new MyButton();
-		public MyButton buttonX = new MyButton();
-		public MyButton buttonY = new MyButton();
-	 
-		public MyButton buttonRB = new MyButton();
-		public MyButton buttonRT = new MyButton();
-		public MyButton buttonLB = new MyButton();
-		public MyButton buttonLT = new MyButton();
-	
-		public MyButton buttonL3 = new MyButton();
-		public MyButton buttonR3 = new MyButton();	
-	
-		public MyButton buttonSelect = new MyButton();
-		public MyButton buttonStart = new MyButton();
 		
-		public MyButton ButtonLeft = new MyButton();
-		public MyButton ButtonRight = new MyButton();
 		
 
 		#endregion

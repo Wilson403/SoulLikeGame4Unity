@@ -13,7 +13,8 @@ namespace M_CharactorSystem.CharactorBuilder
         public ICharactor NewCharactor = null; //角色对象
         public Vector3 SpawnPosition; //位置
         public string AssetName; //角色模型的资源名
-        public int GameObjectID;
+        public int CharactorID;
+        public int WeaponID;
         public WeaponType LWeaponType = WeaponType.None;
         public WeaponType RWeaponType = WeaponType.None;
     } 

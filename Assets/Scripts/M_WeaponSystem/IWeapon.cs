@@ -20,24 +20,25 @@ namespace M_WeaponSystem
 	public abstract class IWeapon
 	{
 		private Transform _weapontrans; //角色武器的左手挂载点
-		//private Transform _rweapontrans; //角色武器的右手挂载点
+		
 
 		private Collider _col; //角色左手武器碰撞器
-		//private Collider _colR; //角色右手武器碰撞器
+		
 
 		private ICharactor WeaponOwner = null; //武器的拥有者
 
 		private WeaponAttr _weaponAttr = null; //左手武器属性
-		//private WeaponAttr _rweaponAttr = null; //右手武器属性
+		
 
 		private GameObject _weaponObject; //左手武器模型
-		//private GameObject _rweaponObject; //右手武器模型
+		
 
 		//设置Unity模型
 		public void SetGameObject(GameObject lweaponObject)
 		{
 			_weaponObject = lweaponObject;
-			//_rweaponObject = rweaponObject;
+			_col = _weaponObject.transform.GetChild(0).GetComponent<Collider>();
+			_col.enabled = false;
 		}
 
 		public GameObject GetGameObject()
@@ -48,18 +49,7 @@ namespace M_WeaponSystem
 		public void SetWeaponAttr(WeaponAttr lAttr)
 		{
 			_weaponAttr = lAttr;
-			//_rweaponAttr = rAttr;
 		}
-
-//		//设置武器手持挂载点信息
-//		public void SetWeapon(Transform theTarget, out Transform lweapontrans, out Transform rweapontrans)
-//		{
-//			_lweapontrans = UnityTool.DeepFind(theTarget, "weaponHandleL").transform;
-//			_rweapontrans = UnityTool.DeepFind(theTarget, "weaponHandleR").transform;
-//
-//			lweapontrans = _lweapontrans;
-//			rweapontrans = _rweapontrans;
-//		}
 
 		//设置武器的拥有者
 		public void SetWeaponOwner(ICharactor theCharactor)
@@ -87,16 +77,9 @@ namespace M_WeaponSystem
 		//获取左手武器属性
 		public WeaponAttr GetWeaponAttr()
 		{
-			_col = _weaponObject.GetComponent<Collider>();
+			
 			return _weaponAttr;
 		}
-
-//		//获取右手武器属性
-//		public WeaponAttr GetRWeaponAttr()
-//		{
-//			_col = _weaponObject.GetComponent<Collider>();
-//			return _weaponAttr;
-//		}
 
 
 
@@ -107,19 +90,6 @@ namespace M_WeaponSystem
 		/// <returns></returns>
 		public int GetAtkValue()
 		{
-//			if (index == 0 && _lweaponAttr != null)
-//			{
-//				return _lweaponAttr.AtkValue;
-//			}
-//			else if (index == 1 && _rweaponAttr != null)
-//			{
-//				return _rweaponAttr.AtkValue;
-//			}
-//			else
-//			{
-//				Debug.Log("武器属性获取未知错误");
-//				return 0;
-//			}
 			return _weaponAttr.AtkValue;
 		}
 
@@ -130,19 +100,6 @@ namespace M_WeaponSystem
 		/// <returns></returns>
 		public int GetDefenseValue()
 		{
-//			if (index == 0 && _lweaponAttr != null)
-//			{
-//				return _lweaponAttr.DefenseValue;
-//			}
-//			else if (index == 1 && _rweaponAttr != null)
-//			{
-//				return _rweaponAttr.DefenseValue;
-//			}
-//			else
-//			{
-//				Debug.Log("武器属性获取未知错误");
-//				return 0;
-//			}
 			return _weaponAttr.DefenseValue;
 		}
 
@@ -161,28 +118,13 @@ namespace M_WeaponSystem
 		//为什么不让武器一直具备攻击的效果？
 		//因为攻击判定是靠触发器判断的，如果一直保持碰撞体的启用，有时会无意触发攻击效果
 
-	#region WeaponEnable
 
-//	//启用左武器的攻击功能
-//	public void LWeaponEnable()
-//	{
-//		_colL.enabled = true;
-//	}
-//
-//	//启用右武器的攻击功能
-//	public void RWeaponEnable()
-//	{
-//		_colR.enabled = true;
-//	}
-//
-//	//禁用武器触发功能
-//	public void WeaponDisenable()
-//	{
-//		_colL.enabled = false;
-//		_colR.enabled = false;
-//	}
+	//启用左武器的攻击功能
+	public void WeaponEnable(bool isenable)
+	{
+		_col.enabled = isenable;
+	}
 
-	#endregion
 
 
 	}

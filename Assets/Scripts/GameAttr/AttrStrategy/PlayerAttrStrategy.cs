@@ -50,13 +50,14 @@ namespace GameAttr.AttrStrategy
         //等级越高，减伤越高
         public override int GetDmgDesValue(ICharactorAttr theCharactorAttr)
         {
-            var theAttr = theCharactorAttr as PlayerAttr;
-            if (theAttr == null)
-            {
-                return 0;
-            }
-
-            return (theAttr.GetLevel() - 1) * 2;
+//            var theAttr = theCharactorAttr as PlayerAttr;
+//            if (theAttr == null)
+//            {
+//                return 0;
+//            }
+//
+//            return (theAttr.GetLevel() - 1) * 2;
+            return 0;
         }
 
     #endregion

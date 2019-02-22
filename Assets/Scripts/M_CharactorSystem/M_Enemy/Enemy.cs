@@ -43,12 +43,13 @@ namespace M_CharactorSystem.M_Enemy
             m_Animator.SetTrigger("ToEqip");
             m_Animator.SetFloat("Z", 1);
             m_AI.ChangeAiState(new IdleAIState());
-            m_AI.SetAiCharactor(theTarget: this);
+            m_AI.SetAiCharactor(theTarget: this);  
         }
      
 
         public override void Update()
         {
+            base.Update();
             CheckBOnGround();
             FindEnemy();
             AiStateUpdate(Targets);

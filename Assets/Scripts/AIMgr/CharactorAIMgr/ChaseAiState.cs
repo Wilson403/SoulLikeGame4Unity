@@ -35,6 +35,7 @@ namespace AIMgr.CharactorAIMgr
 
         public override void Update(List<ICharactor> targets)
         {
+            base.Update(targets);
             //如果目标为空或者死亡，切换回待机模式
             if (_chasetarget == null || _chasetarget.BKilled)
             {

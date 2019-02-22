@@ -13,6 +13,7 @@ using System.Collections;
 using System.Collections.Generic;
 using M_CharactorSystem;
 using M_CharactorSystem.M_Player;
+using M_Factory;
 using UnityEngine;
 
 public class AnimationEventMgr : MonoBehaviour
@@ -74,5 +75,15 @@ public class AnimationEventMgr : MonoBehaviour
 	public void ResetTrigger(string name)
 	{
 		_anim.ResetTrigger(name);
+	}
+
+	public void OpenCol()
+	{
+		_charactor.EnableWeaponCol(true);
+	}
+
+	public void CloseCol()
+	{
+		_charactor.EnableWeaponCol(false);
 	}
 }

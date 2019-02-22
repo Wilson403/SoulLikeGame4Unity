@@ -6,6 +6,7 @@ using BaseClass;
 using GameAttr.CharactorAttr;
 using M_AnimationManager;
 using M_ControllerSystem;
+using M_Factory;
 using M_WeaponSystem;
 using UnityEngine.AI;
 
@@ -32,6 +33,8 @@ namespace M_CharactorSystem
 		
 		//左手武器
 		protected IWeapon m_LWeapon = null;
+		
+		//右手武器
 		protected IWeapon m_RWeapon = null;
 
 		//属性
@@ -81,12 +84,17 @@ namespace M_CharactorSystem
 		public Transform m_SwordPos;
 		public Transform m_ShieldPos;
 
-		protected AnimationEventMgr _animationeventMgr;
+		
 		protected NavMeshAgent _agent; //代理组件
 
 		public abstract void Init();
 		public abstract void Update();
-		
+
+		public void EnableWeaponCol(bool isEnable)
+		{
+			m_RWeapon.WeaponEnable(isEnable);
+		}
+
 		//设置模型-
 		public virtual void SetCharactorModel(GameObject go)
 		{
@@ -99,8 +107,9 @@ namespace M_CharactorSystem
 			m_Animator = m_Model.GetComponent<Animator>();
 		}
 		
+		
 		//设置武器的挂载点信息
-		protected void SetWeaponPoint()
+		protected virtual void SetWeaponPoint()
 		{
 			m_Lweapontrans = UnityTool.DeepFind(m_Model.transform, "weaponHandleL").transform;
 			m_Rweapontrans = UnityTool.DeepFind(m_Model.transform, "weaponHandleR").transform;
@@ -199,6 +208,7 @@ namespace M_CharactorSystem
 		{
 			m_RWeapon = weapon;
 			m_RWeapon.SetWeaponOwner(this);
+		    
 		}
 
 		//取得武器攻击力
@@ -241,7 +251,7 @@ namespace M_CharactorSystem
 			return value;
 		}
 
-		protected void SetWeaponPos()
+		protected virtual void SetWeaponPos()
 		{
 			var lweapon = GetLWeaponModel();
 			UnityTool.SetParent(m_ShieldPos, lweapon);
@@ -398,13 +408,18 @@ namespace M_CharactorSystem
 			return rad * Mathf.Rad2Deg; //转换为度数返回
 		}
 
+		public bool GetHpState()
+		{
+			return BKilled;
+		}
+
 //=============================旧代码===============================================================
 
 		
 
 
 
-		public bool BKilled; //是否阵亡
+		public bool BKilled = false; //是否阵亡
 		public bool BAttack; //是否可以攻击
 		public Vector3 MovingVec; //移动值
 		public Vector3 DeltaPos; //动画自身的移动量

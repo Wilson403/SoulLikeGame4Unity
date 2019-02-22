@@ -155,7 +155,7 @@ namespace M_AnimationManager.PlayerAnimation
 
 		public override void GetDamageAnimation(float x, float z)
 		{
-			if (!CheckState("DamageDirc"))
+			if (!CheckState("DamageDirc") && !CheckState("Dead"))
 			{
 				CurAnimator.SetFloat("AtkDircX", x);
 				CurAnimator.SetFloat("AtkDircZ", z);

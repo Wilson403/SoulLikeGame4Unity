@@ -60,7 +60,10 @@ namespace AIMgr.CharactorAIMgr
         /// <param name="targets"></param>
         public virtual void Update(List<ICharactor> targets)
         {
-            
+            if (CharactorAi.GetAICharactor().GetHpState())
+            {
+                CharactorAi.ChangeAiState(new DeadAIState());
+            }
         }
 
         /// <summary>
