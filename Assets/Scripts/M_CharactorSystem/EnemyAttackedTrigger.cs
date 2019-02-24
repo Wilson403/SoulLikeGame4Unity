@@ -13,7 +13,7 @@ namespace M_CharactorSystem
         private void Start()
         {
             _id = transform.parent.gameObject.GetInstanceID();
-            _charactor = MainFactory.GetCharactorFactory().GetEnemy(_id);
+            _charactor = MainFactory.Instance.GetCharactorFactory().GetEnemy(_id);
         }
 
         private void OnTriggerEnter(Collider other)
@@ -21,7 +21,7 @@ namespace M_CharactorSystem
             if (other.CompareTag("Sword"))
             {
                 var id = other.transform.parent.gameObject.GetInstanceID();
-                _charactor.UnderAttack(MainFactory.GetCharactorFactory().GetPlayer(id));
+                _charactor.UnderAttack(MainFactory.Instance.GetCharactorFactory().GetPlayer(id));
             }
         }
     } 

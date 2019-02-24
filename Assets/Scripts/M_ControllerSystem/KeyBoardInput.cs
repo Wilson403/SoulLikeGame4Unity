@@ -78,7 +78,7 @@ namespace M_ControllerSystem
 			
 
 			BWalk = buttonA.isPressing;
-			BLock = buttonR3.OnPressed;
+			BLock = Input.GetMouseButtonDown(2);
 			BDefense = buttonLB.isPressing;
 			BJump = buttonA.OnPressed;
 			BFontStab = buttonB.OnPressed;

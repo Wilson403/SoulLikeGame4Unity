@@ -1,8 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Diagnostics;
 using M_ControllerSystem;
+using M_Factory;
+using M_Factory.AttriableFactory;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 using Debug = UnityEngine.Debug;
 
 namespace M_CharactorSystem.M_Player
@@ -13,6 +17,7 @@ namespace M_CharactorSystem.M_Player
         public bool BLockmoving = false;
         public bool BLock = false;
         private AnimationEventMgr _animationeventMgr;
+        private float timer = 0;
        
         public bool BArmedSword = false;
 
@@ -41,26 +46,35 @@ namespace M_CharactorSystem.M_Player
         {
             //首帧就要检查是否位于地面
             CheckBOnGround();
-            
             SetWeaponPoint();
             SetWeaponPos();
         }
         
         public override void Update()
         {
+            if (isStartRun)
+            {
+                Init();
+                isStartRun = false;
+            }
+
             ChangeController();
             Controller.Update(); //控制器内部更新逻辑
             BCanMove(); 
             BFollowObject();
             CheckBOnGround();
+            OnReLoadScene();
             
             //触发锁定，相机会锁定敌人
             if (Controller.BLock)
             {
                 m_CameraControl.LockUnLock();
             }
-            
-            Debug.Log(m_Attribute.GetNowHp());
+
+            if (Input.GetKeyDown(KeyCode.K))
+            {
+                BKilled = true;
+            }
         }
 
         public virtual void FixedUpdate()
@@ -189,6 +203,19 @@ namespace M_CharactorSystem.M_Player
             m_CameraControl = theCamera;
         }
 
-        
+        private void OnReLoadScene()
+        {
+            if (BKilled)
+            {
+                timer += Time.deltaTime;
+                if (timer > 3)
+                {
+                    SceneManager.LoadSceneAsync("Battle");
+                    MainFactory.Instance.GetCharactorFactory().Release();
+                }
+            }
+        }
+
+
     }
 } 

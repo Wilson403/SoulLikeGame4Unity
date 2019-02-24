@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using AIMgr;
 using AIMgr.CharactorAIMgr;
 using M_Factory;
+using M_Factory.AttriableFactory;
 using UnityEngine;
 using UnityEngine.AI;
 
@@ -43,7 +44,11 @@ namespace M_CharactorSystem.M_Enemy
 
         public override void Update()
         {
-            
+            if (isStartRun)
+            {
+                Init();
+                isStartRun = false;
+            }
         }
         
         public override int GetAtkValue()

@@ -87,6 +87,8 @@ namespace M_CharactorSystem
 		
 		protected NavMeshAgent _agent; //代理组件
 
+		protected bool isStartRun = true;
+
 		public abstract void Init();
 		public abstract void Update();
 

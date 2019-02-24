@@ -35,7 +35,7 @@ public class GameManageHub
 
 	public void Start()
 	{
-		_charactorSystem.Initialize();
+		//_charactorSystem.Initialize();
 	}
 
 	public void Update()

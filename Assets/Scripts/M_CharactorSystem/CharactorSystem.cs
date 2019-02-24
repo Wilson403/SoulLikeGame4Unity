@@ -34,29 +34,18 @@ namespace M_CharactorSystem
         {
             _enemies.Add(theEnemy);
         }
-
-        public override void Initialize()
-        {
-            foreach (var player in _players)
-            {
-                player.Init();
-            }
-            
-            foreach (var enemy in _enemies)
-            {
-                enemy.Init();
-            }
-        }
-
+        
         public override void Update()
         {
             foreach (var player in _players)
             {
+
                 player.Update();
             }
 
             foreach (var enemy in _enemies)
             {
+
                 enemy.Update();
             }
         }

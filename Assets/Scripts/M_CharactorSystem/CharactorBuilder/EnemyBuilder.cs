@@ -33,7 +33,7 @@ namespace M_CharactorSystem.CharactorBuilder
         //加载角色模型
         public override void LoadAsset(int gameobjectID)
         {
-            var assetfactory = MainFactory.GetAssetFactory();
+            var assetfactory = MainFactory.Instance.GetAssetFactory();
             var go = assetfactory.LoadEnemy(_theParam.NewCharactor.GetAssetName());
            
             //模型初始化
@@ -53,7 +53,7 @@ namespace M_CharactorSystem.CharactorBuilder
 
         public override void AddCharactorAttr()
         {
-            var attrFactory = MainFactory.GetrAttrFactory();
+            var attrFactory = MainFactory.Instance.GetrAttrFactory();
             var attrID = _theParam.NewCharactor.GetAttrID();
             var attr = attrFactory.GetEnemyAttr(attrID);
 
@@ -64,7 +64,7 @@ namespace M_CharactorSystem.CharactorBuilder
         public override void AddWeapon()
         {
             //取得武器工厂
-            var weaponFactory = MainFactory.GetWeaponFactory();
+            var weaponFactory = MainFactory.Instance.GetWeaponFactory();
             var weapon = weaponFactory.CreatWeapon(_theParam.RWeaponType);
             var weapongo = weapon.GetGameObject();
             

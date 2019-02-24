@@ -185,7 +185,7 @@ namespace M_CharactorSystem.M_Enemy
                         //将检测到的角色加入目标列表
                         //注意，空对象也会加入。使用前要检查是否存在空对象
                         var id = hitColliders[i].gameObject.GetInstanceID();
-                        Targets.Add(MainFactory.GetCharactorFactory().GetPlayer(id));
+                        Targets.Add(MainFactory.Instance.GetCharactorFactory().GetPlayer(id));
                     }
                 }
             }

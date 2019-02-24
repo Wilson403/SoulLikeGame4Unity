@@ -20,14 +20,34 @@ namespace M_Factory
     /// <summary>
     /// 取得所有的工厂
     /// </summary>
-    public static class MainFactory
+    public class MainFactory : MonoBehaviour
     {
+        private static MainFactory _instance;
+
+        public static MainFactory Instance
+        {
+            get { return _instance; }
+        }
+
+        private void Awake()
+        {
+            if (_instance == null)
+            {
+                _instance = this;
+            }
+//            else
+//            {
+//                DestroyImmediate(this);
+//            }
+        }
+
         private static IAssetFactory _assetFactory = null;
         private static ICharactorFactory _charactorFactory = null;
         private static IAttrFactory _attrfactory = null;
         private static IWeaonFactory _weaonFactory = null;
+       
         
-        public static IAssetFactory GetAssetFactory()
+        public IAssetFactory GetAssetFactory()
         {
             if (_assetFactory == null)
                 _assetFactory = new ResourcesProxyFactory();
@@ -35,7 +55,7 @@ namespace M_Factory
             return _assetFactory;
         }
 
-        public static ICharactorFactory GetCharactorFactory()
+        public ICharactorFactory GetCharactorFactory()
         {
             if (_charactorFactory == null)
                 _charactorFactory = new CharactorFactory_Switch();
@@ -43,7 +63,7 @@ namespace M_Factory
             return _charactorFactory;
         }
         
-        public static IAttrFactory GetrAttrFactory()
+        public IAttrFactory GetrAttrFactory()
         {
             if (_attrfactory == null)
                 _attrfactory = new AttrFactory();
@@ -51,7 +71,7 @@ namespace M_Factory
             return _attrfactory;
         }
         
-        public static IWeaonFactory GetWeaponFactory()
+        public IWeaonFactory GetWeaponFactory()
         {
             if (_weaonFactory == null)
                 _weaonFactory = new M_WeaponFactory();

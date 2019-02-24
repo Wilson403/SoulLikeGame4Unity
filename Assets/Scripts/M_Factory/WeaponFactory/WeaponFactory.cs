@@ -38,12 +38,12 @@ namespace M_Factory.WeaponFactory
             }
 
             //使用武器工厂产生武器
-            var assetFactory = MainFactory.GetAssetFactory();
+            var assetFactory = MainFactory.Instance.GetAssetFactory();
             var go = assetFactory.LoadWeapon(assetName);
             weapon.SetGameObject(go);
             
             //使用属性工厂给予武器属性
-            var factory = MainFactory.GetrAttrFactory();
+            var factory = MainFactory.Instance.GetrAttrFactory();
             weapon.SetWeaponAttr(factory.GetWeaponAttr(attrID));
             
             return weapon;

@@ -27,5 +27,22 @@ namespace M_Factory.CharactorFactory
         public abstract IPlayer GetPlayer(int key);
 
         public abstract IEnemy GetEnemy(int key);
-    } 
+        
+        public virtual int GetPlayerCount()
+        {
+            return 0;
+        }
+        
+        public virtual int GetEnemyCount()
+        {
+            return 0;
+        }
+
+        public virtual void Release()
+        {
+            
+        }
+
+    }
+    
 } 

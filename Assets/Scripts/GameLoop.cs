@@ -13,18 +13,23 @@ using GameAttr.WeaponAttr;
 using UnityEngine;
 using M_Factory;
 using M_Factory.AssetFactory;
+using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
-public class GameLoop : MonoBehaviour {
+public class GameLoop : MonoBehaviour
+{
     
     //场景状态切换的控制器
     private readonly SceneStateController _controller = new SceneStateController();
 
     private bool _bStart = true;
-    //private readonly GameManageHub _hub = new GameManageHub();
+
+    public Text PlayerWarnText;
+    public Text EnemyWarnText;
     
     private void Awake()
     {
-        DontDestroyOnLoad(this);
+     
     }
 
     private void Start()
@@ -32,9 +37,7 @@ public class GameLoop : MonoBehaviour {
         
         //设置初始场景
         GameManageHub.GetInstance().Awake();
-        Cursor.lockState = CursorLockMode.Locked; 
-        CreatePlayer();
-        CreateEnemy();
+        //Cursor.lockState = CursorLockMode.Locked; 
        
       //  _controller.SetState("", new LogoMenuState(_controller));
     }
@@ -57,17 +60,46 @@ public class GameLoop : MonoBehaviour {
         GameManageHub.GetInstance().FixedUpdate();
     }
 
-    private void CreatePlayer()
+    public void CreatePlayer(GameObject theTarget)
     {
-        var factory = MainFactory.GetCharactorFactory();
-        factory.CreatePlayer(new Vector3(10,0,10), 10, WeaponType.Shield, WeaponType.Sword);
+        PlayerWarnText.enabled = true;
+        if (MainFactory.Instance.GetCharactorFactory().GetPlayerCount() != 0)
+        {
+            PlayerWarnText.text = "别闹！只能存在一个我方角色";
+            PlayerWarnText.color = Color.red;
+            return;
+        }
+
+        PlayerWarnText.text = "我方角色已产生";
+        PlayerWarnText.color = Color.green;
+        
+        var factory = MainFactory.Instance.GetCharactorFactory();
+        factory.CreatePlayer(theTarget.transform.position, 10, WeaponType.Shield, WeaponType.Sword);
         
     }
 
-    private void CreateEnemy()
+    public void CreateEnemy(GameObject theTarget)
     {
-        var factory = MainFactory.GetCharactorFactory();
-        factory.CreateEnemy(new Vector3(50, 0, 50), WeaponType.Shield, WeaponType.Sword);
+        EnemyWarnText.enabled = true;
+        
+        if (MainFactory.Instance.GetCharactorFactory().GetEnemyCount() != 0)
+        {
+            EnemyWarnText.text = "暂时只能产生一个敌人，多个敌人有BUG,待解决";
+            EnemyWarnText.color = Color.red;
+            return;
+        }
+
+        EnemyWarnText.text = "敌人已产生";
+        EnemyWarnText.color = Color.green;
+        
+        var factory = MainFactory.Instance.GetCharactorFactory();
+        factory.CreateEnemy(theTarget.transform.position, WeaponType.Shield, WeaponType.Sword);
+    }
+
+    public void ReLoad()
+    {
+        SceneManager.LoadScene("Battle");
+        MainFactory.Instance.GetCharactorFactory().Release();
     }
 
 

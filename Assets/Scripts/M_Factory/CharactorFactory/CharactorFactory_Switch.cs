@@ -23,12 +23,29 @@ namespace M_Factory.CharactorFactory
 
         private readonly Dictionary<int, IEnemy> m_EnemyDict = new Dictionary<int, IEnemy>();
         
+        
+        
 
         //组装指挥者
         private readonly CharactorBuildSystem theCharactorBuildSystem =
             new CharactorBuildSystem(GameManageHub.GetInstance());
 
-        
+        public override int GetPlayerCount()
+        {
+            return m_PlayerDict.Count;
+        }
+
+        public override int GetEnemyCount()
+        {
+            return m_EnemyDict.Count;
+        }
+
+        public override void Release()
+        {
+            m_PlayerDict.Clear();
+            m_EnemyDict.Clear();
+        }
+
         //产生玩家角色
         public override Player CreatePlayer(Vector3 spawnPos, int lv, WeaponType ltype, WeaponType rtype)
         {
@@ -87,10 +104,6 @@ namespace M_Factory.CharactorFactory
 
         public override IEnemy GetEnemy(int key)
         {
-//            foreach (var k in m_EnemyDict.Keys)
-//            {
-//                Debug.Log(k);
-//            }
             if (!m_EnemyDict.ContainsKey(key))
             {
                 Debug.Log("Enemy未知key");

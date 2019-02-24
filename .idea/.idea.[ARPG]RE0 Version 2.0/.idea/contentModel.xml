@@ -25,6 +25,7 @@
             </e>
           </e>
           <e p="AnimationEventMgr.cs" t="Include" />
+          <e p="AutoClose.cs" t="Include" />
           <e p="BaseClass" t="Include">
             <e p="IGameSystem.cs" t="Include" />
           </e>
