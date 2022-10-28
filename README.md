@@ -1,4 +1,4 @@
-# MyRPGGame-Version-2
+# SoulLikeGame
 
 ## 项目介绍
 一个SoulLikeRPG游戏的Demo，使用Unity开发，基于MyRPGGame-Version-1的代码重构优化，同时加入了更多的功能。
